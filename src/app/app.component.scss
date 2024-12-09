@@ -6,3 +6,29 @@
     align-items: $ai;
     gap: $x;
 }
+
+$main-color1: #3DCFB6;  /*opacity 20% oder 50% je nach verwendung*/
+$main-color2: #FFFDFD;
+$main-color-wrong:#FD2E12;
+
+$button-default: #3DCFB6;
+
+$button-hover: #017562; /*hier sollte gradient sein main-color + --> dunklere variante*/
+
+$button-disabled: #9E9D9D;
+
+
+$backgroundcolor1: #1C1C1C;
+$backgroundcolor2: #08463B ;
+
+colorset{
+    color: #1C1C1C;
+    color: #08463B ;
+    color: #1C1C1C;
+    color: #08463B;
+    color: #1C1C1C;
+    /*für hintergrund Gradience ganze seite durchgezogen */
+    /*Blur effect für Icons hover skills*/
+
+    font-family: Quantico;
+}
