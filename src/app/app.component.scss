@@ -1,0 +1,8 @@
+/* Using this scss for mixin imports */
+
+@mixin center($jc:center,$ai:center, $x:0) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $x;
+}
