@@ -1,0 +1,30 @@
+/* Using this scss for mixin imports */
+
+@mixin center($jc:center,$ai:center, $x:0) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $x;
+}
+
+$main-color1: #3DCFB6;  /*opacity 20% oder 50% je nach verwendung*/
+$main-color2: #083d33;
+$main-color3: #FFFDFD;
+$main-color-wrong:#FD2E12;
+
+$backgroundcolor1: #1C1C1C;
+$backgroundcolor2: $main-color2 ;
+$colorGradient:  linear-gradient(135deg,$main-color1 45%,$main-color2 99%);
+
+$button-default: $main-color1;
+$button-hover: $colorGradient;
+$button-disabled: #9E9D9D;
+
+
+
+
+colorset{
+    /*Blur effect für Icons hover skills*/
+
+    font-family: Quantico;
+}

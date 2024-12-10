@@ -1,34 +1,20 @@
-/* Using this scss for mixin imports */
+@use './shared/mixin.scss' as main;
 
-@mixin center($jc:center,$ai:center, $x:0) {
-    display: flex;
-    justify-content: $jc;
-    align-items: $ai;
-    gap: $x;
-}
+.side_wrapper{
+    height: calc(100dvh - 17px);
+    width: 9640px;
+    
+    @include main.center($jc:flex-start);
+    flex-direction: row;
+    color: main.$main-color3;
+    background: linear-gradient(40deg, main.$backgroundcolor1 25%, main.$backgroundcolor2 35%,main.$backgroundcolor1 45%,main.$backgroundcolor1 70%, main.$backgroundcolor2 80%,main.$backgroundcolor1 90%);
+    
+    
 
-$main-color1: #3DCFB6;  /*opacity 20% oder 50% je nach verwendung*/
-$main-color2: #FFFDFD;
-$main-color-wrong:#FD2E12;
-
-$button-default: #3DCFB6;
-
-$button-hover: #004237; /*hier sollte gradient sein main-color + --> dunklere variante*/
-
-$button-disabled: #9E9D9D;
-
-
-$backgroundcolor1: #1C1C1C;
-$backgroundcolor2: #08463B ;
-
-colorset{
-    color: #1C1C1C;
-    color: #08463B ;
-    color: #1C1C1C;
-    color: #08463B;
-    color: #1C1C1C;
-    /*für hintergrund Gradience ganze seite durchgezogen */
-    /*Blur effect für Icons hover skills*/
-
-    font-family: Quantico;
+    @media(max-width:1025px) {
+        height: 5446px;
+        width: calc(100dvw - 17px);
+        flex-direction: column;
+        background: linear-gradient(150deg, main.$backgroundcolor1 25%, main.$backgroundcolor2 35%,main.$backgroundcolor1 45%,main.$backgroundcolor1 70%, main.$backgroundcolor2 80%,main.$backgroundcolor1 90%);
+    }
 }

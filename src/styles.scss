@@ -38,4 +38,15 @@
     box-sizing: border-box;
     margin: 0;
     font-family: Quantico;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.d-none{
+  display: none;
 }
