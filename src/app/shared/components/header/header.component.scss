@@ -106,8 +106,6 @@ section{
             @include main.center($jc:space-around);
 
             .mobileClose{
-                
-                @include main.center($jc:flex-end);
                 display: none;
                 padding: 20px 20px 0 0;
                 width: 100%;
@@ -117,9 +115,12 @@ section{
                     aspect-ratio: 1/1;
                 }
 
+                img:hover{
+                    cursor: pointer;
+                }
+
                 @media(max-width:1025px) {
-                    display: flex;
-                    justify-content: flex-end;
+                    @include main.center($jc:flex-end);
                 }
             }
 
@@ -140,6 +141,7 @@ section{
                     a {
                         writing-mode: unset;
                         rotate: unset;
+                        font-size: 25px;
                     }
                 }
             }
@@ -150,7 +152,6 @@ section{
                 right: 50px;
                 width: auto;
                 @include main.center($x:40px);
-
 
                 .icons{
                     @include main.center($x:15px);
@@ -217,10 +218,18 @@ section{
                     :hover{
                         cursor: pointer;
                     }
+
+                    @media(max-width:1025px) {
+                        border: 1px solid main.$main-color2;
+                        color: main.$main-color2;
+                        .active{
+                            background-color: main.$main-color2;
+                        }
+                    }
                 }
 
                 @media(max-width:1025px) {
-                    position: unset;
+                    position: unset;                   
                 }
             }
 
@@ -233,6 +242,9 @@ section{
                 justify-content: center;
                 flex-direction: column;
                 gap: 10px;
+                padding: 0 20px 20px 20px;
+                background: main.$colorGradient;
+                border-radius: 0 0 40px 40px;
             }
 
         }
