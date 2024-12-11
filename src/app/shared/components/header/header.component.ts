@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output  } from '@angular/core';
 import { LogoComponent } from "./logo/logo.component";
 import { NavComponent } from "./nav/nav.component";
 
@@ -10,5 +10,5 @@ import { NavComponent } from "./nav/nav.component";
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-
+  toggleMenu = false;
 }

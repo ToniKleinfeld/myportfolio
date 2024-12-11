@@ -26,12 +26,28 @@ section{
             padding: 0 3% ;
         }
 
+        app-nav{
+            height: 100%;
+            width: 100%;
+            @include main.center($jc:space-around);
+        }
+
         .dropdownmenu{
             display: none;
+            width: 32px;
+            aspect-ratio: 1/1;
+            background-image: url(../../../../assets/img/burgermenu.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
 
             @media(max-width:1025px) {
                 @include main.center();
+                cursor: pointer;   
             }
+        }
+
+        .dropdownmenu:hover{
+            background-image: url(../../../../assets/img/burgerhover.svg);
         }
     }
 }

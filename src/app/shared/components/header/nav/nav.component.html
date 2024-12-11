@@ -1,7 +1,9 @@
-<nav>
+<nav [ngClass]="{'menu_open': toggle, 'menu_closed': !toggle}" >
+
     <div class="mobileClose">
-        <img src="./assets/img/closemenu.svg" alt="">
-    </div>   
+        <img src="./assets/img/closemenu.svg" alt="" (click)="closeMenu.emit(false)">
+    </div> 
+
     <div class="navmenu">
         <a href="#">Contact</a>
         <a href="#">My Work</a>

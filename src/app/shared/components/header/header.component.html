@@ -3,9 +3,9 @@
 
         <app-logo></app-logo>
 
-        <app-nav></app-nav>
+        <app-nav (closeMenu)="toggleMenu = $event" [toggle]="toggleMenu"></app-nav>
 
-        <div class="dropdownmenu">
+        <div class="dropdownmenu" (click)="toggleMenu = true">
         </div>
 
     </header>

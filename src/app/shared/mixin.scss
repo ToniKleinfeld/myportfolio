@@ -7,7 +7,7 @@
     gap: $x;
 }
 
-$main-color1: #3DCFB6;  /*opacity 20% oder 50% je nach verwendung*/
+$main-color1: #3DCFB6;  /*opacity 20% oder 50% je nach verwendung hinzu z.b als component hintergrund*/
 $main-color2: #083d33;
 $main-color3: #FFFDFD;
 $main-color-wrong:#FD2E12;
@@ -20,11 +20,7 @@ $button-default: $main-color1;
 $button-hover: $colorGradient;
 $button-disabled: #9E9D9D;
 
-
-
-
 colorset{
     /*Blur effect für Icons hover skills*/
-
     font-family: Quantico;
 }
