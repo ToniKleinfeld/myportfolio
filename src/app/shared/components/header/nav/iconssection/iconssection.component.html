@@ -5,8 +5,8 @@
         <a href=""></a>
     </div>
 
-    <div class="setLanguage">
-        <div class="active">EN</div>
-        <div>DE</div>
+    <div class="setLanguage" (click)="changeLanguage()">
+        <div [ngClass]="{'active': translate , 'moveright': translate}">EN</div>
+        <div [ngClass]="{'active': !translate ,'moveleft': !translate }">DE</div>
     </div>
 </div>
