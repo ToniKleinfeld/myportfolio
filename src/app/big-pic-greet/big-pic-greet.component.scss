@@ -1,3 +1,49 @@
+@use '../shared/mixin.scss' as main;
 section{
-    
+    width: calc(100dvw - 172px);
+    height: calc(100dvh - 17px);
+    @include main.center();
+    flex-direction: column;
+    font-weight: 700;
+    max-height: 1250px;
+
+    h1{
+        font-size: 100px;
+        color: main.$main-color1;
+
+        
+    }
+
+    h3{
+        font-size: 48px;
+        -webkit-text-stroke: 1px main.$main-color1;
+        color: black;
+        overflow: hidden; 
+        white-space: nowrap; 
+        margin: 0 auto; 
+        
+    }
+
+    @media(max-width:1025px) {
+        height: calc(100dvh - 17px);
+        width: 100dvw;
+    }
+}
+
+.typinganimation h1,.typinganimation h3{
+    animation:typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+    border-right: .15em solid orange;
+    overflow: hidden;
+    white-space: nowrap; 
+    margin: 0 auto; 
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
 }
