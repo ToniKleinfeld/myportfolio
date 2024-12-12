@@ -29,5 +29,4 @@ export class IconssectionComponent {
       this.translation.changeLanguage('en')
     }
   }
-
 }
