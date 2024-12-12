@@ -2,7 +2,7 @@
 
 section{
     width: 172px;
-    height: calc(100dvh - 17px);;
+    height: calc(100dvh - 17px);
     @include main.center();
     background: main.$colorGradient;
 

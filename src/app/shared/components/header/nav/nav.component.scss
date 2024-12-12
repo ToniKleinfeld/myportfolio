@@ -22,7 +22,7 @@ nav{
     }
 
     .navmenu{
-        @include main.center($x:40px);
+        @include main.center($x:30px);
         flex-direction: column-reverse;
 
         a{

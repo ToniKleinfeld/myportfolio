@@ -8,10 +8,15 @@ export class TranslationService {
   public language:string = 'en';
 
   constructor(private translation: TranslateService) {
-    this.translation.setDefaultLang('en');
+    this.checkLocal();
+    this.translation.setDefaultLang(this.language);
     this.translation.addLangs(['en', 'de']);
-    
    }
+
+   checkLocal(){
+    const local = localStorage.getItem('currentLang');
+    this.language = (local === 'de') ? 'de' : 'en';
+  }
 
    public changeLanguage(changeTo: string) {
     this.language = changeTo;

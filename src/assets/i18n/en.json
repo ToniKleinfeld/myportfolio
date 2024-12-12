@@ -4,5 +4,9 @@
         "mywork":"MY Work",
         "skills":"Skills",
         "whyme":"Why me"
+    },
+    "footer": {
+        "imprint":"Legal notice",
+        "privacy":"privacy policy"
     }
 }

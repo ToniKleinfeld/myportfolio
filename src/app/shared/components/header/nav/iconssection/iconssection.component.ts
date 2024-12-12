@@ -1,8 +1,7 @@
-import { Component,Injectable, Inject } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslationService } from '../../../../../../assets/i18n/translation.service';
 import { CommonModule } from '@angular/common';
-
 @Component({
   selector: 'app-iconssection',
   standalone: true,
@@ -11,13 +10,10 @@ import { CommonModule } from '@angular/common';
   styleUrl: './iconssection.component.scss'
 })
 
-@Injectable({
-  providedIn: 'root',
-})
-
 export class IconssectionComponent {
 
   constructor(private translation: TranslationService){
+    this.translate = (this.translation.language === 'de') ? false : true;
   }
 
   translate:boolean = true;
@@ -25,10 +21,12 @@ export class IconssectionComponent {
   changeLanguage(){
     if (this.translate == true) {
       this.translate = false;
-      this.translation.changeLanguage('de')
+      this.translation.changeLanguage('de');
+      localStorage.setItem('currentLang','de');
     } else {
       this.translate = true;
-      this.translation.changeLanguage('en')
+      this.translation.changeLanguage('en');
+      localStorage.setItem('currentLang','en');
     }
   }
 }

@@ -3,6 +3,10 @@
         "contact":"Kontakt",
         "mywork":"Meine Projekte",
         "skills":"Fähigkeiten",
-        "whyme":"Warum ich"
+        "whyme":"Über mich"
+    },
+    "footer": {
+        "imprint":"Rechtlicher Hinweis",
+        "privacy":"Datenschutzbestimmungen"
     }
 }
