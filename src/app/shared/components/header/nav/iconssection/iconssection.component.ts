@@ -1,21 +1,23 @@
-import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { TranslationService } from '../../../../../../assets/i18n/translation.service';
+import { Component,Injectable, Inject } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { TranslationService } from '../../../../../../assets/i18n/translation.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-iconssection',
   standalone: true,
-  imports: [CommonModule,TranslateModule],
+  imports: [TranslateModule,CommonModule],
   templateUrl: './iconssection.component.html',
   styleUrl: './iconssection.component.scss'
 })
+
+@Injectable({
+  providedIn: 'root',
+})
+
 export class IconssectionComponent {
 
-  public activeLanguage:string;
-
   constructor(private translation: TranslationService){
-    this.activeLanguage = this.translation.language;
   }
 
   translate:boolean = true;

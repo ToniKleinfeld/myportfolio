@@ -1,5 +1,8 @@
 {
     "header": {
-        
+        "contact":"Contact",
+        "mywork":"MY Work",
+        "skills":"Skills",
+        "whyme":"Why me"
     }
 }

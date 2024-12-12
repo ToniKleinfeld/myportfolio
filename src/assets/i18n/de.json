@@ -1,1 +1,8 @@
-{}
+{
+    "header": {
+        "contact":"Kontakt",
+        "mywork":"Meine Projekte",
+        "skills":"Fähigkeiten",
+        "whyme":"Warum ich"
+    }
+}
