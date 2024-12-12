@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslationService } from '../../../../../../assets/i18n/translation.service';
 import { CommonModule } from '@angular/common';
+import { IconsComponent } from "./icons/icons.component";
 @Component({
   selector: 'app-iconssection',
   standalone: true,
-  imports: [TranslateModule,CommonModule],
+  imports: [TranslateModule, CommonModule, IconsComponent],
   templateUrl: './iconssection.component.html',
   styleUrl: './iconssection.component.scss'
 })

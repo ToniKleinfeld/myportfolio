@@ -7,55 +7,6 @@
     width: auto;
     @include main.center($x:40px);
 
-    .icons{
-        @include main.center($x:15px);
-
-        a{
-            width: 30px;
-            height: 30px;
-            aspect-ratio: 1/1;
-        }
-
-        :nth-child(1){
-            background-image: url(../../../../../../assets/img/mail.svg);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        :nth-child(1):hover{
-            background-image: url(../../../../../../assets/img/mailhover.svg);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        :nth-child(2){
-            background-image: url(../../../../../../assets/img/linkin.svg);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        :nth-child(2):hover{
-            background-image: url(../../../../../../assets/img/linkinhover.svg);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        :nth-child(3){
-            background-image: url(../../../../../../assets/img/github.svg);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        :nth-child(3):hover{
-            background-image: url(../../../../../../assets/img/githubhover.svg);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        @media(max-width:1025px) {
-            display: none;
-        } 
-    }
 
     .setLanguage{
         @include main.center();
