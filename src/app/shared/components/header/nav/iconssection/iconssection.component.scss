@@ -1,12 +1,11 @@
 @use '../../../../mixin.scss' as main;
 
 .iconsandLanguage{
-    position: absolute;
+    position: fixed;
     top : 2%;
     right: 50px;
     width: auto;
     @include main.center($x:40px);
-
 
     .setLanguage{
         @include main.center();
@@ -15,7 +14,6 @@
         color: main.$main-color1;
         width: 99px;
         
-
         div{
             padding: 4px 12px;
             transition: ease-in-out;
