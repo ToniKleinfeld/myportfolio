@@ -1,8 +1,8 @@
 @use "./shared/mixin.scss" as main;
 
 .side_wrapper {
-  height: calc(100dvh - 17px);
-  width: fit-content;
+  height: 100dvh;
+  width: 100%;
   @include main.center($jc: flex-start);
   flex-direction: row;
   color: main.$main-color3;
@@ -15,6 +15,11 @@
     main.$backgroundcolor2 80%,
     main.$backgroundcolor1 90%
   );
+  
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap; 
+  scroll-behavior: smooth;
 
   router-outlet {
     @include main.center($jc: flex-start);

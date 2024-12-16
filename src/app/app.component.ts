@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet, Scroll } from '@angular/router';
+import { HorizonalscrollDirective } from './horizonalscroll.directive';
 import { HeaderComponent } from "./shared/components/header/header.component";
 import { FooterComponent } from "./shared/components/footer/footer.component";
 import { BigPicGreetComponent } from "./big-pic-greet/big-pic-greet.component";
 import { ArrowComponent } from "./arrow/arrow.component";
 import { WhymeComponent } from "./whyme/whyme.component";
-import { HorizonalscrollDirective } from './horizonalscroll.directive';
+
 
 @Component({
   selector: 'app-root',
@@ -20,8 +21,4 @@ export class AppComponent {
     
   }
   title = 'myportfolio'; 
-
-  scrollX(){
-    return scrollX;
-  }
 }

@@ -1,5 +1,4 @@
 import { Directive, HostListener , ElementRef } from '@angular/core';
-import { AppComponent } from './app.component';
 
 @Directive({
   selector: '[appHorizonalscroll]',
@@ -7,22 +6,14 @@ import { AppComponent } from './app.component';
 })
 
 export class HorizonalscrollDirective {
-  constructor(private el: ElementRef, private appComponent: AppComponent) {}
+  constructor(private el: ElementRef) {}
 
-  @HostListener('wheel', ['$event']) onWheel(event: WheelEvent) {
+  @HostListener('wheel', ['$event']) 
+  onWheel(event: WheelEvent) {
     if (window.innerWidth > 1025) {
       event.preventDefault();
-      const scrollAmount = 200;
-
-      let currentScrollLeft = this.appComponent.scrollX();
-      console.log(currentScrollLeft)
-      
-      scroll({
-        left: event.deltaY > 0
-          ? currentScrollLeft + scrollAmount 
-          : currentScrollLeft - scrollAmount, 
-        behavior: 'smooth'
-      }); 
+      const scrollAmount = event.deltaY;      
+      this.el.nativeElement.scrollLeft += scrollAmount*4;
     }
   }
 }
