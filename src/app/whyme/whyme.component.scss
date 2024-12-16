@@ -1,0 +1,63 @@
+@use '../shared/mixin.scss' as main;
+section{
+    @include main.center($ai:flex-start);
+
+    h2{
+        rotate: -90deg;
+        -webkit-text-stroke: 2px main.$main-color1;
+        color: black;
+        font-size: 54px;
+    }
+    
+    div{
+        p{
+            font-size: 18px;
+        }
+
+        div{
+            @include main.center();
+            flex-direction: column;
+
+            h4{
+                font-size: 48px;
+                font-weight: 700;
+                color: main.$main-color1;
+                align-self: flex-start;
+            }
+
+            div{
+                .img{
+                    display: flex;
+                    background-repeat: no-repeat;
+                    background-size: center;
+                    width: 60px;
+                    aspect-ratio: 1/1;
+                }
+            }
+
+            .iconlocation{
+                .img{
+                    background-image: url(../../assets/img/Location.svg);
+                }
+
+                .img:hover{
+                    background-image: url(../../assets/img/LocationHover.svg);
+                }
+            }
+
+            .iconremote{
+                .img{
+                    background-image: url(../../assets/img/remote.svg);
+                }
+
+                .img:hover{
+                    background-image: url(../../assets/img/remotehover.svg);
+                }
+                
+            }
+
+
+        }
+    }
+
+}
