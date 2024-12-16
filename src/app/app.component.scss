@@ -1,33 +1,49 @@
-@use './shared/mixin.scss' as main;
+@use "./shared/mixin.scss" as main;
 
-.side_wrapper{
-    height: calc(100dvh - 17px);
-    width: fit-content;
-    @include main.center($jc:flex-start);
-    flex-direction: row;
-    color: main.$main-color3;
-    background: linear-gradient(40deg, main.$backgroundcolor1 25%, main.$backgroundcolor2 35%,main.$backgroundcolor1 45%,main.$backgroundcolor1 70%, main.$backgroundcolor2 80%,main.$backgroundcolor1 90%);
+.side_wrapper {
+  height: calc(100dvh - 17px);
+  width: fit-content;
+  @include main.center($jc: flex-start);
+  flex-direction: row;
+  color: main.$main-color3;
+  background: linear-gradient(
+    40deg,
+    main.$backgroundcolor1 25%,
+    main.$backgroundcolor2 35%,
+    main.$backgroundcolor1 45%,
+    main.$backgroundcolor1 70%,
+    main.$backgroundcolor2 80%,
+    main.$backgroundcolor1 90%
+  );
 
-    router-outlet{
-        @include main.center($jc:flex-start); 
+  router-outlet {
+    @include main.center($jc: flex-start);
 
-        @media(max-width:1025px) {
-            justify-content: center;
-            flex-direction: column;
-            align-self: flex-start;
-        }
-
-        app-arrow{
-            @media(max-width:1025px) {
-                display: none;
-            }
-        }
+    @media (max-width: 1025px) {
+      justify-content: center;
+      flex-direction: column;
+      align-self: flex-start;
     }
-    
-    @media(max-width:1025px) {
-        height: auto;
-        width: 100dvw;
-        flex-direction: column;
-        background: linear-gradient(150deg, main.$backgroundcolor1 25%, main.$backgroundcolor2 35%,main.$backgroundcolor1 45%,main.$backgroundcolor1 70%, main.$backgroundcolor2 80%,main.$backgroundcolor1 90%);
+
+    app-arrow {
+      @media (max-width: 1025px) {
+        display: none;
+      }
     }
+  }
+
+  @media (max-width: 1025px) {
+    height: auto;
+    width: 100dvw;
+    flex-direction: column;
+    background: linear-gradient(
+      150deg,
+      main.$backgroundcolor1 25%,
+      main.$backgroundcolor2 35%,
+      main.$backgroundcolor1 45%,
+      main.$backgroundcolor1 70%,
+      main.$backgroundcolor2 80%,
+      main.$backgroundcolor1 90%
+    );
+  }
 }
