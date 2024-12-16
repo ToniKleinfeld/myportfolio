@@ -1,4 +1,4 @@
-import { Component, ViewChild , ElementRef } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet, Scroll } from '@angular/router';
 import { HeaderComponent } from "./shared/components/header/header.component";
@@ -19,18 +19,9 @@ export class AppComponent {
   constructor(){
     
   }
-  x = scrollX;
-  
-
-  title = 'myportfolio';
-  @ViewChild("side_wrapper") wrapper: ElementRef | any;
-
+  title = 'myportfolio'; 
 
   scrollX(){
     return scrollX;
-  }
-
-  scrollFunction(x:number){
-    this.wrapper.scroll(x,0)
   }
 }

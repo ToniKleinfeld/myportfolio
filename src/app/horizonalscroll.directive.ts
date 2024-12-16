@@ -12,9 +12,10 @@ export class HorizonalscrollDirective {
   @HostListener('wheel', ['$event']) onWheel(event: WheelEvent) {
     if (window.innerWidth > 1025) {
       event.preventDefault();
-      const scrollAmount = 200;  
+      const scrollAmount = 200;
 
       let currentScrollLeft = this.appComponent.scrollX();
+      console.log(currentScrollLeft)
       
       scroll({
         left: event.deltaY > 0
