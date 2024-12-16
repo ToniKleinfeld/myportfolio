@@ -1,12 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild , ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, Scroll } from '@angular/router';
 import { HeaderComponent } from "./shared/components/header/header.component";
 import { FooterComponent } from "./shared/components/footer/footer.component";
 import { BigPicGreetComponent } from "./big-pic-greet/big-pic-greet.component";
 import { ArrowComponent } from "./arrow/arrow.component";
 import { WhymeComponent } from "./whyme/whyme.component";
-
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -15,5 +14,16 @@ import { WhymeComponent } from "./whyme/whyme.component";
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+  constructor(){
+    
+  }
   title = 'myportfolio';
+  @ViewChild("side_wrapper") wrapper: ElementRef | any;
+
+
+  scrollfunction(){
+    
+    console.log(this.wrapper.scrollLeft)
+  }
 }
+
