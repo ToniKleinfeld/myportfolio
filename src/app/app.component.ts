@@ -7,12 +7,13 @@ import { FooterComponent } from "./shared/components/footer/footer.component";
 import { BigPicGreetComponent } from "./big-pic-greet/big-pic-greet.component";
 import { ArrowComponent } from "./arrow/arrow.component";
 import { WhymeComponent } from "./whyme/whyme.component";
+import { SkillsetComponent } from "./skillset/skillset.component";
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent, FooterComponent, BigPicGreetComponent, ArrowComponent, WhymeComponent,HorizonalscrollDirective],
+  imports: [CommonModule, RouterOutlet, HeaderComponent, FooterComponent, BigPicGreetComponent, ArrowComponent, WhymeComponent, HorizonalscrollDirective, SkillsetComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
