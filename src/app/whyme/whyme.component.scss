@@ -74,6 +74,7 @@ section {
         div {
           @include main.center();
           flex-direction: column;
+          font-size: 18px;
           .img {
             display: flex;
             background-repeat: no-repeat;
@@ -87,14 +88,14 @@ section {
           .img {
             animation: locationBg 3s infinite;
           }
-          font-size: 18px;
+          
         }
 
         .iconremote {
           .img {
             animation: remoteBg 2s infinite;
           }
-          font-size: 18px;
+          
         }
       }
 
@@ -112,4 +113,26 @@ section {
       }
     }
   }
+
+  @media (max-width: 730px) {
+    h2 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .content_whyme{
+        .description{
+            font-size: 16px;
+        }
+        .inside_wrapper{
+            h4{
+                font-size: 32px;
+            }
+            .icon_wrapper{
+                div{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
 }
