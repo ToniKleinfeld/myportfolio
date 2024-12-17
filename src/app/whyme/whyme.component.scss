@@ -40,7 +40,7 @@ section {
       max-width: 690px;
       word-wrap: break-word;
       word-break: break-word;
-      white-space:wrap;
+      white-space: wrap;
       padding-bottom: 30px;
 
       @media (max-width: 1025px) {
@@ -88,14 +88,12 @@ section {
           .img {
             animation: locationBg 3s infinite;
           }
-          
         }
 
         .iconremote {
           .img {
             animation: remoteBg 2s infinite;
           }
-          
         }
       }
 
@@ -116,23 +114,23 @@ section {
 
   @media (max-width: 730px) {
     h2 {
-        font-size: 32px;
-        font-weight: 700;
+      font-size: 32px;
+      font-weight: 700;
     }
-    .content_whyme{
-        .description{
+    .content_whyme {
+      .description {
+        font-size: 16px;
+      }
+      .inside_wrapper {
+        h4 {
+          font-size: 32px;
+        }
+        .icon_wrapper {
+          div {
             font-size: 16px;
+          }
         }
-        .inside_wrapper{
-            h4{
-                font-size: 32px;
-            }
-            .icon_wrapper{
-                div{
-                    font-size: 16px;
-                }
-            }
-        }
+      }
     }
-}
+  }
 }
