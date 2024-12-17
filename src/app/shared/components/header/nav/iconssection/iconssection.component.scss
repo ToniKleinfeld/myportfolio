@@ -1,72 +1,62 @@
-@use '../../../../mixin.scss' as main;
+@use "../../../../mixin.scss" as main;
 
-.iconsandLanguage{
-    position: fixed;
-    top : 2%;
-    right: 110px;
-    width: auto;
-    @include main.center($x:40px);
+.iconsandLanguage {
+  position: fixed;
+  top: 2%;
+  right: 110px;
+  width: auto;
+  @include main.center($x: 40px);
 
-    .setLanguage{
-        @include main.center();
-        border: 1px solid main.$main-color1;
-        border-radius: 20px;
-        color: main.$main-color1;
-        width: 99px;
-        
-        div{
-            padding: 4px 12px;
-            transition: ease-in-out;
-        }
+  .setLanguage {
+    @include main.center();
+    border: 1px solid main.$main-color1;
+    border-radius: 20px;
+    color: main.$main-color1;
+    width: 99px;
 
-        .active {
-            background-color: main.$main-color1;
-            color: main.$main-color3;
-            border-radius: 16px;
-            padding: 4px 16px;
-        }
-
-        .moveleft{
-            animation: moveleft 0.3s linear;
-        }
-        @keyframes moveleft {
-            0% {
-                transform: translateX(-43px);
-                color:main.$main-color3
-             }
-             100% {
-                transform: translateX(0);
-                color:main.$main-color2
-             }
-        }
-        .moveright{
-            animation: moveright 0.3s linear;
-        }
-        @keyframes moveright {
-            0% {
-                transform: translateX(43px);
-                color:main.$main-color3
-             }
-             100% {
-                transform: translateX(0);
-                color:main.$main-color2
-             }
-        }
-
-        :hover{
-            cursor: pointer;
-        }
-
-        @media(max-width:1025px) {
-            border: 1px solid main.$main-color2;
-            color: main.$main-color2;
-            .active{
-                background-color: main.$main-color2;
-            }
-        }
+    div {
+      padding: 4px 12px;
+      transition: ease-in-out;
     }
 
-    @media(max-width:1025px) {
-        position: unset;                   
+    .active {
+      background-color: main.$main-color1;
+      color: main.$main-color3;
+      border-radius: 16px;
+      padding: 4px 16px;
     }
+
+    .moveleft {
+      animation: moveleft 0.3s linear;
+    }
+    @keyframes moveleft {
+      0% {
+        transform: translateX(-43px);
+        color: main.$main-color3;
+      }
+      100% {
+        transform: translateX(0);
+        color: main.$main-color2;
+      }
+    }
+    .moveright {
+      animation: moveright 0.3s linear;
+    }
+
+    :hover {
+      cursor: pointer;
+    }
+
+    @media (max-width: 1025px) {
+      border: 1px solid main.$main-color2;
+      color: main.$main-color2;
+      .active {
+        background-color: main.$main-color2;
+      }
+    }
+  }
+
+  @media (max-width: 1025px) {
+    position: unset;
+  }
 }
