@@ -8,6 +8,7 @@
     "whyme": {
         "header":"Why me",
         "secondaryheader": "I am",
+        "location": "located in ",
         "descripeme":"Placeholder , here come more text in future",
         "button":"Contact me",
         "remote":"open to work remote"

@@ -24,3 +24,20 @@ colorset{
     /*Blur effect für Icons hover skills*/
     font-family: Quantico;
 }
+
+@mixin button(){
+    border: 1px solid $main-color1;
+    padding: 10px 20px; 
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@mixin butonfilled(){
+    color: black;
+    background-color: $main-color1;
+}
+
+@mixin buttonempty(){
+    color: $main-color1;
+    background-color: transparent;
+}

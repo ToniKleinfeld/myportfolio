@@ -1,20 +1,25 @@
 <section>
     <h2>{{ 'whyme.header' | translate}}</h2>
 
-    <div>
+    <div class="content_whyme">
         <p>{{'whyme.descripeme' | translate}}</p>
 
-        <div>
+        <div class="inside_wrapper">
+
             <h4>{{'whyme.secondaryheader' | translate}}</h4>
 
-            <div class="iconlocation">
-                <div class="img"></div>
-                Münster
-            </div>
+            <div class="icon_wrapper">
 
-            <div class="iconremote">
-                <div class="img"></div>
-                {{'whyme.remote' | translate}}
+                <div class="iconlocation">
+                    <div class="img"></div>
+                    {{ 'whyme.location'| translate}} Münster
+                </div>
+
+                <div class="iconremote">
+                    <div class="img"></div>
+                    {{'whyme.remote' | translate}}
+                </div>
+
             </div>
 
             <div class="fullcolorbutton">{{'whyme.button' | translate}}</div>
