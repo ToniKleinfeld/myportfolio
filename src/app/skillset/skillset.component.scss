@@ -1,0 +1,49 @@
+@use "../shared/mixin.scss" as main;
+
+section {
+  width: 975px;
+  @include main.center();
+  h2 {
+    -webkit-text-stroke: 2px main.$main-color1;
+    color: black;
+    font-size: 54px;
+    align-self: flex-start;
+    writing-mode: vertical-rl;
+    rotate: 180deg;
+    padding-left: 3%;
+  }
+
+  .skillset-wrapper {
+    .skillsetintro {
+      font-size: 18px;
+      max-width: 860px;
+      word-wrap: break-word;
+      word-break: break-word;
+      white-space: wrap;
+      padding-bottom: 30px;
+    }
+
+    .iconskills-wrapper {
+      @include main.center($x: 25px, $jc: flex-start);
+      max-width: 728px;
+      flex-wrap: wrap;
+      .icon {
+        @include main.center($x: 5px);
+        flex-direction: column;
+        div {
+          width: 60px;
+          aspect-ratio: 1/1;
+          background-repeat: no-repeat;
+          background-size: center;
+        }
+      }
+      .text {
+        text-align: left;
+        width: 215px;
+        word-wrap: break-word;
+        word-break: break-word;
+        white-space: wrap;
+      }
+    }
+  }
+}

@@ -16,5 +16,10 @@
     "footer": {
         "imprint":"Legal notice",
         "privacy":"privacy policy"
+    },
+    "myskills": {
+        "header": "My Skill Set",
+        "intro": "The IT landscape is continuously evolving, with new technologies and methodologies. Staying motivated to expand my IT skills requires a strategic approach, a curious mindset, and a commitment to lifelong learning",
+        "challange": "I am always happy to learn new technologies, just tell me what you need."
     }
 }

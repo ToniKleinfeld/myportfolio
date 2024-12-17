@@ -1,1 +1,21 @@
-<p>skillset works!</p>
+<section>
+    <h2>{{'myskills.header'| translate}}</h2>
+    <div class="skillset-wrapper">
+        <div class="skillsetintro">{{'myskills.intro'| translate}}</div>
+        <div class="iconskills-wrapper">
+
+            <div class="icon" *ngFor="let icon of iconArray">
+                <div class="" style="background-image: url(../../assets/img/{{icon}}.svg);"></div>
+                {{icon}}
+                @if(icon == 'Challenge'){
+                me
+                }
+                @if(icon == 'Material'){
+                Design
+                }
+            </div>
+            <div class="text">{{'myskills.challange'|translate}}</div>
+        </div>
+        
+    </div>
+</section>
