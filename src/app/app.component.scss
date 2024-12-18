@@ -77,6 +77,14 @@
         margin-bottom: 12vh;
       }
     }
+    
+    .arrow3{
+      margin: 0vh;
+      @media (max-height:920px) {
+        margin: 0vh;
+      }
+    }
+
   }
 
   @media (max-width: 1025px) {
