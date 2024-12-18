@@ -45,10 +45,12 @@ section {
     ul {
       list-style-type: circle;
       width: 442px;
+
       li {
         font-size: 24px;
         margin-bottom: 10px;
       }
+
       p {
         font-size: 18px;
         max-width: 366px;
@@ -69,11 +71,12 @@ section {
         right: 50px;
         @include main.center($x:35px);
         flex-direction: column;
-        border-radius: 30px;
+        
 
         img{
             width: 337px;
             height: 203px;
+            border-radius: 30px;
         }
 
         .buttons {
