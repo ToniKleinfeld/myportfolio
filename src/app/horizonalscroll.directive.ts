@@ -31,8 +31,7 @@ export class HorizonalscrollDirective {
       }, 100);
 
       this.lastScrollTime = currentTime;
-    }
-    
+    }    
   }
 
   private limitScrollSpeed(scrollAmount: number): number {
