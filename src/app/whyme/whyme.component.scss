@@ -2,11 +2,6 @@
 section {
   @include main.center($ai: flex-start);
   width: 850px;
-  padding-bottom: 60%;
-
-  @media (max-height:920px) {
-    padding-bottom: 40%;
-  }
 
   @media (max-width: 1025px) {
     width: 80dvw;

@@ -36,9 +36,44 @@
     }
 
     .arrow1{
-      margin-bottom: 14%;
+      align-self: flex-start;
+      margin-top: 18vh;
       @media (max-height:920px) {
-        margin-bottom: 7%;
+        margin-top: 26vh;
+      }
+    }
+
+    app-whyme{
+      align-self: flex-start;
+      margin-top: 8vh;
+
+      @media (max-width:1025px) {
+        margin-top: unset;
+        align-self: unset;
+      }
+      @media (max-height:920px) {
+        margin-top: 12vh;
+      }
+    }
+
+    .arrow2{
+      align-self: flex-end;
+      margin-bottom: 6vh;
+      @media (max-height:920px) {
+        margin-bottom: 9vh;
+      }
+    }
+
+    app-skillset{
+      align-self: flex-end;
+      margin-bottom: 8vh;
+
+      @media (max-width:1025px) {
+        margin-bottom: unset;
+        align-self: unset;
+      }
+      @media (max-height:920px) {
+        margin-bottom: 12vh;
       }
     }
   }
