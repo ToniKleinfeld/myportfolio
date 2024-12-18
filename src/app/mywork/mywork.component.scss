@@ -1,0 +1,93 @@
+@use "../shared/mixin.scss" as main;
+section {
+  @include main.center($x: 20px);
+
+  h2 {
+    -webkit-text-stroke: 2px main.$main-color1;
+    color: black;
+    font-size: 54px;
+    align-self: flex-start;
+    writing-mode: vertical-rl;
+    rotate: 180deg;
+
+    @media (max-width: 1025px) {
+      writing-mode: unset;
+      rotate: unset;
+      padding-left: unset;
+    }
+  }
+
+  .project-wrapper {
+    @include main.center($ai:flex-start);
+    flex-direction: column;
+    position: relative;
+    width: 900px;
+    background-color:main.$backgroundcoloropacity;
+    padding: 0 30px 30px 30px;
+    border-radius: 30px;
+
+    .subHeader {
+      @include main.center($x: 15px);
+
+      .count {
+        font-size: 100px;
+        font-weight: 700;
+        -webkit-text-stroke: 2px main.$main-color1;
+        color: transparent;
+      }
+
+      h3 {
+        color: main.$main-color1;
+        font-size: 54px;
+      }
+    }
+
+    ul {
+      list-style-type: circle;
+      width: 442px;
+      li {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 18px;
+        max-width: 366px;
+        word-wrap: break-word;
+        word-break: break-word;
+        white-space: wrap;
+        margin-bottom: 20px;
+      }
+
+      li::marker {
+        color: main.$main-color1;
+      }
+    }
+
+    .image-button-container{
+        position: absolute;
+        top: 150px;
+        right: 50px;
+        @include main.center($x:35px);
+        flex-direction: column;
+        border-radius: 30px;
+
+        img{
+            width: 337px;
+            height: 203px;
+        }
+
+        .buttons {
+            @include main.center($x:20px);            
+            div{
+                @include main.button();
+            }
+            .btnGitHub{
+                @include main.buttonempty();
+            }
+            .btnLiveTest{
+                @include main.butonfilled();
+            }
+        }
+    }
+  }
+}

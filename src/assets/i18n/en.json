@@ -23,6 +23,12 @@
         "challange": "I am always happy to learn new technologies, just tell me what you need."
     },
     "mywork":{
-        "header":"My Work"
+        "header":"My Work",
+        "subhead":"Project ",
+        "about":"About the project",
+        "usedtechnick":"Technologies I have used",
+        "learned":"What i have learned",
+        "joinabout":"Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+        "joinlearned":"sed senectus felis ac mauris. Dui eget dictum.Lorem ipsum dolor sit amet consectetur. Posuere pretium arcu sed senectus felis ac mauris."
     }
 }

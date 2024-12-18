@@ -14,6 +14,7 @@ $main-color-wrong:#FD2E12;
 
 $backgroundcolor1: #1C1C1C;
 $backgroundcolor2: $main-color2 ;
+$backgroundcoloropacity:rgba(8,61,51,0.9);
 $colorGradient:  linear-gradient(135deg,$main-color1 45%,$main-color2 99%);
 
 $button-default: $main-color1;
@@ -28,9 +29,11 @@ colorset{
 @mixin button(){
     border: 1px solid $main-color1;
     padding: 12px 24px; 
-    border-radius: 20px;
+    border-radius: 25px;
     cursor: pointer;
     font-size: 14px;
+    width: 135px;
+    text-align: center;
 }
 
 @mixin butonfilled(){
