@@ -22,11 +22,12 @@
   scroll-behavior: smooth;
 
   router-outlet {
-    @include main.center($jc: flex-start);
+    @include main.center($jc: flex-start);    
 
     @media (max-width: 1025px) {
       justify-content: center;
       flex-direction: column;
+      width: 100%;
     }
 
     app-arrow {
@@ -80,6 +81,7 @@
 
   @media (max-width: 1025px) {
     height: auto;
+    justify-content: center;
     width: 100dvw;
     flex-direction: column;
     background: linear-gradient(
@@ -91,5 +93,8 @@
       main.$backgroundcolor2 80%,
       main.$backgroundcolor1 90%
     );
+    overflow-x: unset;
+    overflow-y: unset;
+    white-space: unset; 
   }
 }
