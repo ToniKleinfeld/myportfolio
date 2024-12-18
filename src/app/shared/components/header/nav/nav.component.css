@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* Using this scss for mixin imports */
+/*opacity 20% oder 50% je nach verwendung hinzu z.b als component hintergrund*/
+colorset {
+  /*Blur effect für Icons hover skills*/
+  font-family: Quantico;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+nav .mobileClose {
+  display: none;
+  padding: 20px 20px 0 0;
+  width: 100%;
+}
+nav .mobileClose img {
+  height: 35px;
+  aspect-ratio: 1/1;
+}
+nav .mobileClose img:hover {
+  cursor: pointer;
+}
+@media (max-width: 1025px) {
+  nav .mobileClose {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0;
+  }
+}
+nav .navmenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-direction: column-reverse;
+}
+nav .navmenu a {
+  writing-mode: vertical-rl;
+  rotate: 180deg;
+  font-size: 30px;
+  color: black;
+}
+nav .navmenu a:hover {
+  -webkit-text-stroke: 1px black;
+  color: transparent;
+}
+@media (max-width: 1025px) {
+  nav .navmenu {
+    justify-content: center;
+    gap: 10px;
+  }
+  nav .navmenu a {
+    writing-mode: unset;
+    rotate: unset;
+    font-size: 25px;
+  }
+}
+@media (max-width: 1025px) {
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px 20px 20px;
+    background: linear-gradient(135deg, #3DCFB6 45%, #083d33 99%);
+    border-radius: 0 0 40px 40px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .menu_closed {
+    display: none;
+  }
+}
+
+@media (max-width: 1025px) {
+  .menu_open {
+    display: flex;
+    animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+}/*# sourceMappingURL=nav.component.css.map */

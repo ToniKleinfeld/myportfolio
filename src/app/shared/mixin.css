@@ -1,0 +1,7 @@
+@charset "UTF-8";
+/* Using this scss for mixin imports */
+/*opacity 20% oder 50% je nach verwendung hinzu z.b als component hintergrund*/
+colorset {
+  /*Blur effect für Icons hover skills*/
+  font-family: Quantico;
+}/*# sourceMappingURL=mixin.css.map */

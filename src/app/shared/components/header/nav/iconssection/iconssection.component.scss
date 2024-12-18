@@ -29,16 +29,7 @@
     .moveleft {
       animation: moveleft 0.3s linear;
     }
-    @keyframes moveleft {
-      0% {
-        transform: translateX(-43px);
-        color: main.$main-color3;
-      }
-      100% {
-        transform: translateX(0);
-        color: main.$main-color2;
-      }
-    }
+
     .moveright {
       animation: moveright 0.3s linear;
     }
@@ -58,5 +49,6 @@
 
   @media (max-width: 1025px) {
     position: unset;
+    gap:unset;
   }
 }

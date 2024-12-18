@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* Using this scss for mixin imports */
+/*opacity 20% oder 50% je nach verwendung hinzu z.b als component hintergrund*/
+colorset {
+  /*Blur effect für Icons hover skills*/
+  font-family: Quantico;
+}
+
+section {
+  width: 975px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+section h2 {
+  -webkit-text-stroke: 2px #3DCFB6;
+  color: black;
+  font-size: 54px;
+  align-self: flex-start;
+  writing-mode: vertical-rl;
+  rotate: 180deg;
+  padding-left: 3%;
+}
+section .skillset-wrapper .skillsetintro {
+  font-size: 18px;
+  max-width: 860px;
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: wrap;
+  padding-bottom: 30px;
+}
+section .skillset-wrapper .iconskills-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+  max-width: 778px;
+  flex-wrap: wrap;
+}
+section .skillset-wrapper .iconskills-wrapper .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  flex-direction: column;
+}
+section .skillset-wrapper .iconskills-wrapper .icon div {
+  width: 60px;
+  aspect-ratio: 1/1;
+  background-repeat: no-repeat;
+  background-size: center;
+}
+section .skillset-wrapper .iconskills-wrapper .text {
+  text-align: left;
+  width: 215px;
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: wrap;
+}/*# sourceMappingURL=skillset.component.css.map */

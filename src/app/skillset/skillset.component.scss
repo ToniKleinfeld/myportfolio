@@ -24,12 +24,14 @@ section {
     }
 
     .iconskills-wrapper {
-      @include main.center($x: 25px, $jc: flex-start);
-      max-width: 778px;
+      @include main.center($x: 5px, $jc: flex-start);
+      max-width: 100%;
       flex-wrap: wrap;
       .icon {
         @include main.center($x: 4px);
         flex-direction: column;
+        width: 100px;
+        height: 100px;
         div {
           width: 60px;
           aspect-ratio: 1/1;
@@ -43,6 +45,7 @@ section {
         word-wrap: break-word;
         word-break: break-word;
         white-space: wrap;
+        margin-left: 20px;
       }
     }
   }

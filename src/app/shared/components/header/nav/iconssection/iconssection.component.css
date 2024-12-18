@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* Using this scss for mixin imports */
+/*opacity 20% oder 50% je nach verwendung hinzu z.b als component hintergrund*/
+colorset {
+  /*Blur effect für Icons hover skills*/
+  font-family: Quantico;
+}
+
+.iconsandLanguage {
+  position: fixed;
+  top: 2%;
+  right: 110px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.iconsandLanguage .setLanguage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  border: 1px solid #3DCFB6;
+  border-radius: 20px;
+  color: #3DCFB6;
+  width: 99px;
+}
+.iconsandLanguage .setLanguage div {
+  padding: 4px 12px;
+  transition: ease-in-out;
+}
+.iconsandLanguage .setLanguage .active {
+  background-color: #3DCFB6;
+  color: #FFFDFD;
+  border-radius: 16px;
+  padding: 4px 16px;
+}
+.iconsandLanguage .setLanguage .moveleft {
+  animation: moveleft 0.3s linear;
+}
+.iconsandLanguage .setLanguage .moveright {
+  animation: moveright 0.3s linear;
+}
+.iconsandLanguage .setLanguage :hover {
+  cursor: pointer;
+}
+@media (max-width: 1025px) {
+  .iconsandLanguage .setLanguage {
+    border: 1px solid #083d33;
+    color: #083d33;
+  }
+  .iconsandLanguage .setLanguage .active {
+    background-color: #083d33;
+  }
+}
+@media (max-width: 1025px) {
+  .iconsandLanguage {
+    position: unset;
+    gap: unset;
+  }
+}/*# sourceMappingURL=iconssection.component.css.map */
