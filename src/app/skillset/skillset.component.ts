@@ -10,5 +10,5 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './skillset.component.scss'
 })
 export class SkillsetComponent {
- iconArray = ['Angular','TypeScript','JavaScript','Rest-Api','Firebase','Git','Scrum','SCSS','Material','HTML','CSS','Challenge']
+ iconArray = ['Angular','TypeScript','JavaScript','Firebase','Rest-Api','Git','Scrum','SCSS','CSS','HTML','Material','Bootstrap','Challenge']
 }

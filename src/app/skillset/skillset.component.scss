@@ -25,10 +25,10 @@ section {
 
     .iconskills-wrapper {
       @include main.center($x: 25px, $jc: flex-start);
-      max-width: 728px;
+      max-width: 778px;
       flex-wrap: wrap;
       .icon {
-        @include main.center($x: 5px);
+        @include main.center($x: 4px);
         flex-direction: column;
         div {
           width: 60px;
