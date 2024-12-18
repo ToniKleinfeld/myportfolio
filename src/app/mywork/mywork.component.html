@@ -1,5 +1,6 @@
 <section>
     <h2>{{'mywork.header'| translate}}</h2>
+    
     <div class="project-wrapper" *ngFor="let project of projectsArray,let i = index">
 
         <div class="subHeader">
@@ -17,7 +18,6 @@
         </ul>
 
         <div class="image-button-container">
-
             <img src="../../assets/img/{{project.name}}.png" alt="image ob a Webapplication">
 
             <div class="buttons">
