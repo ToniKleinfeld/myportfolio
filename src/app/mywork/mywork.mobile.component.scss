@@ -1,0 +1,93 @@
+@use "../shared/mixin.scss" as main;
+
+@media (max-width: 1025px) {
+  section {
+    width: 90dvw;
+    flex-direction: column;
+    h2 {
+      writing-mode: unset;
+      rotate: unset;
+      padding: unset;
+    }
+    .project-wrapper {
+      margin-right: unset;
+    }
+
+    .onGoing {
+      .talkBtn {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 930px) {
+  section {
+    .project-wrapper {
+      width: 100%;
+      height: 100%;
+
+      .subHeader {
+        justify-content: flex-start;
+        width: 100%;
+        h3 {
+          margin: auto;
+        }
+      }
+
+      .image-button-container {
+        position: unset;
+        align-self: center;
+      }
+    }
+  }
+
+  p {
+    max-width: unset;
+  }
+}
+
+@media (max-width: 750px) {
+  section {
+    .project-wrapper {
+      padding: 30px;
+      justify-content: center;
+      .subHeader {
+        .count {
+          font-size: 40px;
+        }
+        h3 {
+          font-size: 24px;
+          margin: unset;
+        }
+      }
+
+      ul {
+        li {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  section {
+    .project-wrapper {
+      .image-button-container {
+        img {
+          padding: 5%;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  .btn {
+    width: auto;
+  }
+}

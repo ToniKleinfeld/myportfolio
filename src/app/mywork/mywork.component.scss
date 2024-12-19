@@ -9,11 +9,11 @@ section {
     align-self: flex-start;
     writing-mode: vertical-rl;
     rotate: 180deg;
-    padding: 0 0 10px 0; 
+    padding: 0 0 10px 0;
   }
 
   .project-wrapper {
-    @include main.center($jc:flex-start,$ai: flex-start);
+    @include main.center($jc: flex-start, $ai: flex-start);
     flex-direction: column;
     position: relative;
     width: 900px;
@@ -62,7 +62,7 @@ section {
         color: main.$main-color1;
       }
 
-      :nth-child(6){
+      :nth-child(6) {
         max-width: 800px;
       }
     }
@@ -82,14 +82,8 @@ section {
 
       .buttons {
         @include main.center($x: 20px);
-        div {
-          @include main.button();
-        }
         .btnGitHub {
           @include main.buttonempty();
-        }
-        .btnLiveTest {
-          @include main.butonfilled();
         }
       }
     }
@@ -102,13 +96,20 @@ section {
     align-self: flex-start;
     padding-top: 40px;
 
-    .talkBtn{
-      @include main.button();
-      @include main.butonfilled();
+    .talkBtn {
       align-self: flex-end;
       margin-right: 20px;
     }
   }
+}
+
+.talkBtn,
+.btnLiveTest {
+  @include main.butonfilled();
+}
+
+.btn {
+  @include main.button();
 }
 
 p {
@@ -118,18 +119,4 @@ p {
   word-break: break-word;
   white-space: wrap;
   margin-bottom: 25px;
-}
-
-@media (max-width: 1025px) {
-  section{
-    width: 90dvh;
-    flex-direction: column;
-    h2 {
-      @media (max-width: 1025px) {
-        writing-mode: unset;
-        rotate: unset;
-        padding: unset;
-      }
-    }
-  }
 }

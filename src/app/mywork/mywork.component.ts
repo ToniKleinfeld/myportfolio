@@ -7,42 +7,41 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [CommonModule, TranslateModule],
   templateUrl: './mywork.component.html',
-  styleUrl: './mywork.component.scss',
+  styleUrls: ['./mywork.component.scss', './mywork.mobile.component.scss'],
 })
 export class MyworkComponent {
   projectsArray = [
-    { 
+    {
       name: 'Ring of Fire',
       about: 'mywork.fireabout',
       skills: 'Angular, TypeScript, Firebase, SCSS, HTML',
       learned: 'mywork.firelearned',
-      img: 'Ringoffire'
+      img: 'Ringoffire',
     },
-    { 
+    {
       name: 'Join',
       about: 'mywork.joinabout',
       skills: 'JavaScript, Firebase, CSS, HTML, Scrum',
       learned: 'mywork.joinlearned',
-      img: 'Join'
+      img: 'Join',
     },
-    { 
+    {
       name: 'Little Sharky',
       about: 'mywork.sharkyabout',
       skills: 'JavaScript, CSS, HTML',
       learned: 'mywork.sharkylearned',
-      img: 'Sharky'
+      img: 'Sharky',
     },
-    { 
+    {
       name: 'Pokedex',
       about: 'mywork.pokeabout',
       skills: 'JavaScript, Rest-Api, CSS, HTML',
       learned: 'mywork.pokelearned',
-      img: 'Pokedex'
+      img: 'Pokedex',
     },
     {
-      name:'Ongoing',
-      nextProject:'mywork.nextWork'
-    }
-
+      name: 'Ongoing',
+      nextProject: 'mywork.nextWork',
+    },
   ];
 }

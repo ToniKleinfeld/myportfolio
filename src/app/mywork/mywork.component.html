@@ -22,8 +22,8 @@
             <img src="./assets/img/{{project.img}}.png" alt="image ob a Webapplication">
 
             <div class="buttons">
-                <div class="btnGitHub">GitHub</div>
-                <div class="btnLiveTest">Live Test</div>
+                <div class="btnGitHub btn">GitHub</div>
+                <div class="btnLiveTest btn">Live Test</div>
             </div>
 
         </div>
@@ -32,10 +32,11 @@
 
         <div class="subHeader smallHeader">
             <div class="count">{{i + 1}}</div>
-            <h3>{{project.name}}{{'mywork.subhead'|translate}}</h3>
+            <h3>{{project.name}} {{'mywork.subhead'|translate}}</h3>
         </div>
         <p>{{project.nextProject! | translate}}</p>
-        <div class="talkBtn">{{'mywork.btn' | translate}}</div>
+        <div class="talkBtn btn">{{'mywork.btn' | translate}}</div>
+
         }
 
     </div>
