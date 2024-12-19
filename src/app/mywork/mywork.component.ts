@@ -12,10 +12,33 @@ import { TranslateModule } from '@ngx-translate/core';
 export class MyworkComponent {
   projectsArray = [
     { 
+      name: 'Ring of Fire',
+      about: 'mywork.fireabout',
+      skills: 'Angular, TypeScript, Firebase, SCSS, HTML',
+      learned: 'mywork.firelearned',
+      img: 'Ringoffire'
+    },
+    { 
       name: 'Join',
       about: 'mywork.joinabout',
-      skills: 'Angular, JavaScript, Firebase, CSS, HTML, Scrum',
+      skills: 'JavaScript, Firebase, CSS, HTML, Scrum',
       learned: 'mywork.joinlearned',
-    }
+      img: 'Join'
+    },
+    { 
+      name: 'Little Sharky',
+      about: 'mywork.sharkyabout',
+      skills: 'JavaScript, CSS, HTML',
+      learned: 'mywork.sharkylearned',
+      img: 'Sharky'
+    },
+    { 
+      name: 'Pokedex',
+      about: 'mywork.pokeabout',
+      skills: 'JavaScript, Rest-Api, CSS, HTML',
+      learned: 'mywork.pokelearned',
+      img: 'Pokedex'
+    },
+
   ];
 }
