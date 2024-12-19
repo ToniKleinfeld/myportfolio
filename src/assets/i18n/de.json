@@ -8,5 +8,33 @@
     "footer": {
         "imprint":"Rechtlicher Hinweis",
         "privacy":"Datenschutzbestimmungen"
+    },
+    "whyme": {
+        "secondaryheader": "Ich bin",
+        "location": "sesshaft in ",
+        "descripeme":"I am motivated to continuously learn new technologies and develop myself. My ability to solve complex problems and my passion for programming make me a valuable member of your team.",
+        "button":"Schreib mir",
+        "remote":"offen für Remote"
+    },
+    "myskills": {
+        "header": "Mein Skill Set",
+        "intro": "Die IT-Landschaft entwickelt sich ständig weiter, mit neuen Technologien und Methoden. Um motiviert zu bleiben, meine IT-Kenntnisse zu erweitern, sind ein strategischer Ansatz, eine neugierige Denkweise und die Bereitschaft zu lebenslangem Lernen erforderlich.",
+        "challange": "Ich bin immer bereit, neue Technologien zu erlernen, sagen Sie mir einfach, was Sie brauchen."
+    },
+    "mywork":{
+        "subhead":"Projekt ",
+        "about":"Über das Projekt",
+        "usedtechnick":"Genutze Technologie",
+        "learned":"Was ich gelernt habe",
+        "joinabout":"Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+        "joinlearned":"sed senectus felis ac mauris. Dui eget dictum.Lorem ipsum dolor sit amet consectetur. Posuere pretium arcu sed senectus felis ac mauris.",
+        "nextWork": "Ich arbeite derzeit mit einer kleinen Gruppe an einem Projekt namens 'Münster Interessierts'. Das Team hat sich beim MSHack 2024 zusammengefunden und wird derzeit durch das Solution Enabler Program unterstützt. Ich unterstütze das Frontend mit Nuxt3 / Vue.js.",
+        "btn": "Schreib mir",
+        "fireabout":"",
+        "firelearned":"",
+        "sharkyabout":"",
+        "sharkylearned":"",
+        "pokeabout":"",
+        "pokelearned":""
     }
 }

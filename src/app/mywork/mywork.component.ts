@@ -39,6 +39,10 @@ export class MyworkComponent {
       learned: 'mywork.pokelearned',
       img: 'Pokedex'
     },
+    {
+      name:'Ongoing',
+      nextProject:'mywork.nextWork'
+    }
 
   ];
 }

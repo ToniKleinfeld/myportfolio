@@ -29,6 +29,14 @@
         "usedtechnick":"Technologies I have used",
         "learned":"What i have learned",
         "joinabout":"Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-        "joinlearned":"sed senectus felis ac mauris. Dui eget dictum.Lorem ipsum dolor sit amet consectetur. Posuere pretium arcu sed senectus felis ac mauris."
+        "joinlearned":"sed senectus felis ac mauris. Dui eget dictum.Lorem ipsum dolor sit amet consectetur. Posuere pretium arcu sed senectus felis ac mauris.",
+        "nextWork": "I am currently working with a small group on a project called 'Münster Interessierts'. The team came together at MSHack 2024 and is currently supported by the Solution Enabler Program. I support the frontend with Nuxt3 / Vue.js.",
+        "btn": "Let's Talk",
+        "fireabout":"",
+        "firelearned":"",
+        "sharkyabout":"",
+        "sharkylearned":"",
+        "pokeabout":"",
+        "pokelearned":""
     }
 }

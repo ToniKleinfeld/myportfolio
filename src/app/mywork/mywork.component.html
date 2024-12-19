@@ -1,8 +1,9 @@
-<section>
+<section id="myWork">
     <h2>{{'header.mywork'| translate}}</h2>
-    
-    <div class="project-wrapper" *ngFor="let project of projectsArray,let i = index">
 
+    <div class="project-wrapper onGoing" *ngFor="let project of projectsArray,let i = index" [class.onGoing] ="project.name == 'Ongoing'">
+
+        @if (project.name !== 'Ongoing') {
         <div class="subHeader">
             <div class="count">{{i + 1}}</div>
             <h3>{{'mywork.subhead'|translate}}{{project.name}}</h3>
@@ -10,11 +11,11 @@
 
         <ul>
             <li>{{'mywork.about'| translate}}</li>
-            <p>{{ project.about | translate}}</p>
+            <p>{{ project.about! | translate}}</p>
             <li>{{'mywork.usedtechnick'| translate}}</li>
             <p>{{ project.skills}}</p>
             <li>{{'mywork.learned'| translate}}</li>
-            <p>{{ project.learned | translate}}</p>
+            <p>{{ project.learned! | translate}}</p>
         </ul>
 
         <div class="image-button-container">
@@ -24,6 +25,18 @@
                 <div class="btnGitHub">GitHub</div>
                 <div class="btnLiveTest">Live Test</div>
             </div>
+
         </div>
+
+        }@else {
+
+        <div class="subHeader smallHeader">
+            <div class="count">{{i + 1}}</div>
+            <h3>{{project.name}}{{'mywork.subhead'|translate}}</h3>
+        </div>
+        <p>{{project.nextProject! | translate}}</p>
+        <div class="talkBtn">{{'mywork.btn' | translate}}</div>
+        }
+
     </div>
 </section>
