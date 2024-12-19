@@ -1,11 +1,11 @@
 @use '../shared/mixin.scss' as main;
 section{
-    width: 1808px;
-    max-width: 1808px;
+    width: 1558px;
+    max-width: 1608px;
     height: calc(100dvh - 17px);
     max-height: 1250px;
     @include main.center($jc:flex-end,$ai:flex-end);
-    padding: 0 20% 15% 0;
+    padding: 0 10% 15% 0;
     flex-direction: column;
     font-weight: 700;
     background-image: url(../../assets/img/heroimg.png);
