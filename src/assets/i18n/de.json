@@ -35,6 +35,8 @@
         "sharkyabout":"",
         "sharkylearned":"",
         "pokeabout":"",
-        "pokelearned":""
+        "pokelearned":"",
+        "showmore":"Zeig mir mehr",
+        "showless":"Zeig mir weniger"
     }
 }

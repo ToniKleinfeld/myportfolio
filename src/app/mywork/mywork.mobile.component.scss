@@ -26,6 +26,8 @@
     .project-wrapper {
       width: 100%;
       height: 100%;
+      margin-bottom: 60px;
+      padding: 0 30px 40px 30px;
 
       .subHeader {
         justify-content: flex-start;
@@ -37,8 +39,34 @@
 
       .image-button-container {
         position: unset;
-        align-self: center;
+        align-self: center;  
       }
+    }
+  }
+
+  .mobile-size-button {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    @include main.center($x:10px);
+    width: 100%;
+    cursor: pointer;
+
+    p{
+      color: main.$main-color1;
+      text-decoration: underline;
+      margin-bottom: unset;
+      text-align: center;
+    }
+
+    .icon {
+      rotate: 180deg;
+      width: 20px;
+      height: 20px;
+      background-image: url(../../assets/img/smallarrow.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     }
   }
 
@@ -47,13 +75,13 @@
   }
 }
 
-@media (max-width:730px) {
-    section{
-        h2{
-            font-size: 32px;
-            font-weight: 700;
-        }
+@media (max-width: 730px) {
+  section {
+    h2 {
+      font-size: 32px;
+      font-weight: 700;
     }
+  }
 }
 
 @media (max-width: 750px) {

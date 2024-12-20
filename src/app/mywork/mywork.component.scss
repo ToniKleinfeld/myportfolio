@@ -103,6 +103,10 @@ section {
   }
 }
 
+.mobile-size-button{
+  display: none;
+}
+
 .talkBtn,
 .btnLiveTest {
   @include main.butonfilled();
