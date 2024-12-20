@@ -37,11 +37,13 @@
 
         .mobile-size-button {
           bottom: -40px;
-          :nth-child(1) {
-            display: none;
-          }
-          :nth-child(2) {
-            display: block;
+          div {
+            :nth-child(1) {
+              display: none;
+            }
+            :nth-child(2) {
+              display: block;
+            }
           }
         }
       }
@@ -52,17 +54,20 @@
       .project {
         height: 250px;
         overflow-y: hidden;
+        overflow-x: hidden;
 
         .mobile-size-button {
           bottom: 20px;
-          :nth-child(1) {
-            display: block;
-          }
-          :nth-child(2) {
-            display: none;
-          }
-          .icon {
-            rotate: unset;
+          div {
+            :nth-child(1) {
+              display: block;
+            }
+            :nth-child(2) {
+              display: none;
+            }
+            .icon {
+              rotate: unset;
+            }
           }
         }
       }
@@ -71,37 +76,29 @@
 
   .mobile-size-button {
     position: absolute;
-    left: 0;
-    @include main.center($x: 10px);
+    @include main.center();
     width: 100%;
-    cursor: pointer;
+    left: 0;
+    div {
+      @include main.center($x: 10px);
+      cursor: pointer;
 
-    p {
-      color: main.$main-color1;
-      text-decoration: underline;
-      margin-bottom: unset;
-      text-align: center;
-    }
+      p {
+        color: main.$main-color1;
+        text-decoration: underline;
+        margin-bottom: unset;
+        text-align: center;
+      }
 
-    .icon {
-      rotate: 180deg;
-      width: 20px;
-      height: 20px;
-      background-image: url(../../assets/img/smallarrow.svg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
-
-    .active {
-      display: block;
-    }
-  }
-
-  .showMore {
-    bottom: 20px;
-    .icon {
-      rotate: unset;
+      .icon {
+        rotate: 180deg;
+        width: 20px;
+        height: 20px;
+        background-image: url(../../assets/img/smallarrow.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
     }
   }
 
