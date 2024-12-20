@@ -1,11 +1,11 @@
 <section id="myWork">
     <h2>{{'header.mywork'| translate}}</h2>
 
-    <div class="project-wrapper onGoing " *ngFor="let project of projectsArray,let i = index"
+    <div class="project-wrapper onGoing smallPreview" *ngFor="let project of projectsArray,let i = index"
         [class.onGoing]="project.name == 'Ongoing'">
 
         @if (project.name !== 'Ongoing') {
-        <div class="project smallPreview">
+        <div class="project ">
             <div class="subHeader">
                 <div class="count">{{i + 1}}</div>
                 <h3>{{'mywork.subhead'|translate}}{{project.name}}</h3>
@@ -32,6 +32,7 @@
 
             <div class="mobile-size-button">
                 <p>{{'mywork.showmore'| translate}}</p>
+                <p>{{'mywork.showless'| translate}}</p>
                 <div class="icon"></div>
             </div>
         </div>
