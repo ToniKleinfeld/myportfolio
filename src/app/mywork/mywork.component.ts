@@ -17,6 +17,7 @@ export class MyworkComponent {
       skills: 'Angular, TypeScript, Firebase, SCSS, HTML',
       learned: 'mywork.firelearned',
       img: 'Ringoffire',
+      toggle: false
     },
     {
       name: 'Join',
@@ -24,6 +25,7 @@ export class MyworkComponent {
       skills: 'JavaScript, Firebase, CSS, HTML, Scrum',
       learned: 'mywork.joinlearned',
       img: 'Join',
+      toggle: false
     },
     {
       name: 'Little Sharky',
@@ -31,6 +33,7 @@ export class MyworkComponent {
       skills: 'JavaScript, CSS, HTML',
       learned: 'mywork.sharkylearned',
       img: 'Sharky',
+      toggle: false
     },
     {
       name: 'Pokedex',
@@ -38,6 +41,7 @@ export class MyworkComponent {
       skills: 'JavaScript, Rest-Api, CSS, HTML',
       learned: 'mywork.pokelearned',
       img: 'Pokedex',
+      toggle: false
     },
     {
       name: 'Ongoing',
