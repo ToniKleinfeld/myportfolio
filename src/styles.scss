@@ -44,15 +44,6 @@
   scroll-behavior: smooth;
 }
 
-body {
-  height: 100dvh;
-  width: auto;
-  @media (max-width: 1025px) {
-    height: auto;
-    width: 100dvw;
-  }
-}
-
 a {
   text-decoration: none;
   color: white;

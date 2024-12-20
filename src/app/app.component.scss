@@ -21,6 +21,12 @@
   white-space: nowrap; 
   scroll-behavior: smooth;
 
+  app-header, app-footer{
+    @media (max-width: 1025px) {
+      width: 100%;
+    }
+  }
+
   router-outlet {
     @include main.center($jc: flex-start);
 
@@ -94,7 +100,6 @@
   @media (max-width: 1025px) {
     height: auto;
     justify-content: center;
-    width: calc(100dvw);
     flex-direction: column;
     background: linear-gradient(
       150deg,
