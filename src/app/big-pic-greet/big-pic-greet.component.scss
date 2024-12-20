@@ -1,73 +1,64 @@
-@use '../shared/mixin.scss' as main;
-section{
-    width: 1558px;
-    max-width: 1608px;
-    height: calc(100dvh - 17px);
-    max-height: 1250px;
-    @include main.center($jc:flex-end,$ai:flex-end);
-    padding: 0 10% 15% 0;
-    flex-direction: column;
-    font-weight: 700;
-    background-image: url(../../assets/img/heroimg.png);
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    background-size: 80vh;
+@use "../shared/mixin.scss" as main;
+section {
+  width: 1558px;
+  max-width: 1608px;
+  height: calc(100dvh - 17px);
+  max-height: 1250px;
+  @include main.center($jc: flex-end, $ai: flex-end);
+  padding: 0 10% 15% 0;
+  flex-direction: column;
+  font-weight: 700;
+  background-image: url(../../assets/img/heroimg.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 80vh;
 
-    h1{
-        font-size: 100px;
-        color: main.$main-color1;
-    }
-
-    h3{
-        font-size: 48px;
-        -webkit-text-stroke: 1px main.$main-color1;
-        color: black;
-    }
-
-    @media(max-width:1025px) {
-        height: calc(100dvh - 73px);
-        width: 100dvw;
-        background-size: 80%;
-        background-position:  top;
-        padding: 0 0 5% 0;
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: column-reverse;
-
-        @media (orientation: landscape) {
-            height: calc(100dvw * 1.2)
-        }
-    }
-
-    @media (max-width:730px) {
-        h1{
-            font-size: 40px;
-        }
-        
-        h3{
-            font-size: 24px;
-        }
-    }
-
-    @media (max-width:450px) {
-        height: calc(100dvw * 1.2);
-    }
-}
-
-.typinganimation h1,.typinganimation h3{
-    animation:typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
-    border-right: .15em solid orange;
-    overflow: hidden;
-    white-space: nowrap; 
-    margin: 0 auto; 
-}
-
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+  h1 {
+    font-size: 100px;
+    color: main.$main-color1;
   }
 
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
+  h3 {
+    font-size: 48px;
+    -webkit-text-stroke: 1px main.$main-color1;
+    color: black;
+  }
+
+  @media (max-width: 1025px) {
+    height: calc(100dvh - 73px);
+    width: 95dvw;
+    background-size: 80%;
+    background-position: top;
+    padding: 0 0 5% 0;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+
+    @media (orientation: landscape) {
+      height: calc(100vw * 1.2);
+    }
+  }
+
+  @media (max-width: 730px) {
+    h1 {
+      font-size: 40px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    height: calc(100vw * 1.2);
+  }
+}
+
+.typinganimation h1,
+.typinganimation h3 {
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  border-right: 0.15em solid orange;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
 }

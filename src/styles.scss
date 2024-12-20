@@ -1,5 +1,5 @@
 /* Global styles */
-@use './app/shared/mixin.scss' as main;
+@use "./app/shared/mixin.scss" as main;
 /* quantico-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -44,10 +44,10 @@
   scroll-behavior: smooth;
 }
 
-body{
+body {
   height: 100dvh;
   width: auto;
-  @media (max-width:1025px) {
+  @media (max-width: 1025px) {
     height: auto;
     width: 100dvw;
   }
@@ -145,5 +145,24 @@ a {
   100% {
     transform: translateX(0);
     color: main.$main-color2;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
   }
 }
