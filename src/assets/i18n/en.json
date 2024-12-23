@@ -40,5 +40,9 @@
         "pokelearned":"",
         "showmore":"Show me more",
         "showless":"Show me less"
+    },
+    "references":{
+        "header": "References",
+        "firstcomment": "He is a trustworthy teamplayer and can cope with the stress of deadlines. Structured work and clear code."
     }
 }

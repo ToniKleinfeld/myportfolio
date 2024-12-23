@@ -1,0 +1,13 @@
+
+<section>
+    <h2>{{'references.header'| translate}}</h2>
+    <div class="reference-wrapper">
+        @for (reference of referenceArray; track $index) {
+            <div class="reference">
+                <div class="comment">{{ reference.comment | translate}}</div>
+                <div class="border"></div>
+                <div class="name"> {{reference.name}} </div>
+            </div>
+        }        
+    </div>
+</section>
