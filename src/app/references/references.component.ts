@@ -11,17 +11,17 @@ import { TranslateModule } from '@ngx-translate/core';
 export class ReferencesComponent {
   referenceArray = [
     {
-      name: "user1",
+      name: "Ryan friend",
       comment : "references.firstcomment",
       project : "Join" 
     },
     {
-      name: "user2",
+      name: "Kamila Kipa",
       comment : 'references.firstcomment',
       project : "KitchenWorld" 
     },
     {
-      name: "user3",
+      name: "Hugo Müller",
       comment :'references.firstcomment',
       project : "Code Buddy" 
     }
