@@ -20,19 +20,18 @@ section {
       @include main.center($x: 10px);
       border: solid 2px main.$main-color1;
       border-radius: 20px;
-      width: 500px;
-      min-height: 180px;
+      width: 750px;
       padding: 20px;
 
       .comment {
         font-size: 18px;
         white-space: wrap;
-        width: 280px;
+        width: 70%;
         text-align: center;
       }
 
       .border {
-        height: 120px;
+        padding: 10% 0 10% 0;
         border: solid 1px main.$main-color1;
         margin: 0 5px 0 5px;
       }
@@ -41,6 +40,7 @@ section {
         @include main.center();
         flex-direction: column;
         color: main.$main-color1;
+        margin: auto;
         :first-child {
           font-size: 24px;
         }

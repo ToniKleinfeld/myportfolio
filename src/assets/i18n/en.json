@@ -1,48 +1,52 @@
 {
-    "header": {
-        "contact":"Contact",
-        "mywork":"My Work",
-        "skills":"Skills",
-        "whyme":"Why Me"
-    },
-    "whyme": {
-        "header":"Why Me",
-        "secondaryheader": "I am",
-        "location": "located in ",
-        "descripeme":"I am motivated to continuously learn new technologies and develop myself. My ability to solve complex problems and my passion for programming make me a valuable member of your team.",
-        "button":"Contact me",
-        "remote":"open to work remote"
-    },
-    "footer": {
-        "imprint":"Legal notice",
-        "privacy":"privacy policy"
-    },
-    "myskills": {
-        "header": "My Skill Set",
-        "intro": "The IT landscape is continuously evolving, with new technologies and methodologies. Staying motivated to expand my IT skills requires a strategic approach, a curious mindset, and a commitment to lifelong learning",
-        "challange": "I am always happy to learn new technologies, just tell me what you need."
-    },
-    "mywork":{
-        "header":"My Work",
-        "subhead":"Project ",
-        "about":"About the project",
-        "usedtechnick":"Technologies I have used",
-        "learned":"What i have learned",
-        "joinabout":"Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-        "joinlearned":"sed senectus felis ac mauris. Dui eget dictum.Lorem ipsum dolor sit amet consectetur. Posuere pretium arcu sed senectus felis ac mauris.",
-        "nextWork": "I am currently working with a small group on a project called 'Münster Interessierts'. The team came together at MSHack 2024 and is currently supported by the Solution Enabler Program. I support the frontend with Nuxt3 / Vue.js.",
-        "btn": "Let's Talk",
-        "fireabout":"",
-        "firelearned":"",
-        "sharkyabout":"",
-        "sharkylearned":"",
-        "pokeabout":"",
-        "pokelearned":"",
-        "showmore":"Show me more",
-        "showless":"Show me less"
-    },
-    "references":{
-        "header": "References",
-        "firstcomment": "He is a trustworthy teamplayer and can cope with the stress of deadlines. Structured work and clear code."
-    }
+  "header": {
+    "contact": "Contact",
+    "mywork": "My Work",
+    "skills": "Skills",
+    "whyme": "Why Me"
+  },
+  "whyme": {
+    "header": "Why Me",
+    "secondaryheader": "I am",
+    "location": "located in ",
+    "descripeme": "I am motivated to continuously learn new technologies and develop myself. My ability to solve complex problems and my passion for programming make me a valuable member of your team.",
+    "button": "Contact me",
+    "remote": "open to work remote"
+  },
+  "footer": {
+    "imprint": "Legal notice",
+    "privacy": "privacy policy"
+  },
+  "myskills": {
+    "header": "My Skill Set",
+    "intro": "The IT landscape is continuously evolving, with new technologies and methodologies. Staying motivated to expand my IT skills requires a strategic approach, a curious mindset, and a commitment to lifelong learning",
+    "challange": "I am always happy to learn new technologies, just tell me what you need."
+  },
+  "mywork": {
+    "header": "My Work",
+    "subhead": "Project ",
+    "about": "About the project",
+    "usedtechnick": "Technologies I have used",
+    "learned": "What i have learned",
+    "joinabout": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "joinlearned": "sed senectus felis ac mauris. Dui eget dictum.Lorem ipsum dolor sit amet consectetur. Posuere pretium arcu sed senectus felis ac mauris.",
+    "nextWork": "I am currently working with a small group on a project called 'Münster Interessierts'. The team came together at MSHack 2024 and is currently supported by the Solution Enabler Program. I support the frontend with Nuxt3 / Vue.js.",
+    "btn": "Let's Talk",
+    "fireabout": "",
+    "firelearned": "",
+    "sharkyabout": "",
+    "sharkylearned": "",
+    "pokeabout": "",
+    "pokelearned": "",
+    "showmore": "Show me more",
+    "showless": "Show me less"
+  },
+  "references": {
+    "header": "References",
+    "firstcomment": "Toni is characterized by his pronounced determination. With his adaptable nature, he always finds constructive solutions to continue on the path he has chosen and achieve the agreed goals, even when faced with challenges. These qualities make him a great asset to the entire team.",
+    "secondcomment": "Toni was an asset to the team as he always had an overview of the project and was able to solve problems in a targeted manner. In addition, he was always a good and helpful contact person and has a focused and effective way of thinking.",
+    "thirdcomment": "Toni is friendly, helpful and provided excellent support to the team during the project. He always had a solution at hand and stood out for his determination when it came to completing projects quickly and efficiently. Without his commitment, it would have taken us much longer to complete the project.",
+    "project": "Project Join",
+    "buddy": "Coding buddy"
+  }
 }

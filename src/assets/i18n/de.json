@@ -38,5 +38,13 @@
         "pokelearned":"",
         "showmore":"Zeig mir mehr",
         "showless":"Zeig mir weniger"
+    },
+    "references":{
+        "header": "Referenzen",
+        "firstcomment": "Toni zeichnet sich durch seine ausgeprägte Zielstrebigkeit aus. Mit seiner anpassungsfähigen Art findet er immer konstruktive Lösungen, um den eingeschlagenen Weg weiterzugehen und die vereinbarten Ziele zu erreichen, auch wenn er mit Herausforderungen konfrontiert wird. Diese Eigenschaften machen ihn zu einer großen Bereicherung für das gesamte Team.",
+        "secondcomment":"Toni war eine Bereicherung für das Team , da er stets den Überblick über das Prjekt bewahrt hatte und gezielt Probleme lösen konnte. Zudem war er immer ein guter und hilfsbereiter Ansprechpartner und besitzt eine fokussierte und effektive Denkweise.",
+        "thirdcomment":"Toni ist freundlich, hilfsbereit und hat das Team während des Projekts hervorragend unterstützt. Er hatte stets eine Lösung parat und zeichnete sich durch seine Zielstrebigkeit aus, wenn es darum ging, Projekte schnell und effizient abzuschließen. Ohne seinen Einsatz hätten wir deutlich länger für die Fertigstellung des Projekts gebraucht.",
+        "project":"Projekt Join",
+        "buddy": "Programmier Kumpel"
     }
 }
