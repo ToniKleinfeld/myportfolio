@@ -1,7 +1,7 @@
 @use "../shared/mixin.scss" as main;
 
 section {
-  width: 975px;
+  width: 1175px;
   @include main.center();
 
   @media (max-width: 1025px) {
@@ -12,23 +12,9 @@ section {
   }
 
   h2 {
-    -webkit-text-stroke: 2px main.$main-color1;
-    color: black;
-    font-size: 54px;
+    @include main.h2();  
     align-self: flex-start;
-    writing-mode: vertical-rl;
-    rotate: 180deg;
-    padding-left: 3%;
-
-    @media (max-width: 1025px) {
-      writing-mode: unset;
-      rotate: unset;
-      padding-left: unset;
-    }
-    @media (max-width: 730px) {
-      font-size: 32px;
-      font-weight: 700;
-    }
+    @include main.arrow();
   }
 
   .skillset-wrapper {
