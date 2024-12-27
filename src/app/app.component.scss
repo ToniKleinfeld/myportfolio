@@ -15,13 +15,14 @@
     main.$backgroundcolor2 80%,
     main.$backgroundcolor1 90%
   );
-  
+
   overflow-x: auto;
   overflow-y: hidden;
-  white-space: nowrap; 
+  white-space: nowrap;
   scroll-behavior: smooth;
 
-  app-header, app-footer{
+  app-header,
+  app-footer {
     @media (max-width: 1025px) {
       width: 100%;
     }
@@ -36,65 +37,35 @@
       width: auto;
     }
 
-    app-arrow {
-      @media (max-width: 1025px) {
-        display: none;
-      }
-    }
-
-    .arrow1{
-      align-self: flex-start;
-      margin-top: 18vh;
-      @media (max-height:920px) {
-        margin-top: 26vh;
-      }
-    }
-
-    app-whyme{
+    app-whyme {
       align-self: flex-start;
       margin-top: 8vh;
 
-      @media (max-width:1025px) {
+      @media (max-width: 1025px) {
         margin-top: unset;
         align-self: unset;
       }
-      @media (max-height:920px) {
+      @media (max-height: 920px) {
         @media (orientation: landscape) {
           margin-top: 12vh;
-        }         
+        }
       }
     }
 
-    .arrow2{
-      align-self: flex-end;
-      margin-bottom: 6vh;
-      @media (max-height:920px) {
-        margin-bottom: 9vh;
-      }
-    }
-
-    app-skillset{
+    app-skillset {
       align-self: flex-end;
       margin-bottom: 8vh;
 
-      @media (max-width:1025px) {
+      @media (max-width: 1025px) {
         margin-bottom: unset;
         align-self: unset;
       }
-      @media (max-height:920px) {
+      @media (max-height: 920px) {
         @media (orientation: landscape) {
           margin-bottom: 12vh;
-        }        
+        }
       }
     }
-    
-    .arrow3{
-      margin: 0vh;
-      @media (max-height:920px) {
-        margin: 0vh;
-      }
-    }
-
   }
 
   @media (max-width: 1025px) {
@@ -112,6 +83,6 @@
     );
     overflow-x: unset;
     overflow-y: unset;
-    white-space: unset; 
+    white-space: unset;
   }
 }

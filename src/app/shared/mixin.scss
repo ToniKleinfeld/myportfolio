@@ -1,42 +1,89 @@
 /* Using this scss for mixin imports */
 
-@mixin center($jc:center,$ai:center, $x:0) {
-    display: flex;
-    justify-content: $jc;
-    align-items: $ai;
-    gap: $x;
+@mixin center($jc: center, $ai: center, $x: 0) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  gap: $x;
 }
 
-$main-color1: #3DCFB6;
+$main-color1: #3dcfb6;
 $main-color2: #083d33;
-$main-color3: #FFFDFD;
-$main-color-wrong:#FD2E12;
+$main-color3: #fffdfd;
+$main-color-wrong: #fd2e12;
 
-$backgroundcolor1: #1C1C1C;
-$backgroundcolor2: $main-color2 ;
-$backgroundcoloropacity:rgba(8,61,51,0.9);
-$colorGradient:  linear-gradient(135deg,$main-color1 45%,$main-color2 99%);
+$backgroundcolor1: #1c1c1c;
+$backgroundcolor2: $main-color2;
+$backgroundcoloropacity: rgba(8, 61, 51, 0.9);
+$colorGradient: linear-gradient(135deg, $main-color1 45%, $main-color2 99%);
 
 $button-default: $main-color1;
 $button-hover: $colorGradient;
-$button-disabled: #9E9D9D;
+$button-disabled: #9e9d9d;
 
-@mixin button(){
-    border: 1px solid $main-color1;
-    padding: 12px 24px; 
-    border-radius: 25px;
+@mixin button() {
+  border: 1px solid $main-color1;
+  padding: 12px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 135px;
+  text-align: center;
+}
+
+@mixin butonfilled() {
+  color: black;
+  background-color: $main-color1;
+}
+
+@mixin buttonempty() {
+  color: $main-color1;
+  background-color: transparent;
+}
+
+@mixin h2() {
+  position: relative;
+  padding-right: 170px;
+  -webkit-text-stroke: 2px $main-color1;
+  color: black;
+  font-size: 54px;
+  align-self: flex-end;
+  writing-mode: vertical-rl;
+  rotate: 180deg;
+  padding-left: 30px;
+
+  @media (max-width: 1025px) {
+    padding-right: unset;
+    writing-mode: unset;
+    rotate: unset;
+    padding-left: unset;
+  }
+
+  @media (max-width: 730px) {
+    h2 {
+      font-size: 32px;
+      font-weight: 700;
+    }
+  }
+}
+
+@mixin arrow() {
+  .jumpnextsection {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    background-image: url(../../assets/img/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 130px;
+    height: 60px;
+
+    @media (max-width: 1025px) {
+      display: none;
+    }
+  }
+  .jumpnextsection:hover {
     cursor: pointer;
-    font-size: 14px;
-    width: 135px;
-    text-align: center;
-}
-
-@mixin butonfilled(){
-    color: black;
-    background-color: $main-color1;
-}
-
-@mixin buttonempty(){
-    color: $main-color1;
-    background-color: transparent;
+    background-image: url(../../assets/img/arrowhover.svg);
+  }
 }

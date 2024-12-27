@@ -2,15 +2,13 @@
 
 section {
   @include main.center();
+ 
 
   h2 {
-    -webkit-text-stroke: 2px main.$main-color1;
-    color: black;
-    font-size: 54px;
-    align-self: flex-end;
-    writing-mode: vertical-rl;
-    rotate: 180deg;
+    @include main.h2();
+    @include main.arrow();
   }
+
 
   .reference-wrapper {
     @include main.center($x: 20px);
@@ -24,10 +22,30 @@ section {
       padding: 20px;
 
       .comment {
+        display: flex;
         font-size: 18px;
         white-space: wrap;
         width: 70%;
         text-align: center;
+      }
+
+      blockquote::before {
+        content: open-quote;
+      }
+
+      blockquote::after {
+        content: close-quote;
+        align-self: flex-end;
+      }
+
+      blockquote::before,
+      blockquote::after {
+        padding: 0 10px;
+        opacity: 0.7;
+        color: main.$main-color1;
+        font-size: 40px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
       }
 
       .border {

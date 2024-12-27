@@ -1,34 +1,23 @@
 @use "../shared/mixin.scss" as main;
 section {
   @include main.center($ai: flex-start);
-  width: 850px;
+  width: 1050px;
 
   @media (max-width: 1025px) {
     width: 90dvw;
     flex-direction: column;
     padding-bottom: 5%;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
   }
 
   h2 {
-    -webkit-text-stroke: 2px main.$main-color1;
-    color: black;
-    font-size: 54px;
+    @include main.h2();
     align-self: flex-start;
-    writing-mode: vertical-rl;
-    rotate: 180deg;
-    padding-left: 5%;
-
-    @media (max-width: 1025px) {
-      writing-mode: unset;
-      rotate: unset;
-      padding-left: unset;
-    }
+    @include main.arrow();
   }
 
   .content_whyme {
-    min-width: 80%;
 
     @media (max-width: 1025px) {
       width: 100%;
@@ -79,10 +68,6 @@ section {
   }
 
   @media (max-width: 730px) {
-    h2 {
-      font-size: 32px;
-      font-weight: 700;
-    }
     .content_whyme {
       .description {
         font-size: 16px;
