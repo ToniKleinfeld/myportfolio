@@ -1,12 +1,4 @@
 /* Using this scss for mixin imports */
-
-@mixin center($jc: center, $ai: center, $x: 0) {
-  display: flex;
-  justify-content: $jc;
-  align-items: $ai;
-  gap: $x;
-}
-
 $main-color1: #3dcfb6;
 $main-color2: #083d33;
 $main-color3: #fffdfd;
@@ -20,6 +12,13 @@ $colorGradient: linear-gradient(135deg, $main-color1 45%, $main-color2 99%);
 $button-default: $main-color1;
 $button-hover: $colorGradient;
 $button-disabled: #9e9d9d;
+
+@mixin center($jc: center, $ai: center, $x: 0) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  gap: $x;
+}
 
 @mixin button() {
   border: 1px solid $main-color1;
