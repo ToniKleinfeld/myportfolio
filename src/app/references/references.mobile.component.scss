@@ -13,25 +13,32 @@
 
 @media (max-width: 930px) {
   section {
+    
     .reference-wrapper {
-      width: 90dvw;
+      width: 100%;
       justify-content: flex-start;
       flex-direction: row;
-      overflow-x: scroll;
+      overflow-y: hidden; 
+      align-items: unset;
+      padding: 0 0 10px 0;
+          
 
       .reference {
+        gap: 0;
+        min-width: 80dvw;
+        
+        
+
         .comment {
           font-size: 14px;
+          width: 85%;
+          margin-right: 5px;
         }
 
         blockquote::before,
         blockquote::after {
-          padding: 0 3px;
-          font-size: 20px;
-        }
-
-        .border {
-            height: 80%;
+          padding: 0 5px;
+          font-size: 17px;
         }
 
         .recoment {

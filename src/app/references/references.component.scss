@@ -2,16 +2,14 @@
 
 section {
   @include main.center();
- 
 
   h2 {
     @include main.h2();
     @include main.arrow();
   }
 
-
   .reference-wrapper {
-    @include main.center($x: 20px);
+    @include main.center($x: 15px);
     flex-direction: column;
 
     .reference {
@@ -23,10 +21,11 @@ section {
 
       .comment {
         display: flex;
+        border-right: solid 2px main.$main-color1;
         font-size: 18px;
         white-space: wrap;
         word-wrap: break-word;
-        width: 70%;
+        width: 75%;
         text-align: center;
       }
 
@@ -49,16 +48,12 @@ section {
           "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
       }
 
-      .border {
-        padding: 5% 0 5% 0;
-        border: solid 1px main.$main-color1;
-        margin: 0 5px 0 5px;
-      }
-
       .recoment {
+
         @include main.center();
         flex-direction: column;
         color: main.$main-color1;
+        text-align: center;
         margin: auto;
         :first-child {
           font-size: 24px;
