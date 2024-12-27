@@ -2,6 +2,7 @@
 
 section {
   @include main.center();
+  margin-right: 70px;
 
   h2 {
     @include main.h2();
