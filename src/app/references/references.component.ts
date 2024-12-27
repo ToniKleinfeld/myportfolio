@@ -6,7 +6,7 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [TranslateModule],
   templateUrl: './references.component.html',
-  styleUrl: './references.component.scss'
+  styleUrls: ['./references.component.scss','./references.mobile.component.scss']
 })
 export class ReferencesComponent {
   referenceArray = [

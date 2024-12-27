@@ -45,11 +45,6 @@
         margin-top: unset;
         align-self: unset;
       }
-      @media (max-height: 920px) {
-        @media (orientation: landscape) {
-          margin-top: 12vh;
-        }
-      }
     }
 
     app-skillset {
@@ -60,10 +55,15 @@
         margin-bottom: unset;
         align-self: unset;
       }
-      @media (max-height: 920px) {
-        @media (orientation: landscape) {
-          margin-bottom: 12vh;
-        }
+    }
+
+    app-references {
+      align-self: flex-end;
+      margin-bottom: 8vh;
+
+      @media (max-width: 1025px) {
+        margin-bottom: unset;
+        align-self: unset;
       }
     }
   }

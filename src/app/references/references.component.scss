@@ -18,13 +18,14 @@ section {
       @include main.center($x: 10px);
       border: solid 2px main.$main-color1;
       border-radius: 20px;
-      width: 750px;
-      padding: 20px;
+      width: 850px;
+      padding: 15px;
 
       .comment {
         display: flex;
         font-size: 18px;
         white-space: wrap;
+        word-wrap: break-word;
         width: 70%;
         text-align: center;
       }
@@ -49,7 +50,7 @@ section {
       }
 
       .border {
-        padding: 10% 0 10% 0;
+        padding: 5% 0 5% 0;
         border: solid 1px main.$main-color1;
         margin: 0 5px 0 5px;
       }
