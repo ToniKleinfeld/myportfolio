@@ -53,6 +53,24 @@ a {
   display: none;
 }
 
+*::-webkit-scrollbar {
+  width: 16px;
+  background-color: black;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: #e7e7e7;
+  border: 1px solid #cacaca;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+  background-color: rgba(8, 61, 51, 0.7);
+}
+
 @keyframes remoteBg {
   0%,
   100% {

@@ -19,14 +19,14 @@
       width: 100%;
       justify-content: flex-start;
       flex-direction: row;
-      overflow-y: hidden; 
+      overflow-x: scroll; 
       align-items: unset;
-      padding: 0 0 10px 0;
-          
+      padding: 0 0 10px 0;         
 
       .reference {
         gap: 0;
         min-width: 80dvw;
+        width: unset;
         
         
 
@@ -50,6 +50,43 @@
           :nth-child(2) {
             font-size: 14px;
           }
+        }
+      }
+    }
+  }
+
+  .reference-wrapper::-webkit-scrollbar {
+    all: unset;
+  }
+  
+  .reference-wrapper::-webkit-scrollbar-track {
+    all: unset;
+  }
+  
+  .reference-wrapper::-webkit-scrollbar-thumb {
+    all: unset;
+  }
+}
+
+@media (max-width: 450px) {
+  section {  
+    .reference-wrapper {     
+      .reference {
+        min-width: 85dvw;
+        padding: 10px;
+        flex-direction: column-reverse;
+
+        .comment {
+          margin-right: unset;
+          border-right: unset;
+          width: 100%;
+        }
+
+        .recoment {
+          margin: 0 auto;
+          padding:0 15px 10px 15px;
+          margin-bottom: 10px;
+          border-bottom: 2px solid main.$main-color1;
         }
       }
     }
