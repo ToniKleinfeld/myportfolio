@@ -4,11 +4,11 @@
     </h2>
     
 
-    <div class="reference-wrapper">
+    <div class="reference-wrapper" (scroll)="onScroll($event)">
 
         @for (reference of referenceArray; track $index) {
 
-        <div class="reference">
+        <div #scrollElement class="reference">
 
             <blockquote  class="comment">{{ reference.comment | translate}}</blockquote >
 
@@ -21,5 +21,11 @@
 
         </div>
         }
+    </div>
+
+    <div class="dots">
+        <div class="dot" [class.active]="activeIndex === 0"></div>
+        <div class="dot" [class.active]="activeIndex === 1"></div>
+        <div class="dot" [class.active]="activeIndex === 2"></div>
     </div>
 </section>

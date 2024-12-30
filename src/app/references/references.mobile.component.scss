@@ -26,9 +26,7 @@
       .reference {
         gap: 0;
         min-width: 80dvw;
-        width: unset;
-        
-        
+        width: unset;       
 
         .comment {
           font-size: 14px;
@@ -52,6 +50,20 @@
           }
         }
       }
+    }
+
+    .dots{
+      @include main.center($x:8);
+      margin-top: 16px;
+      width: 50px;
+    }
+    .dot{
+      width: 10px;
+      height: 10px;
+      border: 1px solid main.$main-color1;
+    }
+    .dot.active {
+      background-color: white;
     }
   }
 
