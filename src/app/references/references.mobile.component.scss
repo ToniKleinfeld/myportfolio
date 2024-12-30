@@ -20,8 +20,7 @@
       justify-content: flex-start;
       flex-direction: row;
       overflow-x: scroll; 
-      align-items: unset;
-      padding: 0 0 10px 0;         
+      align-items: unset;       
 
       .reference {
         gap: 0;
@@ -53,17 +52,25 @@
     }
 
     .dots{
-      @include main.center($x:8);
-      margin-top: 16px;
-      width: 50px;
+      @include main.center($x:20px);
+      width: 100%;
+      padding-bottom: 10px;
     }
     .dot{
-      width: 10px;
+      width: 15px;
       height: 10px;
-      border: 1px solid main.$main-color1;
+      border: 3px solid main.$main-color1;
+      border-radius: 5px;
+      
     }
     .dot.active {
-      background-color: white;
+      background-color: main.$main-color1;
+      width: 30px;
+      animation: fillBg 0.5s;
+    }
+    .emptyDot{
+      background-color: transparent;
+      animation: emptyBg 0.5s;
     }
   }
 

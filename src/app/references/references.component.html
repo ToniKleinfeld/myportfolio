@@ -2,30 +2,21 @@
     <h2>{{'references.header'| translate}}
         <a class="jumpnextsection"></a>
     </h2>
-    
-
     <div class="reference-wrapper" (scroll)="onScroll($event)">
-
         @for (reference of referenceArray; track $index) {
-
         <div #scrollElement class="reference">
-
-            <blockquote  class="comment">{{ reference.comment | translate}}</blockquote >
-
+            <blockquote class="comment">{{ reference.comment | translate}}</blockquote>
             <div class="recoment">
-
                 <p> {{reference.name}} </p>
                 <p>{{reference.project | translate}}</p>
-
             </div>
-
         </div>
         }
     </div>
 
     <div class="dots">
-        <div class="dot" [class.active]="activeIndex === 0"></div>
-        <div class="dot" [class.active]="activeIndex === 1"></div>
-        <div class="dot" [class.active]="activeIndex === 2"></div>
+        @for (reference of referenceArray; track $index) {
+        <div class="dot" [class.active]="activeIndex === $index" [class.emptyDot]="activeIndex !== $index"></div>
+        }
     </div>
 </section>
