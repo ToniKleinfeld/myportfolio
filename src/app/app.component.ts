@@ -9,12 +9,13 @@ import { WhymeComponent } from "./whyme/whyme.component";
 import { SkillsetComponent } from "./skillset/skillset.component";
 import { MyworkComponent } from "./mywork/mywork.component";
 import { ReferencesComponent } from "./references/references.component";
+import { ContactmeComponent } from "./contactme/contactme.component";
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent, FooterComponent, BigPicGreetComponent, WhymeComponent, HorizonalscrollDirective, SkillsetComponent, MyworkComponent, ReferencesComponent],
+  imports: [CommonModule, RouterOutlet, HeaderComponent, FooterComponent, BigPicGreetComponent, WhymeComponent, HorizonalscrollDirective, SkillsetComponent, MyworkComponent, ReferencesComponent, ContactmeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

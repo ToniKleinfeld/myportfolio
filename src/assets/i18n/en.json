@@ -48,5 +48,17 @@
     "thirdcomment": "Toni is friendly, helpful and provided excellent support to the team during the project. He always had a solution at hand and stood out for his determination when it came to completing projects quickly and efficiently. Without his commitment, it would have taken us much longer to complete the project.",
     "project": "Project Join",
     "buddy": "Coding buddy"
+  },
+  "contact":{
+    "header":"Contact me",
+    "inputName": "Your name",
+    "inputMail": "Your e-mail",
+    "inputText": "Your message",
+    "readpolicity1":"I've read the",
+    "readpolicity2":"privacy policy",
+    "readpolicity3":"and agree to the processing of my data as outlined.",
+    "button": "Send",
+    "subheader": "Let us work together.",
+    "letsWorkTogetherText": "Whether your project involves developing a new application , upgrading existing systems, or implementing robust cybersecurity measures, I Have the technical acumen and problem-solving skills to ensure successful outcomes."
   }
 }
