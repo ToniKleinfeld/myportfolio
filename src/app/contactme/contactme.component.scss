@@ -1,2 +1,36 @@
 @use '../shared/mixin.scss' as main;
 
+section{
+    @include main.center($jc:flex-start);
+    white-space: wrap;
+    h2 {
+        @include main.h2();
+        align-self: flex-start;
+        @include main.arrow();
+        .jumpnextsection{
+            rotate: 180deg;
+        }
+      }
+}
+
+.container-wrapper{
+    @include main.center($jc:flex-start, $ai:flex-start , $x:30px);
+    width: 100%;
+}
+input,textarea,form{
+    all: unset
+}
+
+.form-wrapper{
+    @include main.center($x:15px);
+    flex-direction: column;
+    width: 100%;
+
+    .inputfield{
+        font-size: 14px;
+        width: 100%;
+        border: 1px solid main.$main-color1;
+        border-radius: 30px;
+        padding: 20px;
+    }
+}

@@ -3,21 +3,26 @@
         <a class="jumpnextsection"></a>
     </h2>
 
-    <div>
-        <form action="" id="sendMeForm">
+    <div class="container-wrapper">
+        <div class="form-wrapper">
+            <form action="" id="sendMeForm">
 
-            <input type="text" placeholder="{{'contact.inputName'| translate}}" id="nameInput">
-
-            <input type="mail" placeholder="{{'contact.inputMail'| translate}}" id="mailInput">
-
-            <textarea name="textarea" id="textInput" placeholder="{{'contact.inputText'| translate}}"></textarea>
-
-            <input type="checkbox" name="readPolicity" id="readPolicity">
-            <label for="readPolicity">{{'contact.readpolicity1' | translate}} <a>{{'contact.readpolicity2' | translate}} </a> {{'contact.readpolicity3' | translate}}</label>
-
-            <input type="submit" value="{{'contact.button'| translate}}">
-
-        </form>
+                <input type="text" placeholder="{{'contact.inputName'| translate}}" id="nameInput" class="inputfield">
+    
+                <input type="mail" placeholder="{{'contact.inputMail'| translate}}" id="mailInput" class="inputfield">
+    
+                <textarea name="textarea" id="textInput" placeholder="{{'contact.inputText'| translate}}" class="inputfield"></textarea>
+    
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" name="readPolicity" id="readPolicity">
+                    <label for="readPolicity">{{'contact.readpolicity1' | translate}} <a>{{'contact.readpolicity2' | translate}} </a> {{'contact.readpolicity3' | translate}}</label>
+                </div>
+    
+                <input type="submit" value="{{'contact.button'| translate}}">
+    
+            </form>
+        </div>
+        
 
         <div class="letsWorkTogether-wrapper">
             <div class="lets-wrapper"> 
@@ -36,7 +41,7 @@
                 <a href="">
                     {{'footer.imprint'|translate}}
                 </a>
-                
+
                 <a href="">
                     {{'footer.privacy'|translate}}
                 </a>
