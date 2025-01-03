@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { FormsModule, NgForm } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+import { Component, inject } from '@angular/core';
+import { CheckboxRequiredValidator, FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -12,19 +13,45 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class ContactmeComponent {
 
+  http = inject(HttpClient);
+
   formData= {
     name : "",
     email : "",
     message : "",
-  
+    terms : false
   }
 
-  onSubmit(ngForm : NgForm){
-    if (ngForm.valid && ngForm.submitted) {
-      console.log(this.formData)
-    }    
+  mailTest = true;
+
+  post = {
+    endPoint: 'https://deineDomain.de/sendMail.php',
+    body: (payload: any) => JSON.stringify(payload),
+    options: {
+      headers: {
+        'Content-Type': 'text/plain',
+        responseType: 'text',
+      },
+    },
+  };
+
+  onSubmit(ngForm: NgForm) {
+    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+      this.http.post(this.post.endPoint, this.post.body(this.formData))
+        .subscribe({
+          next: (response:any) => {
+
+            ngForm.resetForm();
+          },
+          error: (error:any) => {
+            console.error(error);
+          },
+          complete: () => console.info('send post complete'),
+        });
+    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+
+      ngForm.resetForm();
+    }
   }
-
-
 
 }

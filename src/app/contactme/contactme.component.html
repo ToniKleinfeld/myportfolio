@@ -27,7 +27,7 @@
                 }
     
                 <div class="checkbox-wrapper">
-                    <input type="checkbox" name="readPolicity" id="readPolicity" required>
+                    <input type="checkbox" name="readPolicity" id="readPolicity" [(ngModel)]="formData.terms" required [checked]="this.formData">
                     <label for="readPolicity">{{'contact.readpolicity1' | translate}} <a>{{'contact.readpolicity2' | translate}} </a> {{'contact.readpolicity3' | translate}}</label>
                 </div>
     
