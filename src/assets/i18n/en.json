@@ -59,6 +59,9 @@
     "readpolicity3":"and agree to the processing of my data as outlined.",
     "button": "Send",
     "subheader": "Let us work together.",
-    "letsWorkTogetherText": "Whether your project involves developing a new application , upgrading existing systems, or implementing robust cybersecurity measures, I Have the technical acumen and problem-solving skills to ensure successful outcomes."
+    "letsWorkTogetherText": "Whether your project involves developing a new application , upgrading existing systems, or implementing robust cybersecurity measures, I Have the technical acumen and problem-solving skills to ensure successful outcomes.",
+    "insertName": "Please enter your Name.",
+    "insertMail": "Please fill a mail adress. example: max@aol.com",
+    "insertMessage": "Please send me some Words , not a empty mail."
   }
 }

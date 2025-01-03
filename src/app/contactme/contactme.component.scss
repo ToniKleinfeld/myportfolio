@@ -17,14 +17,17 @@ section{
     @include main.center($jc:flex-start, $ai:flex-start , $x:30px);
     width: 100%;
 }
-input,textarea,form{
+input[type=text],input[type=email],input[type=submit],textarea,form{
     all: unset
 }
 
 .form-wrapper{
-    @include main.center($x:15px);
-    flex-direction: column;
     width: 100%;
+
+    form{
+        @include main.center($x:15px);
+        flex-direction: column;
+    }
 
     .inputfield{
         font-size: 14px;

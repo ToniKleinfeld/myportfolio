@@ -5,16 +5,29 @@
 
     <div class="container-wrapper">
         <div class="form-wrapper">
-            <form action="" id="sendMeForm">
 
-                <input type="text" placeholder="{{'contact.inputName'| translate}}" id="nameInput" class="inputfield">
+            <form (ngSubmit)="onSubmit(contactForm)" id="sendMeForm" #contactForm="ngForm">
+
+                <input type="text" placeholder="{{'contact.inputName'| translate}}" id="nameInput" class="inputfield" [(ngModel)]="formData.name" name="name" required #name="ngModel" autocomplete="off" minlength="3">
+
+                @if(!name.valid && name.touched){
+                    <label for="name">{{'contact.insertName'|translate}}</label>
+                }
     
-                <input type="mail" placeholder="{{'contact.inputMail'| translate}}" id="mailInput" class="inputfield">
+                <input type="email" minlength="3" placeholder="{{'contact.inputMail'| translate}}" id="mailInput" class="inputfield" [(ngModel)]="formData.email" name="email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" #mail="ngModel" autocomplete="off">
+
+                @if(!mail.valid && mail.touched && name.valid){
+                    <label for="email">{{'contact.insertMail'|translate}}</label>
+                }
     
-                <textarea name="textarea" id="textInput" placeholder="{{'contact.inputText'| translate}}" class="inputfield"></textarea>
+                <textarea minlength="3" name="textarea" id="textInput" placeholder="{{'contact.inputText'| translate}}" class="inputfield" [(ngModel)]="formData.message" name="message" required #message="ngModel"></textarea>
+
+                @if(!message.valid && message.touched && name.valid && mail.valid){
+                    <label for="message">{{'contact.insertMessage'|translate}}</label>
+                }
     
                 <div class="checkbox-wrapper">
-                    <input type="checkbox" name="readPolicity" id="readPolicity">
+                    <input type="checkbox" name="readPolicity" id="readPolicity" required>
                     <label for="readPolicity">{{'contact.readpolicity1' | translate}} <a>{{'contact.readpolicity2' | translate}} </a> {{'contact.readpolicity3' | translate}}</label>
                 </div>
     
