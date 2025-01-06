@@ -46,6 +46,10 @@ form {
     aspect-ratio: 1/0.5;
   }
 
+  .noValid{
+    border: 1px solid main.$main-color-wrong; 
+}
+
   .checkbox-wrapper {
     text-align: center;
     padding: 0 10px;
@@ -91,4 +95,11 @@ form {
     background-color: grey;
     border: 1px solid grey;
   }
+}
+
+.inputLabel{
+    font-size: 12px;
+    align-self: flex-start;
+    color: main.$main-color-wrong;
+    margin: -14px 0;
 }

@@ -9,26 +9,28 @@
             <form (ngSubmit)="onSubmit(contactForm)" id="sendMeForm" #contactForm="ngForm">
 
                 <input type="text" placeholder="{{'contact.inputName'| translate}}" id="nameInput" class="inputfield"
-                    [(ngModel)]="formData.name" name="name" required #name="ngModel" autocomplete="off" minlength="3">
+                    [(ngModel)]="formData.name" name="name" required #name="ngModel" autocomplete="off" minlength="3"
+                    [class.noValid]="!name.valid && name.touched">
 
                 @if(!name.valid && name.touched){
-                <label for="name">{{'contact.insertName'|translate}}</label>
+                <label class="inputLabel" for="name">{{'contact.insertName'|translate}}</label>
                 }
 
                 <input type="email" minlength="3" placeholder="{{'contact.inputMail'| translate}}" id="mailInput"
                     class="inputfield" [(ngModel)]="formData.email" name="email" required
-                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" #mail="ngModel" autocomplete="off">
+                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" #mail="ngModel" autocomplete="off"
+                    [class.noValid]="!mail.valid && mail.touched && name.valid">
 
                 @if(!mail.valid && mail.touched && name.valid){
-                <label for="email">{{'contact.insertMail'|translate}}</label>
+                <label class="inputLabel" for="email">{{'contact.insertMail'|translate}}</label>
                 }
 
                 <textarea minlength="3" name="textarea" id="textInput" placeholder="{{'contact.inputText'| translate}}"
-                    class="inputfield" [(ngModel)]="formData.message" name="message" required
-                    #message="ngModel"></textarea>
+                    class="inputfield" [(ngModel)]="formData.message" name="message" required #message="ngModel"
+                    [class.noValid]="!message.valid && message.touched && name.valid && mail.valid"></textarea>
 
                 @if(!message.valid && message.touched && name.valid && mail.valid){
-                <label for="message">{{'contact.insertMessage'|translate}}</label>
+                <label for="message" class="inputLabel">{{'contact.insertMessage'|translate}}</label>
                 }
 
                 <div class="checkbox-wrapper">
@@ -49,7 +51,7 @@
                                     fill="#FFFDFD" />
                             </svg>
                             } @else if (message.valid && name.valid && mail.valid && !formData.terms) {
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M2 18C1.45 18 0.979167 17.8042 0.5875 17.4125C0.195833 17.0208 0 16.55 0 16V2C0 1.45 0.195833 0.979167 0.5875 0.5875C0.979167 0.195833 1.45 0 2 0H16C16.55 0 17.0208 0.195833 17.4125 0.5875C17.8042 0.979167 18 1.45 18 2V16C18 16.55 17.8042 17.0208 17.4125 17.4125C17.0208 17.8042 16.55 18 16 18H2ZM2 16H16V2H2V16Z"
@@ -57,8 +59,9 @@
                                 <path transform="scale(0.5) translate(14, 5)"
                                     d="M2.60014 16.5715C2.66871 16.9922 2.88391 17.7778 3.55058 17.7778C4.21724 17.7778 4.28353 16.9123 4.43947 16.4445C4.88391 15.1112 6.21725 3.30163 6.21725 2.69845C6.21725 0.888889 5.55058 0 3.55058 0C1.86403 0 0.883911 0.444445 0.883911 2.66671C1.32836 7.55556 2.21724 14.2223 2.60014 16.5715Z"
                                     fill="#FD2E12" />
-    
-                                    <ellipse transform="scale(0.5) translate(14, 5)" cx="3.55073" cy="22.2222" rx="1.77778" ry="1.77778" fill="#FD2E12"/>
+
+                                <ellipse transform="scale(0.5) translate(14, 5)" cx="3.55073" cy="22.2222" rx="1.77778"
+                                    ry="1.77778" fill="#FD2E12" />
                             </svg>
                             } @else {
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
@@ -74,8 +77,11 @@
                         {{'contact.readpolicity3' | translate}}</label>
                 </div>
 
+                @if (name.valid && mail.valid && message.valid && formData.terms) {
+                <input type="submit" value="{{'contact.button'| translate}}" class="submitbtn" enable>
+                } @else {
                 <input type="submit" value="{{'contact.button'| translate}}" class="submitbtn" disabled>
-
+                }
             </form>
         </div>
 
