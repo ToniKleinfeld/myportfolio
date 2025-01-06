@@ -47,7 +47,7 @@ form {
   }
 
   .checkbox-wrapper {
-    text-align: left;
+    text-align: center;
 
     input {
       margin-right: 5px;
@@ -58,17 +58,18 @@ form {
       font-size: 14px;
 
       .checkbox-img {
-        background: url(../../assets/img/checkbox.svg);      
-        padding: 10px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
         margin-right: 5px;
       }
 
       .checkbox-img:hover {
-        // -webkit-box-shadow: -3px -8px 10px 10px rgba(61, 207, 182, 0.65);
-        box-shadow: -3px -8px 10px 10px rgba(61, 207, 182, 0.65);
+        -webkit-box-shadow: 
+        inset 0 0 8px 6px rgba(61, 207, 182, 0.6),
+        0 0 16px 10px rgba(61, 207, 182, 0.7);
+        box-shadow: 
+        inset 0 0 8px 6px rgba(61, 207, 182, 0.6),
+        0px 0px 16px 10px rgba(61, 207, 182, 0.7);
+        border-radius: 5px;
+        cursor: pointer;     
       }
 
       a {
