@@ -48,9 +48,10 @@ form {
 
   .checkbox-wrapper {
     text-align: center;
+    padding: 0 10px;
 
     input {
-      margin-right: 5px;
+      display: none;
     }
 
     label {
@@ -59,17 +60,16 @@ form {
 
       .checkbox-img {
         margin-right: 5px;
+        vertical-align: middle;
       }
 
       .checkbox-img:hover {
-        -webkit-box-shadow: 
-        inset 0 0 8px 6px rgba(61, 207, 182, 0.6),
-        0 0 16px 10px rgba(61, 207, 182, 0.7);
-        box-shadow: 
-        inset 0 0 8px 6px rgba(61, 207, 182, 0.6),
-        0px 0px 16px 10px rgba(61, 207, 182, 0.7);
+        -webkit-box-shadow: inset 0 0 8px 6px rgba(61, 207, 182, 0.6),
+          0 0 16px 10px rgba(61, 207, 182, 0.7);
+        box-shadow: inset 0 0 8px 6px rgba(61, 207, 182, 0.6),
+          0px 0px 16px 10px rgba(61, 207, 182, 0.7);
         border-radius: 5px;
-        cursor: pointer;     
+        cursor: pointer;
       }
 
       a {
@@ -84,6 +84,7 @@ form {
     @include main.butonfilled();
     align-self: flex-end;
     width: 60px;
+    margin-right: 10px;
   }
 
   .submitbtn:disabled {
