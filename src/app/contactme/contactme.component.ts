@@ -1,15 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
-import { CheckboxRequiredValidator, FormsModule, NgForm } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
+import { IconsComponent } from "../shared/components/header/nav/iconssection/icons/icons.component";
 
 @Component({
   selector: 'app-contactme',
   standalone: true,
-  imports: [TranslateModule,FormsModule,CommonModule],
+  imports: [TranslateModule, FormsModule, CommonModule, IconsComponent],
   templateUrl: './contactme.component.html',
-  styleUrl: './contactme.component.scss'
+  styleUrls: ['./contactme.component.scss','./contactme.form.component.scss','./contactme.mobile.component.scss']
 })
 export class ContactmeComponent {
 

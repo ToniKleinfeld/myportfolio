@@ -51,5 +51,9 @@
   @media (max-width: 1025px) {
     position: unset;
     gap:unset;
+
+    app-icons{
+      display: none;
+    }
   }
 }

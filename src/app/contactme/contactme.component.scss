@@ -18,123 +18,51 @@ section {
   width: 950px;
   height: 75vh;
 }
-input[type="text"],
-input[type="email"],
-input[type="submit"],
-textarea,
-form {
-  all: unset;
+
+.inputLabel {
+  font-size: 12px;
+  align-self: flex-start;
+  color: main.$main-color-wrong;
+  margin: -14px 0;
 }
 
-.form-wrapper {
+.letsWorkTogether-wrapper {
   width: 50%;
+  height: 100%;
+  @include main.center($jc: space-between);
+  flex-direction: column;
 
-  form {
-    @include main.center($x: 15px);
-    flex-direction: column;
-    width: 100%;
+  .lets-wrapper,
+  .legal-policy-links {
+    text-align: end;
+    width: 90%;
   }
 
-  .inputfield {
-    font-size: 14px;
-    width: calc(100% - 40px);
-    border: 1px solid main.$main-color1;
-    border-radius: 30px;
-    padding: 20px;
-  }
-
-  textarea {
-    aspect-ratio: 1/0.5;
-  }
-
-  .noValid{
-    border: 1px solid main.$main-color-wrong; 
-}
-
-  .checkbox-wrapper {
-    text-align: center;
-    padding: 0 10px;
-
-    input {
-      display: none;
-    }
-
-    label {
+  .lets-wrapper {
+    h4 {
       color: main.$main-color1;
+    }
+    h4,
+    p,
+    a {
+      font-size: 18px;
+    }
+
+    a::before {
+      content: url(../../assets/img/iconmail.svg);
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+  }
+
+  .legal-policy-links {
+    a,
+    .copyr-name {
       font-size: 14px;
-
-      .checkbox-img {
-        margin-right: 5px;
-        vertical-align: middle;
-      }
-
-      .checkbox-img:hover {
-        -webkit-box-shadow: inset 0 0 8px 6px rgba(61, 207, 182, 0.6),
-          0 0 16px 10px rgba(61, 207, 182, 0.7);
-        box-shadow: inset 0 0 8px 6px rgba(61, 207, 182, 0.6),
-          0px 0px 16px 10px rgba(61, 207, 182, 0.7);
-        border-radius: 5px;
-        cursor: pointer;
-      }
-
-      a {
-        cursor: pointer;
-        font-size: 14px;
-      }
     }
-  }
-
-  .submitbtn {
-    @include main.button();
-    @include main.butonfilled();
-    align-self: flex-end;
-    width: 60px;
-    margin-right: 10px;
-  }
-
-  .submitbtn:disabled {
-    background-color: grey;
-    border: 1px solid grey;
   }
 }
 
-.inputLabel{
-    font-size: 12px;
-    align-self: flex-start;
-    color: main.$main-color-wrong;
-    margin: -14px 0;
-}
-
-.letsWorkTogether-wrapper{
-    width: 50%;
-    height: 100%;
-    @include main.center($jc:space-between);
-    flex-direction: column;
-
-    .lets-wrapper,.legal-policy-links{
-        text-align: end;
-        width: 90%;
-    }
-
-    .lets-wrapper{
-        
-        h4{
-            color: main.$main-color1;
-        }
-        h4,p,a{
-            font-size: 18px;
-        }
-
-        a::before{
-            content: url(../../assets/img/iconmail.svg);
-            margin-right: 8px;
-            vertical-align: middle;
-        }
-    }
-
-    .legal-policy-links{
-        a,.copyr-name{
-            font-size: 14px;
-        }
-    }
+.mobile-arrow-icons{
+  display: none;
 }

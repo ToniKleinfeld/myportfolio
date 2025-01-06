@@ -1,0 +1,63 @@
+@use "../shared/mixin.scss" as main;
+
+@media (max-width: 1025px) {
+  section {
+    flex-direction: column;
+    justify-content: center;
+    width: 90vw;
+    padding-top: 65px
+  }
+
+  .container-wrapper {
+    flex-direction: column-reverse;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .letsWorkTogether-wrapper{
+    width: 100%;
+    align-items: start;
+
+    .lets-wrapper{
+        text-align: left;
+        width: 100%;
+    }
+  }
+
+  .legal-policy-links{
+    display: none;    
+  }
+
+  .form-wrapper{
+    width: 100%;
+    padding-bottom: 65px;
+    textarea{
+        aspect-ratio: 1 / 0.3;
+    }
+  }
+
+  .mobile-arrow-icons{
+    @include main.center();
+    flex-direction: column;
+    .arrow{      
+      background-image: url(../../assets/img/arrowupdefault.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 30px;
+      height: 100px;
+      margin-bottom: 40px;
+    }
+
+    .arrow:hover{
+      scale: 0.8;
+    }
+
+    app-icons{
+      padding-bottom: 65px;
+    }
+
+  }
+}
