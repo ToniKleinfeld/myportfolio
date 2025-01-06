@@ -1,39 +1,92 @@
-@use '../shared/mixin.scss' as main;
+@use "../shared/mixin.scss" as main;
 
-section{
-    @include main.center($jc:flex-start);
-    white-space: wrap;
-    h2 {
-        @include main.h2();
-        align-self: flex-start;
-        @include main.arrow();
-        .jumpnextsection{
-            rotate: 180deg;
-        }
+section {
+  @include main.center($jc: flex-start);
+  white-space: wrap;
+  h2 {
+    @include main.h2();
+    align-self: flex-start;
+    @include main.arrow();
+    .jumpnextsection {
+      rotate: 180deg;
+    }
+  }
+}
+
+.container-wrapper {
+  @include main.center($jc: flex-start, $ai: flex-start, $x: 30px);
+  width: 1080px;
+}
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea,
+form {
+  all: unset;
+}
+
+.form-wrapper {
+  width: 100%;
+
+  form {
+    @include main.center($x: 15px);
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .inputfield {
+    font-size: 14px;
+    width: calc(100% - 40px);
+    border: 1px solid main.$main-color1;
+    border-radius: 30px;
+    padding: 20px;
+  }
+
+  textarea {
+    aspect-ratio: 1/0.5;
+  }
+
+  .checkbox-wrapper {
+    text-align: left;
+
+    input {
+      margin-right: 5px;
+    }
+
+    label {
+      color: main.$main-color1;
+      font-size: 14px;
+
+      .checkbox-img {
+        background: url(../../assets/img/checkbox.svg);      
+        padding: 10px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        margin-right: 5px;
       }
-}
 
-.container-wrapper{
-    @include main.center($jc:flex-start, $ai:flex-start , $x:30px);
-    width: 100%;
-}
-input[type=text],input[type=email],input[type=submit],textarea,form{
-    all: unset
-}
+      .checkbox-img:hover {
+        // -webkit-box-shadow: -3px -8px 10px 10px rgba(61, 207, 182, 0.65);
+        box-shadow: -3px -8px 10px 10px rgba(61, 207, 182, 0.65);
+      }
 
-.form-wrapper{
-    width: 100%;
-
-    form{
-        @include main.center($x:15px);
-        flex-direction: column;
-    }
-
-    .inputfield{
+      a {
+        cursor: pointer;
         font-size: 14px;
-        width: 100%;
-        border: 1px solid main.$main-color1;
-        border-radius: 30px;
-        padding: 20px;
+      }
     }
+  }
+
+  .submitbtn {
+    @include main.button();
+    @include main.butonfilled();
+    align-self: flex-end;
+    width: 60px;
+  }
+
+  .submitbtn:disabled {
+    background-color: grey;
+    border: 1px solid grey;
+  }
 }

@@ -27,11 +27,14 @@
                 }
     
                 <div class="checkbox-wrapper">
-                    <input type="checkbox" name="readPolicity" id="readPolicity" [(ngModel)]="formData.terms" required [checked]="this.formData">
-                    <label for="readPolicity">{{'contact.readpolicity1' | translate}} <a>{{'contact.readpolicity2' | translate}} </a> {{'contact.readpolicity3' | translate}}</label>
+                    <input type="checkbox" name="readPolicity" id="readPolicity" [(ngModel)]="formData.terms" required [checked]="this.formData" class="checkbox-policity">
+
+                    <label for="readPolicity">
+                        <span class="checkbox-img"></span>
+                        {{'contact.readpolicity1' | translate}} <a href="#">{{'contact.readpolicity2' | translate}} </a> {{'contact.readpolicity3' | translate}}</label>
                 </div>
     
-                <input type="submit" value="{{'contact.button'| translate}}">
+                <input type="submit" value="{{'contact.button'| translate}}" class="submitbtn" disabled>
     
             </form>
         </div>
@@ -44,8 +47,7 @@
                 <p>{{'contact.letsWorkTogetherText' | translate}}</p>
     
                 <div class="container-mail-phone-wrapper">
-                    <div class="mail-phone-container"> tonikleinfeld&#64;aol.com</div>
-                    <div class="mail-phone-container">0173 / 5451636</div>
+                    <a href="mailto:contact@toni-kleinfeld.de?subject=Mail from my Portfolio" class="mail-phone-container">Email: contact&#64;toni-kleinfeld.com</a>
                 </div>
 
             </div>
