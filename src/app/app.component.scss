@@ -1,20 +1,21 @@
 @use "./shared/mixin.scss" as main;
 
 .side_wrapper {
-  height: calc(100vh - 15.5px);
-  width: fit-content;
-  @include main.center($jc: flex-start);
+  height: 100vh;
+  width: auto;
+  @include main.center($jc: flex-start,$ai:unset);
   flex-direction: row;
   color: main.$main-color3;
-  background: linear-gradient(
-    40deg,
-    main.$backgroundcolor1 25%,
-    main.$backgroundcolor2 35%,
-    main.$backgroundcolor1 45%,
-    main.$backgroundcolor1 70%,
-    main.$backgroundcolor2 80%,
-    main.$backgroundcolor1 90%
-  );
+
+  // background: linear-gradient(
+  //   40deg,
+  //   main.$backgroundcolor1 25%,
+  //   main.$backgroundcolor2 35%,
+  //   main.$backgroundcolor1 45%,
+  //   main.$backgroundcolor1 70%,
+  //   main.$backgroundcolor2 80%,
+  //   main.$backgroundcolor1 90%
+  // );
 
   overflow-x: auto;
   overflow-y: hidden;
@@ -30,6 +31,16 @@
 
   router-outlet {
     @include main.center($jc: flex-start);
+
+    background: linear-gradient(
+      40deg,
+      main.$backgroundcolor1 25%,
+      main.$backgroundcolor2 35%,
+      main.$backgroundcolor1 45%,
+      main.$backgroundcolor1 70%,
+      main.$backgroundcolor2 80%,
+      main.$backgroundcolor1 90%
+    );
 
     @media (max-width: 1025px) {
       justify-content: center;

@@ -1,7 +1,7 @@
 @use '../../mixin.scss' as main;
 
 section{
-    height: calc(100dvh - 17px);
+    height:100dvh;
     width: 100px;
     background: main.$colorGradient;
 
