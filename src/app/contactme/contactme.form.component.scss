@@ -31,6 +31,10 @@ form {
 
   .noValid {
     border: 1px solid main.$main-color-wrong;
+
+    &::placeholder {
+      color: main.$main-color-wrong;
+    }
   }
 
   .checkbox-wrapper {
@@ -68,14 +72,22 @@ form {
 
   .submitbtn {
     @include main.button();
-    @include main.butonfilled();
+    background-color: main.$main-color1;
+    padding: 12px 24px;
     align-self: flex-end;
     width: 60px;
     margin-right: 10px;
+
+    &:hover {
+      opacity: 0.6;
+    }
   }
 
   .submitbtn:disabled {
     background-color: grey;
     border: 1px solid grey;
+    &:hover {
+      opacity: 1;
+    }
   }
 }

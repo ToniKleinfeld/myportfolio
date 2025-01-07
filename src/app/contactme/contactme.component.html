@@ -8,26 +8,20 @@
 
             <form (ngSubmit)="onSubmit(contactForm)" id="sendMeForm" #contactForm="ngForm">
 
-                <input type="text" placeholder="{{'contact.inputName'| translate}}" id="nameInput" class="inputfield"
-                    [(ngModel)]="formData.name" name="name" required #name="ngModel" autocomplete="off" minlength="3"
-                    [class.noValid]="!name.valid && name.touched">
+                <input type="text" id="nameInput" class="inputfield" [(ngModel)]="formData.name" name="name" required
+                    #name="ngModel" autocomplete="off" minlength="3" [class.noValid]="!name.valid && name.touched"
+                    [placeholder]="(!name.valid && name.touched) ? ('contact.insertName' | translate) : ('contact.inputName' | translate)">
 
-                @if(!name.valid && name.touched){
-                <label class="inputLabel" for="name">{{'contact.insertName'|translate}}</label>
-                }
+                <input type="email" minlength="3" id="mailInput" class="inputfield" [(ngModel)]="formData.email"
+                    name="email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" #mail="ngModel"
+                    autocomplete="off" [class.noValid]="!mail.valid && mail.touched && name.valid"
+                    [placeholder]="(!mail.valid && mail.touched && name.valid) ? ('contact.insertMail' | translate) : ('contact.inputMail' | translate)">
 
-                <input type="email" minlength="3" placeholder="{{'contact.inputMail'| translate}}" id="mailInput"
-                    class="inputfield" [(ngModel)]="formData.email" name="email" required
-                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" #mail="ngModel" autocomplete="off"
-                    [class.noValid]="!mail.valid && mail.touched && name.valid">
 
-                @if(!mail.valid && mail.touched && name.valid){
-                <label class="inputLabel" for="email">{{'contact.insertMail'|translate}}</label>
-                }
-
-                <textarea minlength="3" name="textarea" id="textInput" placeholder="{{'contact.inputText'| translate}}"
-                    class="inputfield" [(ngModel)]="formData.message" name="message" required #message="ngModel"
-                    [class.noValid]="!message.valid && message.touched && name.valid && mail.valid"></textarea>
+                <textarea minlength="3" name="textarea" id="textInput" class="inputfield" [(ngModel)]="formData.message"
+                    name="message" required #message="ngModel"
+                    [class.noValid]="!message.valid && message.touched && name.valid && mail.valid"
+                    [placeholder]="(!message.valid && message.touched && name.valid && mail.valid) ? ('contact.insertMessage' | translate) : ('contact.inputText' | translate)"></textarea>
 
                 @if(!message.valid && message.touched && name.valid && mail.valid){
                 <label for="message" class="inputLabel">{{'contact.insertMessage'|translate}}</label>
@@ -94,8 +88,8 @@
                 <p>{{'contact.letsWorkTogetherText' | translate}}</p>
                 <br>
                 <br>
-                <a href="mailto:contact@toni-kleinfeld.de?subject=Mail from Toni's Portfolio"
-                    class="mail-container" title="{{'tooltips.sendMail'|translate}}">Email: contact&#64;toni-kleinfeld.com</a>
+                <a href="mailto:contact@toni-kleinfeld.de?subject=Mail from Toni's Portfolio" class="mail-container"
+                    title="{{'tooltips.sendMail'|translate}}">Email: contact&#64;toni-kleinfeld.com</a>
             </div>
 
             <div class="legal-policy-links">
