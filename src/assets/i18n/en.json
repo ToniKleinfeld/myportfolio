@@ -63,5 +63,16 @@
     "insertName": "Please enter your Name.",
     "insertMail": "Please fill a mail adress. example: max@aol.com",
     "insertMessage": "Please send me some Words , not a empty mail."
+  },
+  "tooltips":{
+    "arrowNext":"Jump to next section.",
+    "arrowBack":"Jump back to start.",
+    "sendMail":"Send me mail with system mail program.",
+    "visitGitHub":"Visit my GitHub site.",
+    "visitlinkIn":"Visit my LinkIn.",
+    "changeLang": "Change the language.",
+    "visitGitProject": "Visit the GitHub project.",
+    "try":"Try the project.",
+    "contact":"Jump to contact formular."
   }
 }

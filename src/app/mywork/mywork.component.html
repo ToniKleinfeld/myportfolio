@@ -1,6 +1,6 @@
 <section id="myWork">
     <h2>{{'header.mywork'| translate}}
-        <a class="jumpnextsection"></a>
+        <a class="jumpnextsection" href="#reference" title="{{'tooltips.arrowNext'|translate}}"></a>
     </h2>
 
     <div class="project-wrapper onGoing " *ngFor="let project of projectsArray,let i = index"
@@ -26,8 +26,16 @@
                 <img src="./assets/img/{{project.img}}.png" alt="image ob a Webapplication">
 
                 <div class="buttons">
-                    <div class="btnGitHub btn">GitHub</div>
-                    <div class="btnLiveTest btn">Live Test</div>
+
+                    <a class="btnGitHub btn" href="{{project.hrefGit}}" title="{{'tooltips.visitGitProject'|translate}}" target="_blank">
+                        <span>GitHub</span>
+                        <div class="btnHover">GitHub</div>
+                    </a>
+
+                    <a class="btnLiveTest btn" href="{{project.href}}" title="{{'tooltips.try'|translate}}" target="_blank">
+                        <span>Live Test</span>
+                        <div class="btnHover">Live Test</div>
+                    </a>
                 </div>
 
             </div>
@@ -48,7 +56,10 @@
                 <h3>{{project.name}} {{'mywork.subhead'|translate}}</h3>
             </div>
             <p>{{project.nextProject! | translate}}</p>
-            <div class="talkBtn btn">{{'mywork.btn' | translate}}</div>
+            <a class="talkBtn btn" href="#contactMe" title="{{'tooltips.contact'|translate}}">
+                <span>{{'mywork.btn' | translate}}</span>
+                <div class="btnHover">{{'mywork.btn' | translate}}</div>
+            </a>
         </div>
         }
 

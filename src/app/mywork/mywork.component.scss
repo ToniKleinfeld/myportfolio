@@ -81,9 +81,6 @@ section {
 
         .buttons {
           @include main.center($x: 20px);
-          .btnGitHub {
-            @include main.buttonempty();
-          }
         }
       }
     }
@@ -107,13 +104,17 @@ section {
   display: none;
 }
 
+.btn {
+  @include main.button();
+}
+
 .talkBtn,
 .btnLiveTest {
   @include main.butonfilled();
 }
 
-.btn {
-  @include main.button();
+.btnGitHub {
+  @include main.buttonempty();
 }
 
 p {

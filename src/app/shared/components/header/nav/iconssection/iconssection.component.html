@@ -2,7 +2,7 @@
 
     <app-icons></app-icons>
 
-    <div class="setLanguage" (click)="changeLanguage()">
+    <div class="setLanguage" (click)="changeLanguage()" title="{{'tooltips.changeLang'| translate}}">
         <div [ngClass]="{'active': translate , 'moveright': translate}">EN</div>
         <div [ngClass]="{'active': !translate ,'moveleft': !translate }">DE</div>
     </div>

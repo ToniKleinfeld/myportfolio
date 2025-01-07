@@ -21,23 +21,67 @@ $button-disabled: #9e9d9d;
 }
 
 @mixin button() {
+  position: relative;
   border: 1px solid $main-color1;
-  padding: 12px 24px;
   border-radius: 25px;
   cursor: pointer;
-  font-size: 14px;
   width: 135px;
   text-align: center;
+  transition: 0.5s;
+  overflow: hidden;
+
+  span {
+    position: absolute;
+    color: $main-color1;
+    text-align: center;
+    left: 0;
+    font-size: 14px;
+    width: 100%;
+    overflow: hidden;
+    padding: 12px 24px;
+  }
 }
 
 @mixin butonfilled() {
-  color: black;
-  background-color: $main-color1;
+  .btnHover {
+    padding: 12px 24px;
+    font-size: 14px;
+    color: black;
+    background-color: $main-color1;
+    -webkit-mask: url(../../assets/img/buttonmask.png);
+    mask: url(../../assets/img/buttonmask.png);
+    -webkit-mask-size: 2300% 100%;
+    mask-size: 2300% 100%;
+
+    -webkit-animation: ani2 0.7s steps(22) forwards;
+    animation: ani2 0.7s steps(22) forwards;
+
+    &:hover {
+      -webkit-animation: ani 0.7s steps(22) forwards;
+      animation: ani 0.7s steps(22) forwards;
+    }
+  }
 }
 
 @mixin buttonempty() {
-  color: $main-color1;
-  background-color: transparent;
+  .btnHover {
+    font-size: 14px;
+    padding: 12px 24px;
+    color: black;
+    background-color: $main-color1;
+    -webkit-mask: url(../../assets/img/buttonmask.png);
+    mask: url(../../assets/img/buttonmask.png);
+    -webkit-mask-size: 2300% 100%;
+    mask-size: 2300% 100%;
+
+    -webkit-animation: ani 0.7s steps(22) forwards;
+    animation: ani 0.7s steps(22) forwards;
+
+    &:hover {
+      -webkit-animation: ani2 0.7s steps(22) forwards;
+      animation: ani2 0.7s steps(22) forwards;
+    }
+  }
 }
 
 @mixin h2() {
@@ -59,10 +103,8 @@ $button-disabled: #9e9d9d;
   }
 
   @media (max-width: 730px) {
-    h2 {
-      font-size: 32px;
-      font-weight: 700;
-    }
+    font-size: 32px;
+    font-weight: 700;
   }
 }
 

@@ -1,6 +1,6 @@
 <section id="whyMe">
     <h2>{{ 'header.whyme' | translate}}
-        <a class="jumpnextsection"></a>
+        <a class="jumpnextsection" href="#mySkills" title="{{'tooltips.arrowNext'|translate}}"></a>
     </h2>
 
     <div class="content_whyme">
@@ -12,7 +12,10 @@
 
             <app-whymeicons></app-whymeicons>
 
-            <div class="fullcolorbutton">{{'whyme.button' | translate}}</div>
+            <a class="fullcolorbutton" href="#contactMe">
+                <span>{{'whyme.button' | translate}}</span>
+                <div class="btnHover">{{'whyme.button' | translate}}</div>
+            </a>
 
         </div>
 
