@@ -1,8 +1,8 @@
 @use "./shared/mixin.scss" as main;
 
 .side_wrapper {
-  height: 100dvh;
-  width: auto;
+  height: calc(100vh - 15.5px);
+  width: fit-content;
   @include main.center($jc: flex-start);
   flex-direction: row;
   color: main.$main-color3;
@@ -74,6 +74,7 @@
 
   @media (max-width: 1025px) {
     height: auto;
+    width: auto;
     justify-content: center;
     flex-direction: column;
     background: linear-gradient(
