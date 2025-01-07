@@ -31,9 +31,10 @@ form {
 
   .noValid {
     border: 1px solid main.$main-color-wrong;
-
+    
     &::placeholder {
       color: main.$main-color-wrong;
+      font-size: 12px;
     }
   }
 
