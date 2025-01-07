@@ -23,10 +23,6 @@
                     [class.noValid]="!message.valid && message.touched && name.valid && mail.valid"
                     [placeholder]="(!message.valid && message.touched && name.valid && mail.valid) ? ('contact.insertMessage' | translate) : ('contact.inputText' | translate)"></textarea>
 
-                @if(!message.valid && message.touched && name.valid && mail.valid){
-                <label for="message" class="inputLabel">{{'contact.insertMessage'|translate}}</label>
-                }
-
                 <div class="checkbox-wrapper">
                     <input type="checkbox" name="readPolicity" id="readPolicity" [(ngModel)]="formData.terms" required
                         [checked]="this.formData" class="checkbox-policity">
