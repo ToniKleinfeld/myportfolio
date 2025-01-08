@@ -1,6 +1,6 @@
 @use "../shared/mixin.scss" as main;
 section {
-  @include main.center($ai: flex-start ,$jc:flex-start);
+  @include main.center($ai: flex-start, $jc: flex-start);
   width: 1050px;
 
   @media (max-width: 1025px) {
@@ -19,7 +19,6 @@ section {
   }
 
   .content_whyme {
-
     @media (max-width: 1025px) {
       width: 100%;
     }

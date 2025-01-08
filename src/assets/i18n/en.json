@@ -11,10 +11,10 @@
     "location": "located in ",
     "descripeme": "I am motivated to continuously learn new technologies and develop myself. My ability to solve complex problems and my passion for programming make me a valuable member of your team.",
     "button": "Contact me",
-    "remote": "open to work remote"
+    "remote": "open to remote work"
   },
   "footer": {
-    "imprint": "Legal notice",
+    "imprint": "Imprint",
     "privacy": "Privacy policy"
   },
   "myskills": {
@@ -30,7 +30,7 @@
     "learned": "What i have learned",
     "joinabout": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
     "joinlearned": "sed senectus felis ac mauris. Dui eget dictum.Lorem ipsum dolor sit amet consectetur. Posuere pretium arcu sed senectus felis ac mauris.",
-    "nextWork": "I am currently working with a small group on a project called 'Münster Interessierts'. The team came together at MSHack 2024 and is currently supported by the Solution Enabler Program. I support the frontend with Nuxt3 / Vue.js.",
+    "nextWork": "I am currently working with a small group on a project called ‘Münster Interessierts / Policast’. The team came together at MSHack 2024 and is currently being supported by the Solution Enabler programme. I am supporting the frontend area. The aim is to produce an audible weekly summary from the City of Münster's Council Information Network using LLM, ideally as a podcast. ",
     "btn": "Let's Talk",
     "fireabout": "",
     "firelearned": "",

@@ -1,12 +1,12 @@
 {
     "header": {
         "contact":"Kontakt",
-        "mywork":"Meine Projekte",
-        "skills":"Fähigkeiten",
-        "whyme":"Über mich"
+        "mywork":"Projekte",
+        "skills":"Skill Set",
+        "whyme":"Warum ich"
     },
     "footer": {
-        "imprint":"Rechtliche Hinweise",
+        "imprint":"Impressum",
         "privacy":"Datenschutzbestimmungen"
     },
     "whyme": {
@@ -28,7 +28,7 @@
         "learned":"Was ich gelernt habe",
         "joinabout":"Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
         "joinlearned":"sed senectus felis ac mauris. Dui eget dictum.Lorem ipsum dolor sit amet consectetur. Posuere pretium arcu sed senectus felis ac mauris.",
-        "nextWork": "Ich arbeite derzeit mit einer kleinen Gruppe an einem Projekt namens 'Münster Interessierts'. Das Team hat sich beim MSHack 2024 zusammengefunden und wird derzeit durch das Solution Enabler Program unterstützt. Ich unterstütze das Frontend mit Nuxt3 / Vue.js.",
+        "nextWork": "Ich arbeite derzeit mit einer kleinen Gruppe an einem Projekt namens 'Münster Interessierts / Policast'. Das Team hat sich beim MSHack 2024 zusammengefunden und wird derzeit durch das Solution Enabler Programm unterstützt. Ich unterstütze hierbei den Frontend Bereich. Ziel ist eine hörbare Wöchentliche Zusammenfassung aus dem Rats Information Netzwerkes der Stadt Münster mittelt LLM , im Idealfall als Podcast. ",
         "btn": "Schreib mir",
         "fireabout":"",
         "firelearned":"",
