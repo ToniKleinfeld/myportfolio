@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet, Scroll } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 import { HorizonalscrollDirective } from './horizonalscroll.directive';
 import { HeaderComponent } from "./shared/components/header/header.component";
 import { FooterComponent } from "./shared/components/footer/footer.component";
@@ -10,6 +10,8 @@ import { SkillsetComponent } from "./skillset/skillset.component";
 import { MyworkComponent } from "./mywork/mywork.component";
 import { ReferencesComponent } from "./references/references.component";
 import { ContactmeComponent } from "./contactme/contactme.component";
+import * as AOS from 'aos';
+
 
 
 @Component({
@@ -19,9 +21,16 @@ import { ContactmeComponent } from "./contactme/contactme.component";
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
+  
   constructor(){
     
   }
+
+  ngOnInit(){
+    AOS.init();
+    window.addEventListener('load', AOS.refresh);
+  }
+ 
   title = 'myportfolio'; 
 }
