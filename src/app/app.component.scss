@@ -3,7 +3,7 @@
 .side_wrapper {
   height: 100vh;
   width: auto;
-  @include main.center($jc: flex-start,$ai:unset);
+  @include main.center($jc: flex-start, $ai: unset);
   flex-direction: row;
   color: main.$main-color3;
   overflow-x: auto;
@@ -18,25 +18,58 @@
     }
   }
 
-  router-outlet { 
+  router-outlet {
     height: 100vh;
     @include main.center($jc: flex-start);
 
-    background: linear-gradient(
-      40deg,
-      main.$backgroundcolor1 25%,
-      main.$backgroundcolor2 35%,
-      main.$backgroundcolor1 45%,
-      main.$backgroundcolor1 70%,
-      main.$backgroundcolor2 80%,
-      main.$backgroundcolor1 90%
-    );
+    background-image: radial-gradient(
+        closest-corner circle at 60% 50%,
+        main.$backgroundcolor2 0.2%,
+        main.$backgroundcolor1,
+        50%,
+        transparent
+      ),
+      radial-gradient(
+        closest-corner circle at 80% 30%,
+        main.$backgroundcolor2 1%,
+        main.$backgroundcolor1,
+        20%,
+        transparent
+      ),
+      linear-gradient(
+        70deg,
+        main.$backgroundcolor1 10%,
+        main.$backgroundcolor2 20%,
+        main.$backgroundcolor1 30%
+      );
 
+    // radial-gradient(closest-corner circle at 10% 10%, main.$backgroundcolor2 1%,main.$backgroundcolor1 25%)
     @media (max-width: 1025px) {
       justify-content: center;
       flex-direction: column;
       width: auto;
       height: unset;
+
+      background-image: radial-gradient(
+          closest-corner circle at 60% 50%,
+          main.$backgroundcolor2 0.2%,
+          main.$backgroundcolor1,
+          50%,
+          transparent
+        ),
+        radial-gradient(
+          closest-corner circle at 60% 80%,
+          main.$backgroundcolor2 0.2%,
+          main.$backgroundcolor1,
+          50%,
+          transparent
+        ),
+        linear-gradient(
+          240deg,
+          main.$backgroundcolor1 25%,
+          main.$backgroundcolor2 35%,
+          main.$backgroundcolor1 45%
+        );
     }
 
     app-whyme {
@@ -69,7 +102,7 @@
       }
     }
 
-    app-contactme{
+    app-contactme {
       align-self: center;
     }
   }
@@ -79,15 +112,6 @@
     width: auto;
     justify-content: center;
     flex-direction: column;
-    background: linear-gradient(
-      150deg,
-      main.$backgroundcolor1 25%,
-      main.$backgroundcolor2 35%,
-      main.$backgroundcolor1 45%,
-      main.$backgroundcolor1 70%,
-      main.$backgroundcolor2 80%,
-      main.$backgroundcolor1 90%
-    );
     overflow-x: unset;
     overflow-y: unset;
     white-space: unset;
