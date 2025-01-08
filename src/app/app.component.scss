@@ -18,7 +18,8 @@
     }
   }
 
-  router-outlet {
+  router-outlet { 
+    height: 100vh;
     @include main.center($jc: flex-start);
 
     background: linear-gradient(
@@ -35,6 +36,7 @@
       justify-content: center;
       flex-direction: column;
       width: auto;
+      height: unset;
     }
 
     app-whyme {

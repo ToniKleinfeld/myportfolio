@@ -1,9 +1,10 @@
 @use "../shared/mixin.scss" as main;
 section {
-  @include main.center($ai: flex-start);
+  @include main.center($ai: flex-start ,$jc:flex-start);
   width: 1050px;
 
   @media (max-width: 1025px) {
+    justify-content: center;
     width: 90dvw;
     flex-direction: column;
     padding-bottom: 5%;
