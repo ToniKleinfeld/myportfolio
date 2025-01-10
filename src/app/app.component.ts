@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { HorizonalscrollDirective } from '../directives/horizonalscroll.directive';
+import { HorizonalscrollDirective } from './directives/horizonalscroll.directive';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { BigPicGreetComponent } from './big-pic-greet/big-pic-greet.component';
@@ -10,7 +10,7 @@ import { SkillsetComponent } from './skillset/skillset.component';
 import { MyworkComponent } from './mywork/mywork.component';
 import { ReferencesComponent } from './references/references.component';
 import { ContactmeComponent } from './contactme/contactme.component';
-import * as AOS from 'aos';
+
 
 @Component({
   selector: 'app-root',
@@ -35,8 +35,7 @@ export class AppComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    AOS.init();
-    window.addEventListener('load', AOS.refresh);
+
   }
 
   title = 'myportfolio';
