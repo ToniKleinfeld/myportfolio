@@ -2,35 +2,28 @@ import { Directive, HostListener, ElementRef } from '@angular/core';
 
 @Directive({
   selector: '[appHorizonalscroll]',
-  standalone: true
+  standalone: true,
 })
 export class HorizonalscrollDirective {
-  private smoothingFactor = 2; 
-  private maxScrollSpeed = 400; 
+  private scrollFactor: number = 8;
+  private lastScrolltime: number = 0;
+  private scrolltimeout: number = 200;
 
   constructor(private el: ElementRef) {}
 
-  @HostListener('wheel', ['$event']) 
-
+  @HostListener('wheel', ['$event'])
   onWheel(event: WheelEvent) {
-    console.log(event)
-    if (window.innerWidth > 1025) {
-      event.preventDefault();
-      const rawScrollAmount = event.deltaY;
-      const clampedScrollAmount = this.limitScrollSpeed(rawScrollAmount);
-      const smoothScrollAmount = this.calculateSmoothScroll(clampedScrollAmount);
-      this.el.nativeElement.scrollLeft += smoothScrollAmount;
+    event.preventDefault();
+    const timeStamp = Date.now();
+    if (
+      window.innerWidth > 1025 &&
+      timeStamp - this.lastScrolltime > this.scrolltimeout
+    ) {
+      this.lastScrolltime = timeStamp;
 
-      console.log(clampedScrollAmount,rawScrollAmount)
-    }    
-  }
+      const scrollLeft = event.deltaY * this.scrollFactor;
 
-  private limitScrollSpeed(scrollAmount: number): number {
-    return Math.sign(scrollAmount) * 
-      Math.min(Math.abs(scrollAmount), this.maxScrollSpeed);
-  }
-
-  private calculateSmoothScroll(scrollAmount: number): number {
-    return scrollAmount * this.smoothingFactor * 4;
+      this.el.nativeElement.scrollLeft += scrollLeft;
+    }
   }
 }
