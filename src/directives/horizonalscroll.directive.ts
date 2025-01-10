@@ -5,32 +5,23 @@ import { Directive, HostListener, ElementRef } from '@angular/core';
   standalone: true
 })
 export class HorizonalscrollDirective {
-  private scrollTimeout: any;
-  private lastScrollTime = 0;
-  private smoothingFactor = 1; 
-  private maxScrollSpeed = 170; 
+  private smoothingFactor = 2; 
+  private maxScrollSpeed = 400; 
 
   constructor(private el: ElementRef) {}
 
   @HostListener('wheel', ['$event']) 
+
   onWheel(event: WheelEvent) {
+    console.log(event)
     if (window.innerWidth > 1025) {
       event.preventDefault();
-      const currentTime = Date.now();
       const rawScrollAmount = event.deltaY;
       const clampedScrollAmount = this.limitScrollSpeed(rawScrollAmount);
       const smoothScrollAmount = this.calculateSmoothScroll(clampedScrollAmount);
       this.el.nativeElement.scrollLeft += smoothScrollAmount;
 
-      if (this.scrollTimeout) {
-        clearTimeout(this.scrollTimeout);
-      }
-
-      this.scrollTimeout = setTimeout(() => {
-        this.scrollTimeout = null;
-      }, 100);
-
-      this.lastScrollTime = currentTime;
+      console.log(clampedScrollAmount,rawScrollAmount)
     }    
   }
 
