@@ -1,1 +1,32 @@
 @use "../shared/mixin.scss" as main;
+
+.side_wrapper {
+  height: 100vh;
+  width: auto;
+  @include main.center($jc: flex-start, $ai: unset);
+  flex-direction: row;
+  color: main.$main-color3;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  
+
+  app-header,
+  app-footer {
+    @media (max-width: 1025px) {
+      width: 100%;
+    }
+  }
+
+
+  @media (max-width: 1025px) {
+    height: auto;
+    width: auto;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: unset;
+    overflow-y: unset;
+    white-space: unset;
+  }
+}

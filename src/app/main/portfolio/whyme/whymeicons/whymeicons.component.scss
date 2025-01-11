@@ -1,4 +1,4 @@
-@use "../../shared/mixin.scss" as main;
+@use "../../../../shared/mixin.scss" as main;
 .icon_wrapper {
   @include main.center($x: 15px);
 

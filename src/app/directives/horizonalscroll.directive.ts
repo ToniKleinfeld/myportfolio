@@ -13,17 +13,16 @@ export class HorizonalscrollDirective {
 
   @HostListener('wheel', ['$event'])
   onWheel(event: WheelEvent) {
-    event.preventDefault();
-    const timeStamp = Date.now();
-    if (
-      window.innerWidth > 1025 &&
-      timeStamp - this.lastScrolltime > this.scrolltimeout
-    ) {
-      this.lastScrolltime = timeStamp;
+    if (window.innerWidth > 1025) {
+      event.preventDefault();
+      const timeStamp = Date.now();
+      if (timeStamp - this.lastScrolltime > this.scrolltimeout) {
+        this.lastScrolltime = timeStamp;
 
-      const scrollLeft = event.deltaY * this.scrollFactor;
+        const scrollLeft = event.deltaY * this.scrollFactor;
 
-      this.el.nativeElement.scrollLeft += scrollLeft;
+        this.el.nativeElement.scrollLeft += scrollLeft;
+      }
     }
   }
 }
