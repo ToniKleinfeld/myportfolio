@@ -70,41 +70,7 @@
           main.$backgroundcolor2 35%,
           main.$backgroundcolor1 45%
         );
-    }
-
-    app-whyme {
-      align-self: flex-start;
-      margin-top: 8vh;
-
-      @media (max-width: 1025px) {
-        margin-top: unset;
-        align-self: unset;
-      }
-    }
-
-    app-skillset {
-      align-self: flex-end;
-      margin-bottom: 8vh;
-
-      @media (max-width: 1025px) {
-        margin-bottom: unset;
-        align-self: unset;
-      }
-    }
-
-    app-references {
-      align-self: flex-end;
-      margin-bottom: 8vh;
-
-      @media (max-width: 1025px) {
-        margin-bottom: unset;
-        align-self: unset;
-      }
-    }
-
-    app-contactme {
-      align-self: center;
-    }
+    }    
   }
 
   @media (max-width: 1025px) {

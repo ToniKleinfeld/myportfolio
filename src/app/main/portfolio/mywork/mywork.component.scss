@@ -1,4 +1,4 @@
-@use "../shared/mixin.scss" as main;
+@use "../../../shared/mixin.scss" as main;
 section {
   @include main.center($x: 25px);
 

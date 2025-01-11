@@ -1,4 +1,4 @@
-@use "../shared/mixin.scss" as main;
+@use "../../../shared/mixin.scss" as main;
 section {
   width: 80vw;
   max-width: 1608px;
@@ -8,7 +8,7 @@ section {
   padding: 0 10% 15% 0;
   flex-direction: column;
   font-weight: 700;
-  background-image: url(../../assets/img/heroimg.png);
+  background-image: url(../../../../assets/img/heroimg.png);
   background-repeat: no-repeat;
   background-position: bottom left;
   background-size: 80vh;

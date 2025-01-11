@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
-import { IconsComponent } from "../../shared/components/header/nav/iconssection/icons/icons.component";
+import { IconsComponent } from "../../../shared/components/header/nav/iconssection/icons/icons.component";
 
 @Component({
   selector: 'app-contactme',

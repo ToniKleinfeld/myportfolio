@@ -1,4 +1,4 @@
-@use "../shared/mixin.scss" as main;
+@use "../../../shared/mixin.scss" as main;
 
 section {
   @include main.center($jc: flex-start);
@@ -49,7 +49,7 @@ section {
     }
 
     a::before {
-      content: url(../../assets/img/iconmail.svg);
+      content: url(../../../../assets/img/iconmail.svg);
       margin-right: 8px;
       vertical-align: middle;
     }
