@@ -5,12 +5,13 @@ import { SkillsetComponent } from './skillset/skillset.component';
 import { MyworkComponent } from './mywork/mywork.component';
 import { ReferencesComponent } from './references/references.component';
 import { ContactmeComponent } from './contactme/contactme.component';
+import { ScrollAnimationDirective } from '../../directives/scroll-animation.directive';
 
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [ContactmeComponent,ReferencesComponent,MyworkComponent,SkillsetComponent,WhymeComponent,BigPicGreetComponent],
+  imports: [ContactmeComponent,ReferencesComponent,MyworkComponent,SkillsetComponent,WhymeComponent,BigPicGreetComponent,ScrollAnimationDirective],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })

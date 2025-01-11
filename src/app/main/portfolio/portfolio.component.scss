@@ -3,6 +3,7 @@
 .portfolio-wrapper {
   height: 100vh;
   @include main.center($jc: flex-start);
+  overflow: hidden;
 
   background-image: radial-gradient(
       closest-corner circle at 60% 50%,
@@ -85,5 +86,45 @@
         main.$backgroundcolor2 35%,
         main.$backgroundcolor1 45%
       );
+  }
+}
+
+.scroll-animate {
+  opacity: 0;
+  transition: all 1.5s ease-out;
+  will-change: transform, opacity;
+  
+  &.from-top {
+    transform: translateY(-50px);
+  }
+  
+  &.from-bottom {
+    transform: translateY(50px);
+  }
+  
+  &.visible {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@media (max-width: 1025px){
+  .scroll-animate {
+    opacity: 0;
+    transition: all 1.5s ease-out;
+    will-change: transform, opacity;
+    
+    &.from-top {
+      transform: translateX(-200px);
+    }
+    
+    &.from-bottom {
+      transform: translateX(200px);
+    }
+
+    &.visible {
+      opacity: 1;
+      transform: translateX(0px);
+    }
   }
 }
