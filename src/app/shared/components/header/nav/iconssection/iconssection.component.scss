@@ -6,6 +6,7 @@
   right: 110px;
   width: auto;
   @include main.center($x: 40px);
+  z-index: 99;
 
   .setLanguage {
     @include main.center();
