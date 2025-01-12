@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { ScrollAnimationDirective } from '../../../directives/scroll-animation.directive';
 
 @Component({
   selector: 'app-mywork',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, ScrollAnimationDirective],
   templateUrl: './mywork.component.html',
   styleUrls: ['./mywork.component.scss', './mywork.mobile.component.scss'],
 })

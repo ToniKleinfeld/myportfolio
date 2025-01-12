@@ -4,7 +4,7 @@
     </h2>
 
     <div class="project-wrapper onGoing " *ngFor="let project of projectsArray,let i = index"
-        [class.onGoing]="project.name == 'Ongoing'" [class.smallPreview]="project.toggle == false">
+        [class.onGoing]="project.name == 'Ongoing'" [class.smallPreview]="project.toggle == false" scrollAnimation [direction]="(i % 2 === 0) ? 'top' : 'bottom'" [threshold]="0.2">
 
         @if (project.name !== 'Ongoing') {
         <div class="project ">
