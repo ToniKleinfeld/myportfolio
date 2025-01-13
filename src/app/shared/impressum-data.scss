@@ -1,24 +1,6 @@
 @use "./mixin.scss" as main;
 
 section {
-  h1 {
-    font-size: 70px;
-  }
-
-  p,
-  span,
-  a {
-    font-size: 18;
-  }
-
-  .wrapper {
-    padding: 40px;
-    border: 2px solid main.$main-color1;
-    background-color: main.$backgroundcoloropacity;
-    border-radius: 20px;
-    overflow-y: auto;
-  }
-
   @include main.center();
   height: 100%;
   width: calc(100vw - 272px);
@@ -28,6 +10,46 @@ section {
     main.$backgroundcolor2 50%,
     main.$backgroundcolor1 70%
   );
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h4{
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  h5{
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  p,
+  span,
+  a, .content {
+    font-size: 16px;
+    white-space: wrap;
+  }
+
+  .wrapper {
+    padding: 40px;
+    border: 2px solid main.$main-color1;
+    background-color: main.$backgroundcoloropacity;
+    border-radius: 20px;
+    overflow-y: auto;
+    max-width: 80%;
+    height: 80%;
+
+    .content{      
+      width: 100%;
+      ul{
+        li{
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
 
   @media (max-width: 1025px) {
     padding: 40px 0;

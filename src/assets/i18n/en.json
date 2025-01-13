@@ -49,14 +49,14 @@
     "project": "Project Join",
     "buddy": "Coding buddy"
   },
-  "contact":{
-    "header":"Contact me",
+  "contact": {
+    "header": "Contact me",
     "inputName": "Your name",
     "inputMail": "Your e-mail",
     "inputText": "Your message",
-    "readpolicity1":"I've read the",
-    "readpolicity2":"privacy policy",
-    "readpolicity3":"and agree to the processing of my data as outlined.",
+    "readpolicity1": "I've read the",
+    "readpolicity2": "privacy policy",
+    "readpolicity3": "and agree to the processing of my data as outlined.",
     "button": "Send",
     "subheader": "Let us work together.",
     "letsWorkTogetherText": "Whether your project involves developing a new application , upgrading existing systems, or implementing robust cybersecurity measures, I Have the technical acumen and problem-solving skills to ensure successful outcomes.",
@@ -64,21 +64,62 @@
     "insertMail": "Please fill a mail adress. example: max@aol.com",
     "insertMessage": "Please send me some Words , not a empty mail."
   },
-  "tooltips":{
-    "arrowNext":"Jump to next section.",
-    "arrowBack":"Jump back to start.",
-    "sendMail":"Send me mail with system mail program.",
-    "visitGitHub":"Visit my GitHub site.",
-    "visitlinkIn":"Visit my LinkIn.",
+  "tooltips": {
+    "arrowNext": "Jump to next section.",
+    "arrowBack": "Jump back to start.",
+    "sendMail": "Send me mail with system mail program.",
+    "visitGitHub": "Visit my GitHub site.",
+    "visitlinkIn": "Visit my LinkIn.",
     "changeLang": "Change the language.",
     "visitGitProject": "Visit the GitHub project.",
-    "try":"Try the project.",
-    "contact":"Jump to contact formular."
+    "try": "Try the project.",
+    "contact": "Jump to contact formular."
   },
-  "impres":{
-    "country":"Germany",
-    "phone":"Telephone: Contact me via mail if you want call me.",
-    "create":"I myself am responsible for the content.",
-    "private":"This is a private website that is operated exclusively for non-commercial purposes."
+  "impres": {
+    "country": "Germany",
+    "phone": "Telephone: Contact me via mail if you want call me.",
+    "create": "I myself am responsible for the content.",
+    "private": "This is a private website that is operated exclusively for non-commercial purposes."
+  },
+  "privacy": {
+    "owner": "Responsible person",
+    "purpose":{
+      "header":"Purpose of data processing",
+      "content":"The data entered in the contact form (name, e-mail, message) will only be used to process your enquiry." 
+    },
+    "legalhead":{
+      "header": "Legal basis for the processing of data",
+      "content": "Processing is generally carried out on the basis of Art. 6 para. 1 lit. b DSGVO (fulfilment of contract) or Art. 6 para. 1 lit. f DSGVO (legitimate interest)."
+    },
+    "storage":{
+      "header":"Storage duration",
+      "content": "The data collected will be deleted as soon as it is no longer required for the original purpose."
+    },
+    "thirdparty":{
+      "header": "Transfer of data to third parties",
+      "part1":"The data processed via this website is forwarded to my hosting service provider Strato AG, as this website is hosted on their servers. In addition, I use the e-mail hosting services of Strato AG to receive and manage the messages you send via the contact form or by e-mail.",
+      "part2":"Strato AG is a company based in Germany and is subject to the provisions of the General Data Protection Regulation (DSGVO). Strato AG processes your personal data exclusively within the framework of an order processing contract in accordance with Art. 28 DSGVO, which I have concluded with Strato.",
+      "part3":"Further information on data processing by Strato can be found in Strato's privacy policy:",
+      "part4":"Your data will not be passed on to third parties beyond this unless I are legally obliged to do so or you have expressly consented to this."
+    },
+    "userrights":{
+      "header":"Rights of the users",
+      "point1":"Information about stored data (Art. 15 DSGVO)",
+      "point2":"Correction of incorrect data (Art. 16 DSGVO)",
+      "point3":"Deletion of the data (Art. 17 DSGVO)",
+      "point4":"Restriction of processing (Art. 18 DSGVO)",
+      "point5":"Data portability (Art. 20 DSGVO)",
+      "point6":"Objection to the processing (Art. 21 DSGVO)"
+    },
+    "contactoption":"Contact option for data protection requests",
+    "external":{
+      "header":"Links to external services and websites",
+      "part1": "This website contains links to external services and websites. When you click on these links, you will be redirected to the website of the respective provider. Please note that these external websites have their own data protection regulations, over which I have no influence.",
+      "subhead": "The external services to which I link are",
+      "li1":"GitHub is a platform for the development and management of software projects. Provider: GitHub, Inc, 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA. Further information can be found in GitHub's privacy policy:",
+      "li2":"LinkedIn is a social network that provides professional contacts and content. Provider: LinkedIn Corporation, 1000 W. Maude Avenue, Sunnyvale, CA 94085, USA (for users outside the EU: LinkedIn Ireland Unlimited Company, Wilton Plaza, Wilton Place, Dublin 2, Ireland). Further information can be found in LinkedIn's privacy policy:",
+      "li3":"I use Strato both as a hosting service provider and for my e-mail service. Further information can be found in Strato's privacy policy:",
+      "part2":"Please note that by clicking on external links, personal data (e.g. your IP address) may be transmitted to the respective platform."
+    }   
   }
 }

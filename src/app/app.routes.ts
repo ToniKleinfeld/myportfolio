@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { MainComponent } from './main/main.component';
 import { PortfolioComponent } from './main/portfolio/portfolio.component';
 import { ImpressumComponent } from './main/impressum/impressum.component';
+import { DatenschutzComponent } from './main/datenschutz/datenschutz.component';
 
 export const routes: Routes = [
     {
@@ -12,12 +13,12 @@ export const routes: Routes = [
           path: 'port',
           component: PortfolioComponent
         },
-        // {
-        //   path: 'datenschutz',
-        //   component: DatenschutzComponent
-        // },
         {
           path: '',
+          component: DatenschutzComponent
+        },
+        {
+          path: 'impressum',
           component: ImpressumComponent
         }
       ]
