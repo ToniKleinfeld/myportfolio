@@ -10,11 +10,11 @@ export const routes: Routes = [
       component: MainComponent,
       children: [
         {
-          path: 'port',
+          path: '',
           component: PortfolioComponent
         },
         {
-          path: '',
+          path: 'privacy',
           component: DatenschutzComponent
         },
         {
