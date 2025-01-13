@@ -74,5 +74,11 @@
     "visitGitProject": "Visit the GitHub project.",
     "try":"Try the project.",
     "contact":"Jump to contact formular."
+  },
+  "impres":{
+    "country":"Germany",
+    "phone":"Telephone: Contact me via mail if you want call me.",
+    "create":"I myself am responsible for the content.",
+    "private":"This is a private website that is operated exclusively for non-commercial purposes."
   }
 }

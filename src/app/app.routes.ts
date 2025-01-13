@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { MainComponent } from './main/main.component';
 import { PortfolioComponent } from './main/portfolio/portfolio.component';
+import { ImpressumComponent } from './main/impressum/impressum.component';
 
 export const routes: Routes = [
     {
@@ -8,17 +9,17 @@ export const routes: Routes = [
       component: MainComponent,
       children: [
         {
-          path: '',
+          path: 'port',
           component: PortfolioComponent
         },
         // {
         //   path: 'datenschutz',
         //   component: DatenschutzComponent
         // },
-        // {
-        //   path: 'impressum',
-        //   component: ImpressumComponent
-        // }
+        {
+          path: '',
+          component: ImpressumComponent
+        }
       ]
     }
   ];
