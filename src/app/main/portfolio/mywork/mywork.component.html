@@ -15,15 +15,15 @@
 
             <ul>
                 <li>{{'mywork.about'| translate}}</li>
-                <p>{{ project.about! | translate}}</p>
+                <p>{{ 'mywork.'+project.key!+'.about' | translate}}</p>
                 <li>{{'mywork.usedtechnick'| translate}}</li>
                 <p>{{ project.skills}}</p>
                 <li>{{'mywork.learned'| translate}}</li>
-                <p>{{ project.learned! | translate}}</p>
+                <p>{{ 'mywork.'+project.key!+'.learned' | translate}}</p>
             </ul>
 
             <div class="image-button-container">
-                <img src="./assets/img/{{project.img}}.png" alt="image ob a Webapplication">
+                <img src="./assets/img/{{project.key}}.png" alt="image ob a Webapplication">
 
                 <div class="buttons">
 

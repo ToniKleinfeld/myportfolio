@@ -14,40 +14,32 @@ export class MyworkComponent {
   projectsArray = [
     {
       name: 'Join',
-      about: 'mywork.joinabout',
       skills: 'JavaScript, Firebase, CSS, HTML, Scrum',
-      learned: 'mywork.joinlearned',
-      img: 'Join',
+      key: 'Join',
       toggle: false,
       href: "https://toni-kleinfeld.de/join/index.html",
       hrefGit:"https://github.com/ToniKleinfeld/Join"
     },
     {
       name: 'Little Sharky',
-      about: 'mywork.sharkyabout',
       skills: 'JavaScript, CSS, HTML',
-      learned: 'mywork.sharkylearned',
-      img: 'Sharky',
+      key: 'Sharky',
       toggle: false,
       href: "https://toni-kleinfeld.de/sharky/index.html",
       hrefGit:"https://github.com/ToniKleinfeld/Little-Sharky"
     },
     {
       name: 'Ring of Fire',
-      about: 'mywork.fireabout',
       skills: 'Angular, TypeScript, Firebase, SCSS, HTML',
-      learned: 'mywork.firelearned',
-      img: 'Ringoffire',
+      key: 'Ringoffire',
       toggle: false,
       href: "https://toni-kleinfeld.com/",
       hrefGit:"https://github.com/ToniKleinfeld/ring-of-fire"
     },    
     {
       name: 'Pokedex',
-      about: 'mywork.pokeabout',
       skills: 'JavaScript, Rest-Api, CSS, HTML',
-      learned: 'mywork.pokelearned',
-      img: 'Pokedex',
+      key: 'Pokedex',
       toggle: false,
       href: "https://toni-kleinfeld.de/pokedex/index.html",
       hrefGit:"https://github.com/ToniKleinfeld/Pokedex"
