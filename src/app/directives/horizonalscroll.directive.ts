@@ -13,10 +13,10 @@ export class HorizonalscrollDirective {
 
   @HostListener('wheel', ['$event'])
   onWheel(event: WheelEvent) {
-    if (window.innerWidth > 1025) {
-      event.preventDefault();
+    if (window.innerWidth > 1025) {      
       const timeStamp = Date.now();
       if (timeStamp - this.lastScrolltime > this.scrolltimeout) {
+        event.preventDefault();
         this.lastScrolltime = timeStamp;
 
         const scrollLeft = event.deltaY * this.scrollFactor;
