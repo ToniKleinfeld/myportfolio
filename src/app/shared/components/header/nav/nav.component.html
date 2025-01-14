@@ -5,10 +5,10 @@
     </div> 
 
     <div class="navmenu">
-        <a href="#contactMe">{{'header.contact' | translate}}</a>
-        <a href="#myWork">{{'header.mywork' | translate}}</a>
-        <a href="#mySkills">{{'header.skills' | translate}}</a>
-        <a href="#whyMe">{{'header.whyme' | translate}}</a>
+        <a (click)="navigateToSection('contactMe')">{{'header.contact' | translate}}</a>
+        <a (click)="navigateToSection('myWork')">{{'header.mywork' | translate}}</a>
+        <a (click)="navigateToSection('mySkills')">{{'header.skills' | translate}}</a>
+        <a (click)="navigateToSection('whyMe')">{{'header.whyme' | translate}}</a>
     </div>
 
     <app-iconssection></app-iconssection>

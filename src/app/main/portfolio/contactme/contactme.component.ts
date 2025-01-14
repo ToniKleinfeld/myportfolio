@@ -4,11 +4,12 @@ import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { IconsComponent } from "../../../shared/components/header/nav/iconssection/icons/icons.component";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contactme',
   standalone: true,
-  imports: [TranslateModule, FormsModule, CommonModule, IconsComponent],
+  imports: [TranslateModule, FormsModule, CommonModule, IconsComponent, RouterLink],
   templateUrl: './contactme.component.html',
   styleUrls: ['./contactme.component.scss','./contactme.form.component.scss','./contactme.mobile.component.scss']
 })
@@ -26,7 +27,7 @@ export class ContactmeComponent {
   mailTest = true;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://toni-kleinfeld.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
