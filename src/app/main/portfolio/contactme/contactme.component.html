@@ -10,18 +10,18 @@
 
                 <input type="text" id="nameInput" class="inputfield" [(ngModel)]="formData.name" name="name" required
                     #name="ngModel" autocomplete="off" minlength="3" [class.noValid]="!name.valid && name.touched"
-                    [placeholder]="(!name.valid && name.touched) ? ('contact.insertName' | translate) : ('contact.inputName' | translate)">
+                    [placeholder]="(!name.valid && name.touched) ? ('contact.input.name.wrong' | translate) : ('contact.input.name.default' | translate)">
 
                 <input type="email" minlength="3" id="mailInput" class="inputfield" [(ngModel)]="formData.email"
                     name="email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" #mail="ngModel"
                     autocomplete="off" [class.noValid]="!mail.valid && mail.touched && name.valid"
-                    [placeholder]="(!mail.valid && mail.touched && name.valid) ? ('contact.insertMail' | translate) : ('contact.inputMail' | translate)">
+                    [placeholder]="(!mail.valid && mail.touched && name.valid) ? ('contact.input.mail.wrong' | translate) : ('contact.input.mail.default' | translate)">
 
 
                 <textarea minlength="3" name="textarea" id="textInput" class="inputfield" [(ngModel)]="formData.message"
                     name="message" required #message="ngModel"
                     [class.noValid]="!message.valid && message.touched && name.valid && mail.valid"
-                    [placeholder]="(!message.valid && message.touched && name.valid && mail.valid) ? ('contact.insertMessage' | translate) : ('contact.inputText' | translate)"></textarea>
+                    [placeholder]="(!message.valid && message.touched && name.valid && mail.valid) ? ('contact.input.message.wrong' | translate) : ('contact.input.message.default' | translate)"></textarea>
 
                 <div class="checkbox-wrapper">
                     <input type="checkbox" name="readPolicity" id="readPolicity" [(ngModel)]="formData.terms" required
@@ -63,8 +63,8 @@
                             }
 
                         </span>
-                        {{'contact.readpolicity1' | translate}} <a href="#">{{'contact.readpolicity2' | translate}} </a>
-                        {{'contact.readpolicity3' | translate}}</label>
+                        {{'contact.input.readpolicity.1' | translate}} <a routerLink="/privacy">{{'footer.privacy' | translate}} </a>
+                        {{'contact.input.readpolicity.2' | translate}}</label>
                 </div>
 
                 @if (name.valid && mail.valid && message.valid && formData.terms) {

@@ -4,7 +4,7 @@
     "mywork": "My Work",
     "skills": "Skills",
     "whyme": "Why Me",
-    "job":"Frontend Developer"
+    "job": "Frontend Developer"
   },
   "whyme": {
     "header": "Why Me",
@@ -60,18 +60,27 @@
   },
   "contact": {
     "header": "Contact me",
-    "inputName": "Your name",
-    "inputMail": "Your e-mail",
-    "inputText": "Your message",
-    "readpolicity1": "I've read the",
-    "readpolicity2": "privacy policy",
-    "readpolicity3": "and agree to the processing of my data as outlined.",
+    "input": {
+      "name": {
+        "default": "Your name",
+        "wrong": "Please enter your Name."
+      },
+      "mail": {
+        "default": "Your e-mail",
+        "wrong": "Please fill a mail adress. example: max@aol.com"
+      },
+      "message": {
+        "default": "Your message",
+        "wrong": "Please send me some Words , not a empty mail."
+      },
+      "readpolicity": {
+        "1": "I've read the",
+        "2": "and agree to the processing of my data as outlined."
+      }
+    },
     "button": "Send",
     "subheader": "Let us work together.",
-    "letsWorkTogetherText": "Whether your project involves developing a new application , upgrading existing systems, or implementing robust cybersecurity measures, I Have the technical acumen and problem-solving skills to ensure successful outcomes.",
-    "insertName": "Please enter your Name.",
-    "insertMail": "Please fill a mail adress. example: max@aol.com",
-    "insertMessage": "Please send me some Words , not a empty mail."
+    "letsWorkTogetherText": "Whether your project involves developing a new application , upgrading existing systems, or implementing robust cybersecurity measures, I Have the technical acumen and problem-solving skills to ensure successful outcomes."
   },
   "tooltips": {
     "arrowNext": "Jump to next section.",
