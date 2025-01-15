@@ -108,3 +108,10 @@ section {
     }
   }
 }
+
+.wrapper::-webkit-scrollbar-track{
+  margin: 5px;
+}
+.wrapper::-webkit-scrollbar {
+  background-color: transparent;
+}
