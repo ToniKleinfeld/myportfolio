@@ -3,7 +3,8 @@
     "contact": "Contact",
     "mywork": "My Work",
     "skills": "Skills",
-    "whyme": "Why Me"
+    "whyme": "Why Me",
+    "job":"Frontend Developer"
   },
   "whyme": {
     "header": "Why Me",

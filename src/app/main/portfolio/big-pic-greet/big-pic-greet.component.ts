@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component,OnInit } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-big-pic-greet',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,TranslateModule],
   templateUrl: './big-pic-greet.component.html',
   styleUrl: './big-pic-greet.component.scss'
 })
