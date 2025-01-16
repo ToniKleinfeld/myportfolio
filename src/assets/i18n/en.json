@@ -79,7 +79,8 @@
     },
     "button": "Send",
     "subheader": "Let us work together.",
-    "letsWorkTogetherText": "Whether your project involves developing a new application, updating existing systems or migrating to a new framework, I have the technical expertise to make it a success."
+    "letsWorkTogetherText": "Whether your project involves developing a new application, updating existing systems or migrating to a new framework, I have the technical expertise to make it a success.",
+    "sendmail":"Thank's for your message."
   },
   "tooltips": {
     "start":"Start exploring.",

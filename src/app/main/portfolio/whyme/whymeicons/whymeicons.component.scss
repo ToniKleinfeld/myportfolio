@@ -22,12 +22,14 @@
   .iconlocation {
     .img {
       animation: locationBg 3s infinite;
+      -webkit-animation:locationBg 3s infinite;
     }
   }
 
   .iconremote {
     .img {
       animation: remoteBg 2s infinite;
+      -webkit-animation:remoteBg 2s infinite;
     }
   }
 }

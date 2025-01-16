@@ -78,7 +78,8 @@
     },
     "button": "Senden",
     "subheader": "Lassen Sie uns zusammenarbeiten.",
-    "letsWorkTogetherText": "Ob Ihr Projekt die Entwicklung einer neuen Anwendung, die Aktualisierung bestehender Systeme oder umstieg auf ein neues Framework umfasst, ich habe die technische Kompetenz, um dieses Erfolgreich um zusetzten."
+    "letsWorkTogetherText": "Ob Ihr Projekt die Entwicklung einer neuen Anwendung, die Aktualisierung bestehender Systeme oder umstieg auf ein neues Framework umfasst, ich habe die technische Kompetenz, um dieses Erfolgreich um zusetzten.",
+    "sendmail":"Danke für ihre Nachricht."
   },
   "tooltips": {
     "start":"Starte die Erkundung.",

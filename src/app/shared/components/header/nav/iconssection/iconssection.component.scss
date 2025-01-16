@@ -30,10 +30,12 @@
 
     .moveleft {
       animation: moveleft 0.3s linear;
+      -webkit-animation: moveleft 0.3s linear;;
     }
 
     .moveright {
       animation: moveright 0.3s linear;
+      -webkit-animation: moveright 0.3s linear;
     }
 
     :hover {

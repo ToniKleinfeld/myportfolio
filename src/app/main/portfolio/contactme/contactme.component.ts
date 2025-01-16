@@ -5,6 +5,7 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { IconsComponent } from "../../../shared/components/header/nav/iconssection/icons/icons.component";
 import { RouterLink } from '@angular/router';
+import { ScrolltoService } from '../../../service/scrollto.service';
 
 @Component({
   selector: 'app-contactme',
@@ -14,6 +15,8 @@ import { RouterLink } from '@angular/router';
   styleUrls: ['./contactme.component.scss','./contactme.form.component.scss','./contactme.mobile.component.scss']
 })
 export class ContactmeComponent {
+      constructor(private scrollService: ScrolltoService){      
+      }
 
   http = inject(HttpClient);
 
@@ -24,7 +27,7 @@ export class ContactmeComponent {
     terms : false
   }
 
-  mailTest = false;
+  mailTest:boolean = false;
 
   post = {
     endPoint: 'https://toni-kleinfeld.de/sendMail.php',
@@ -48,10 +51,10 @@ export class ContactmeComponent {
           error: (error:any) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => this.scrollService.sendMailMessage(),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
+      this.scrollService.sendMailMessage();
       ngForm.resetForm();
     }
   }

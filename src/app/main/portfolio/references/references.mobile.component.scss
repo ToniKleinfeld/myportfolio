@@ -67,10 +67,12 @@
       background-color: main.$main-color1;
       width: 30px;
       animation: fillBg 0.5s;
+      -webkit-animation:fillBg 0.5s;
     }
     .emptyDot{
       background-color: transparent;
       animation: emptyBg 0.5s;
+      -webkit-animation:emptyBg 0.5s;
     }
   }
 
