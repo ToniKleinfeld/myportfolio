@@ -42,7 +42,7 @@ export class ContactmeComponent {
       this.http.post(this.post.endPoint, this.post.body(this.formData))
         .subscribe({
           next: (response:any) => {
-
+            
             ngForm.resetForm();
           },
           error: (error:any) => {

@@ -6,6 +6,10 @@
     "whyme": "Why Me",
     "job": "Frontend Developer"
   },
+  "footer": {
+    "imprint": "Imprint",
+    "privacy": "Privacy policy"
+  },
   "whyme": {
     "header": "Why Me",
     "secondaryheader": "I am",
@@ -13,10 +17,6 @@
     "descripeme": "I am motivated to continuously learn new technologies and develop myself. My ability to solve complex problems and my passion for programming make me a valuable member of your team.",
     "button": "Contact me",
     "remote": "open to remote work"
-  },
-  "footer": {
-    "imprint": "Imprint",
-    "privacy": "Privacy policy"
   },
   "myskills": {
     "header": "My Skill Set",
@@ -95,7 +95,7 @@
   },
   "impres": {
     "country": "Germany",
-    "phone": "Telephone: Contact me via mail if you want call me.",
+    "phone": "Telephone: Contact me first via mail if you want call me.",
     "create": "I myself am responsible for the content.",
     "private": "This is a private website that is operated exclusively for non-commercial purposes."
   },

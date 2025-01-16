@@ -55,5 +55,87 @@
     "thirdcomment": "Toni ist freundlich, hilfsbereit und hat das Team während des Projekts hervorragend unterstützt. Er hatte stets eine Lösung parat und zeichnete sich durch seine Zielstrebigkeit aus, wenn es darum ging, Projekte schnell und effizient abzuschließen. Ohne seinen Einsatz hätten wir deutlich länger für die Fertigstellung des Projekts gebraucht.",
     "project": "Projekt Join",
     "buddy": "Programmier Kumpel"
+  },
+  "contact": {
+    "header": "Kontaktieren Sie mich",
+    "input": {
+      "name": {
+        "default": "Ihr Name",
+        "wrong": "Bitte geben Sie Ihren Namen ein."
+      },
+      "mail": {
+        "default": "Ihre E-Mail",
+        "wrong": "Bitte geben Sie eine E-Mail-Adresse an. Beispiel: max@aol.com"
+      },
+      "message": {
+        "default": "Ihre Nachricht",
+        "wrong": "Bitte senden Sie mir einige Worte, keine leere Nachricht."
+      },
+      "readpolicity": {
+        "1": "Ich habe die",
+        "2": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu."
+      }
+    },
+    "button": "Senden",
+    "subheader": "Lassen Sie uns zusammenarbeiten.",
+    "letsWorkTogetherText": "Ob Ihr Projekt die Entwicklung einer neuen Anwendung, die Aktualisierung bestehender Systeme oder die Implementierung robuster Cybersicherheitsmaßnahmen umfasst, ich habe die technische Kompetenz und die Problemlösungsfähigkeiten, um erfolgreiche Ergebnisse zu gewährleisten."
+  },
+  "tooltips": {
+    "arrowNext": "Springe zum nächsten Abschnitt.",
+    "arrowBack": "Zurück zum Anfang springen.",
+    "sendMail": "Senden Sie mir eine E-Mail mit dem Standard Mailprogramm.",
+    "visitGitHub": "Besuchen Sie meine GitHub Seite.",
+    "visitlinkIn": "Besuchen Sie mein LinkedIn Profil.",
+    "changeLang": "Ändern Sie die Sprache.",
+    "visitGitProject": "Besuchen Sie das GitHub Projekt.",
+    "try": "Probieren Sie das Projekt aus.",
+    "contact": "Zum Kontaktformular springen."
+  },
+  "impres": {
+    "country": "Deutschland",
+    "phone": "Telefon: Kontaktieren Sie mich erst per E-Mail, wenn Sie mich anrufen möchten.",
+    "create": "Ich selbst bin für den Inhalt verantwortlich.",
+    "private": "Dies ist eine private Website, die ausschließlich zu nicht kommerziellen Zwecken betrieben wird."
+  },
+  "privacy": {
+    "owner": "Verantwortliche Person",
+    "purpose": {
+      "header": "Zweck der Datenverarbeitung",
+      "content": "Die im Kontaktformular eingegebenen Daten (Name, E-Mail, Nachricht) werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet."
+    },
+    "legalhead": {
+      "header": "Rechtsgrundlage für die Datenverarbeitung",
+      "content": "Die Verarbeitung erfolgt grundsätzlich auf der Grundlage von Art. 6 Abs. 1 lit. b DSGVO (Erfüllung eines Vertrags) oder Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse)."
+    },
+    "storage": {
+      "header": "Speicherdauer",
+      "content": "Die erhobenen Daten werden gelöscht, sobald sie für den ursprünglichen Zweck nicht mehr benötigt werden."
+    },
+    "thirdparty": {
+      "header": "Weitergabe von Daten an Dritte",
+      "part1": "Die über diese Website verarbeiteten Daten werden an meinen Hosting-Dienstleister Strato AG weitergeleitet, da diese Website auf deren Servern gehostet wird. Außerdem nutze ich die E-Mail-Hosting-Dienste der Strato AG, um die Nachrichten zu empfangen und zu verwalten, die Sie über das Kontaktformular oder per E-Mail senden.",
+      "part2": "Die Strato AG ist ein in Deutschland ansässiges Unternehmen und unterliegt den Bestimmungen der Datenschutz-Grundverordnung (DSGVO). Die Strato AG verarbeitet Ihre personenbezogenen Daten ausschließlich im Rahmen eines Auftragsverarbeitungsvertrags gemäß Art. 28 DSGVO, den ich mit Strato abgeschlossen habe.",
+      "part3": "Weitere Informationen zur Datenverarbeitung durch Strato finden Sie in der Datenschutzerklärung von Strato:",
+      "part4": "Ihre Daten werden darüber hinaus nicht an Dritte weitergegeben, es sei denn, ich bin gesetzlich dazu verpflichtet oder Sie haben ausdrücklich zugestimmt."
+    },
+    "userrights": {
+      "header": "Rechte der Nutzer",
+      "point1": "Auskunft über gespeicherte Daten (Art. 15 DSGVO)",
+      "point2": "Berichtigung falscher Daten (Art. 16 DSGVO)",
+      "point3": "Löschung der Daten (Art. 17 DSGVO)",
+      "point4": "Einschränkung der Verarbeitung (Art. 18 DSGVO)",
+      "point5": "Datenübertragbarkeit (Art. 20 DSGVO)",
+      "point6": "Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)"
+    },
+    "contactoption": "Kontaktmöglichkeit für Datenschutzanfragen",
+    "external": {
+      "header": "Links zu externen Diensten und Websites",
+      "part1": "Diese Website enthält Links zu externen Diensten und Websites. Wenn Sie auf diese Links klicken, werden Sie auf die Website des jeweiligen Anbieters weitergeleitet. Bitte beachten Sie, dass diese externen Websites eigene Datenschutzbestimmungen haben, auf die ich keinen Einfluss habe.",
+      "subhead": "Die externen Dienste, zu denen ich verlinke, sind",
+      "li1": "GitHub ist eine Plattform für die Entwicklung und Verwaltung von Softwareprojekten. Anbieter: GitHub, Inc, 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA. Weitere Informationen finden Sie in der Datenschutzerklärung von GitHub:",
+      "li2": "LinkedIn ist ein soziales Netzwerk, das professionelle Kontakte und Inhalte bereitstellt. Anbieter: LinkedIn Corporation, 1000 W. Maude Avenue, Sunnyvale, CA 94085, USA (für Nutzer außerhalb der EU: LinkedIn Ireland Unlimited Company, Wilton Plaza, Wilton Place, Dublin 2, Irland). Weitere Informationen finden Sie in der Datenschutzerklärung von LinkedIn:",
+      "li3": "Ich nutze Strato sowohl als Hosting-Dienstleister als auch für meinen E-Mail-Service. Weitere Informationen finden Sie in der Datenschutzerklärung von Strato:",
+      "part2": "Bitte beachten Sie, dass beim Klicken auf externe Links persönliche Daten (z. B. Ihre IP-Adresse) an die jeweilige Plattform übermittelt werden können."
+    }
   }
 }
