@@ -1,7 +1,7 @@
 {
   "header": {
     "contact": "Contact",
-    "mywork": "My Work",
+    "mywork": "My Projects",
     "skills": "Skills",
     "whyme": "Why Me",
     "job": "Frontend Developer"
@@ -14,7 +14,7 @@
     "header": "Why Me",
     "secondaryheader": "I am",
     "location": "located in ",
-    "descripeme": "I am motivated to continuously learn new technologies and develop myself. My ability to solve complex problems and my passion for programming make me a valuable member of your team.",
+    "descripeme": "I am a patient and persistent front-end developer. With my detail-orientation and willingness to learn, I always work to develop clean and well thought-out solutions. I see new technologies and challenges as an opportunity to develop myself further and create added value, both for projects and for my team.",
     "button": "Contact me",
     "remote": "open to remote work"
   },
@@ -24,26 +24,25 @@
     "challange": "I am always happy to learn new technologies, just tell me what you need."
   },
   "mywork": {
-    "header": "My Work",
     "subhead": "Project ",
     "about": "About the project",
     "usedtechnick": "Technologies I have used",
     "learned": "What i have learned",
     "Join": {
-      "learned": "sed senectus felis ac mauris. Dui eget dictum.Lorem ipsum dolor sit amet consectetur. Posuere pretium arcu sed senectus felis ac mauris.",
+      "learned": "The first steps in Angular, how can I manipulate dom and how do I get my own database from Firebase Synchron , so that you can play a common game over the Internet.",
       "about": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
     },
     "Ringoffire": {
-      "learned": "What i have learned",
-      "about": ""
+      "learned": "The first steps in Angular, how can I manipulate dom and how do I get my own database from Firebase Synchron , so that you can play a common game over the Internet.",
+      "about": "A realisation of the game Ring of Fire, connected to a Firebase database, so that it is possible to share the same data set with several players over the Internet and keep it up to date."
     },
     "Sharky": {
-      "learned": "What i have learned",
-      "about": ""
+      "learned": "Object orientated programming, creating classes and integrating them into a canvas, how do I bind and use prefabricated models and how do I keep an overview.",
+      "about": "Little Sharky is a small browser game, there are a total of two different levels, easy and hard (dark and light). You have to defeat or avoid enemies with the little shark, collect poison bottles and defeat a killer whale at the end."
     },
     "Pokedex": {
-      "learned": "What i have learned",
-      "about": ""
+      "learned": "Utilisation and orientation in an unknown API, how do I access it and where do I find the data I want to use?",
+      "about": "My own Pokedex to retrieve information about different Pokemon. You can also view more detailed data on individual Pokemon, e.g. which attacks they can learn."
     },
     "nextWork": "I am currently working with a small group on a project called ‘Münster Interessierts / Policast’. The team came together at MSHack 2024 and is currently being supported by the Solution Enabler programme. I am supporting the frontend area. The aim is to produce an audible weekly summary from the City of Münster's Council Information Network using LLM, ideally as a podcast. ",
     "btn": "Let's Talk",

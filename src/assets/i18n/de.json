@@ -13,7 +13,7 @@
   "whyme": {
     "secondaryheader": "Ich bin",
     "location": "sesshaft in ",
-    "descripeme": "I am motivated to continuously learn new technologies and develop myself. My ability to solve complex problems and my passion for programming make me a valuable member of your team.",
+    "descripeme": "Ich bin ein geduldiger und ausdauernder Frontend-Entwickler. Mit meiner Detailorientierung und Lernbereitschaft arbeite ich stets daran, saubere und durchdachte Lösungen zu entwickeln. Neue Technologien und Herausforderungen sehe ich als Chance, mich weiterzuentwickeln und Mehrwert zu schaffen, sowohl für Projekte als auch für mein Team.",
     "button": "Schreib mir",
     "remote": "offen für Remote"
   },
@@ -28,20 +28,20 @@
     "usedtechnick": "Genutze Technologie",
     "learned": "Was ich gelernt habe",
     "Join": {
-      "learned": "sed senectus felis ac mauris. Dui eget dictum.Lorem ipsum dolor sit amet consectetur. Posuere pretium arcu sed senectus felis ac mauris.",
-      "about": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+      "learned": "Umsetzung eines Projekts als gemeinsames Team , wie man verschiedene Meinungen auf einen gemeinsamen Nenner bringt und wie merged man am besten für ein gemeinsames GitHub Projekt.",
+      "about": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu."
     },
     "Ringoffire": {
-      "learned": "What i have learned",
-      "about": ""
+      "learned": "Die ersten Schritte in Angular, wie kann ich dom manipulieren und wie bekomme ich eine eigen Datenbank von Firebase Synchron , so dass man ein gemeinsames Spiel über das Internet spielen kann.",
+      "about": "Eine Umsetzung des Spieles Ring of Fire, angebunden an eine Firebase Datenbank , so das es möglich ist , mit mehreren Spielern über das Internet den selben Datensatz zu teilen und aktuell zu halten."
     },
     "Sharky": {
-      "learned": "What i have learned",
-      "about": ""
+      "learned": "Object Orientiertes Programmieren , Classen Erstellung und Einbindung in einen Canvas , wie binde und nutze ich vorgefertigte Modelle und wie behalte ich den Überblick.",
+      "about": "Little Sharky ist ein kleines Browser Spiel , es gibt insgesamt zwei verschiedene level , Einfach und schwer (Dunkel und Hell). Man muss mit dem kleinen Hai Gegner besiegen oder ausweichen ,Giftflaschen einsammeln und am ende einen Killerwal besiegen"
     },
     "Pokedex": {
-      "learned": "What i have learned",
-      "about": ""
+      "learned": "Nutzung und Orientierung in einer unbekannten API , wie greife ich auf diese zu und wo finde ich die Daten , die ich nutzen möchte.",
+      "about": "Mein eigener Pokedex um Informationen von verschiedenen Pokemon abrufen zu können. Weiter sind genauere Daten von einzelnen Pokemon einsehbar , z.b welche Attacken sie lernen können."
     },
     "nextWork": "Ich arbeite derzeit mit einer kleinen Gruppe an einem Projekt namens 'Münster Interessierts / Policast'. Das Team hat sich beim MSHack 2024 zusammengefunden und wird derzeit durch das Solution Enabler Programm unterstützt. Ich unterstütze hierbei den Frontend Bereich. Ziel ist eine hörbare Wöchentliche Zusammenfassung aus dem Rats Information Netzwerkes der Stadt Münster mittelt LLM , im Idealfall als Podcast. ",
     "btn": "Schreib mir",
