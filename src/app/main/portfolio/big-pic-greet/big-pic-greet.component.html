@@ -1,6 +1,6 @@
 <section>
     <div class="arrow-anker" [ngClass]="{'typinganimation': typeAnimationh1,}" >
-        <a href="#whyMe" class="start" title="{{'tooltips.start'|translate}}" [ngClass]="{'d-none': arrow}"></a>
+        <a href="#whyMe" scrollAnimation [threshold]="0.9" class="start" title="{{'tooltips.start'|translate}}" [ngClass]="{'d-none': arrow}"></a>
         <h1>Toni Kleinfeld</h1>
     </div>
     <div [ngClass]="{'typinganimation': tpyeAnimationh3, 'd-none': hideh3}" >

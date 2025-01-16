@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component,OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { ScrollAnimationDirective } from '../../../directives/scroll-animation.directive';
 
 @Component({
   selector: 'app-big-pic-greet',
   standalone: true,
-  imports: [CommonModule,TranslateModule],
+  imports: [CommonModule,TranslateModule,ScrollAnimationDirective],
   templateUrl: './big-pic-greet.component.html',
   styleUrl: './big-pic-greet.component.scss'
 })
