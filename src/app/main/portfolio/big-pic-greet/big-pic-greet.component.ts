@@ -14,6 +14,7 @@ export class BigPicGreetComponent implements OnInit{
   typeAnimationh1:boolean = false;
   tpyeAnimationh3:boolean = false;
   hideh3:boolean = true;
+  arrow:boolean = true;
 
   ngOnInit(){
     this.playAnimation(3600);
@@ -28,6 +29,9 @@ export class BigPicGreetComponent implements OnInit{
       this.tpyeAnimationh3 = true;
       setTimeout(() => {
         this.tpyeAnimationh3 = false;
+        setTimeout(() => {
+          this.arrow = false;
+        }, 100);
       }, time);
     }, time);
   }

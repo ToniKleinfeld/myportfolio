@@ -78,9 +78,10 @@
     },
     "button": "Senden",
     "subheader": "Lassen Sie uns zusammenarbeiten.",
-    "letsWorkTogetherText": "Ob Ihr Projekt die Entwicklung einer neuen Anwendung, die Aktualisierung bestehender Systeme oder die Implementierung robuster Cybersicherheitsmaßnahmen umfasst, ich habe die technische Kompetenz und die Problemlösungsfähigkeiten, um erfolgreiche Ergebnisse zu gewährleisten."
+    "letsWorkTogetherText": "Ob Ihr Projekt die Entwicklung einer neuen Anwendung, die Aktualisierung bestehender Systeme oder umstieg auf ein neues Framework umfasst, ich habe die technische Kompetenz, um dieses Erfolgreich um zusetzten."
   },
   "tooltips": {
+    "start":"Starte die Erkundung.",
     "arrowNext": "Springe zum nächsten Abschnitt.",
     "arrowBack": "Zurück zum Anfang springen.",
     "sendMail": "Senden Sie mir eine E-Mail mit dem Standard Mailprogramm.",

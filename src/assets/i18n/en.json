@@ -80,9 +80,10 @@
     },
     "button": "Send",
     "subheader": "Let us work together.",
-    "letsWorkTogetherText": "Whether your project involves developing a new application , upgrading existing systems, or implementing robust cybersecurity measures, I Have the technical acumen and problem-solving skills to ensure successful outcomes."
+    "letsWorkTogetherText": "Whether your project involves developing a new application, updating existing systems or migrating to a new framework, I have the technical expertise to make it a success."
   },
   "tooltips": {
+    "start":"Start exploring.",
     "arrowNext": "Jump to next section.",
     "arrowBack": "Jump back to start.",
     "sendMail": "Send me mail with system mail program.",
