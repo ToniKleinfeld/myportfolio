@@ -24,7 +24,7 @@ export class ContactmeComponent {
     terms : false
   }
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
     endPoint: 'https://toni-kleinfeld.de/sendMail.php',
