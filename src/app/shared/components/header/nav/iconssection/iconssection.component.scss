@@ -47,6 +47,17 @@
       color: main.$main-color2;
       .active {
         background-color: main.$main-color2;
+        color: main.$main-color1;
+      }
+
+      .moveleft {
+        animation: moveleft2 0.3s linear;
+        -webkit-animation: moveleft2 0.3s linear;;
+      }
+
+      .moveright {
+        animation: moveright2 0.3s linear;
+        -webkit-animation: moveright2 0.3s linear;
       }
     }
   }
