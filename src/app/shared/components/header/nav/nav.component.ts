@@ -17,9 +17,10 @@ export class NavComponent {
     this.toggle = false
   }
   @Input() toggle:boolean;
-  @Output() closeMenu: EventEmitter<boolean> = new EventEmitter();  
+  @Output() closeMenu: EventEmitter<boolean> = new EventEmitter();
 
   navigateToSection(sectionId: string): void {
     this.scrollService.scrollToElement(sectionId);
+    this.closeMenu.emit(false);
   }
 }
