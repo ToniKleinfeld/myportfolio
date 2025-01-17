@@ -1,10 +1,11 @@
 import { Component, AfterViewInit, ElementRef, ViewChildren, QueryList } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { ScrollAnimationDirective } from '../../../directives/scroll-animation.directive';
 
 @Component({
   selector: 'app-references',
   standalone: true,
-  imports: [TranslateModule],
+  imports: [TranslateModule,ScrollAnimationDirective],
   templateUrl: './references.component.html',
   styleUrls: ['./references.component.scss','./references.mobile.component.scss']
 })
@@ -48,12 +49,12 @@ export class ReferencesComponent implements AfterViewInit{
     {
       name: "Patric K.",
       comment : 'references.secondcomment',
-      project : "references.project" 
+      project : "references.project"
     },
     {
       name: "Boban Jakov.",
       comment :'references.thirdcomment',
-      project : "references.project" 
+      project : "references.project"
     }
   ];
 }

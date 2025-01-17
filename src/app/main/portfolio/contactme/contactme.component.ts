@@ -6,16 +6,17 @@ import { TranslateModule } from '@ngx-translate/core';
 import { IconsComponent } from "../../../shared/components/header/nav/iconssection/icons/icons.component";
 import { RouterLink } from '@angular/router';
 import { ScrolltoService } from '../../../service/scrollto.service';
+import { ScrollAnimationDirective } from '../../../directives/scroll-animation.directive';
 
 @Component({
   selector: 'app-contactme',
   standalone: true,
-  imports: [TranslateModule, FormsModule, CommonModule, IconsComponent, RouterLink],
+  imports: [TranslateModule, FormsModule, CommonModule, IconsComponent, RouterLink,ScrollAnimationDirective],
   templateUrl: './contactme.component.html',
   styleUrls: ['./contactme.component.scss','./contactme.form.component.scss','./contactme.mobile.component.scss']
 })
 export class ContactmeComponent {
-      constructor(private scrollService: ScrolltoService){      
+      constructor(private scrollService: ScrolltoService){
       }
 
   http = inject(HttpClient);
@@ -45,7 +46,7 @@ export class ContactmeComponent {
       this.http.post(this.post.endPoint, this.post.body(this.formData))
         .subscribe({
           next: (response:any) => {
-            
+
             ngForm.resetForm();
           },
           error: (error:any) => {
