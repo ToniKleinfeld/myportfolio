@@ -12,7 +12,7 @@ section {
   }
 
   h2 {
-    @include main.h2();  
+    @include main.h2();
     align-self: flex-start;
     @include main.arrow();
   }
@@ -52,7 +52,7 @@ section {
           width: 60px;
           aspect-ratio: 1/1;
           background-repeat: no-repeat;
-          background-size: cover;
+          background-size: contain;
         }
 
         @media (max-width: 1025px) {

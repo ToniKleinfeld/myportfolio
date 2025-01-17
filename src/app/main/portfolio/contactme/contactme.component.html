@@ -24,7 +24,7 @@
                     [placeholder]="(!message.valid && message.touched && name.valid && mail.valid) ? ('contact.input.message.wrong' | translate) : ('contact.input.message.default' | translate)"></textarea>
 
                 <div class="checkbox-wrapper">
-                    <input type="checkbox" name="readPolicity" id="readPolicity" [(ngModel)]="formData.terms" required
+                    <input type="checkbox" name="readPolicity" id="readPolicity" required [(ngModel)]="formData.terms"
                         [checked]="this.formData" class="checkbox-policity">
 
                     <label for="readPolicity">
@@ -105,7 +105,7 @@
 
         </div>
     </div>
-    
+
     <div class="mobile-arrow-icons">
         <a class="arrow" href="#header"></a>
         <app-icons></app-icons>
