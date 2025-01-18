@@ -26,13 +26,11 @@ export class HeaderComponent implements OnInit, OnDestroy {
   constructor(private router: Router) {}
 
   ngOnInit() {
-    this.scrollSubscription = fromEvent(window, 'scroll')
-      .pipe()
-      .subscribe(() => {
-        if (this.toggleMenu) {
-          this.toggleMenu = false;
-        }
-      });
+    this.scrollSubscription = fromEvent(window, 'scroll').subscribe(() => {
+      if (this.toggleMenu) {
+        this.toggleMenu = false;
+      }
+    });
 
     this.routerSubscription = this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
@@ -44,11 +42,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    if (this.scrollSubscription) {
-      this.scrollSubscription.unsubscribe();
-    }
-    if (this.routerSubscription) {
-      this.routerSubscription.unsubscribe();
-    }
+    this.scrollSubscription?.unsubscribe();
+    this.routerSubscription?.unsubscribe();
   }
 }
