@@ -17,6 +17,7 @@ section {
   @include main.center($jc: flex-start, $ai: flex-start, $x: 20px);
   width: 950px;
   height: 75vh;
+  max-height: 1250px;
 }
 
 .inputLabel {

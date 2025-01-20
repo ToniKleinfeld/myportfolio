@@ -34,6 +34,10 @@
       margin-top: unset;
       align-self: unset;
     }
+
+    @media (min-height: 1250px) {
+      margin-top: 20vh;
+    }
   }
 
   app-skillset {
@@ -44,6 +48,10 @@
       margin-bottom: unset;
       align-self: unset;
     }
+
+    @media (min-height: 1250px) {
+      margin-bottom: 20vh;
+    }
   }
 
   app-references {
@@ -53,6 +61,10 @@
     @media (max-width: 1025px) {
       margin-bottom: unset;
       align-self: unset;
+    }
+
+    @media (min-height: 1250px) {
+      margin-bottom: 20vh;
     }
   }
 
