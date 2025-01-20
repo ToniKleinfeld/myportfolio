@@ -18,7 +18,7 @@
                     [placeholder]="(!mail.valid && mail.touched && name.valid) ? ('contact.input.mail.wrong' | translate) : ('contact.input.mail.default' | translate)">
 
 
-                <textarea minlength="3" name="textarea" id="textInput" class="inputfield" [(ngModel)]="formData.message"
+                <textarea minlength="4" name="textarea" id="textInput" class="inputfield" [(ngModel)]="formData.message"
                     name="message" required #message="ngModel"
                     [class.noValid]="!message.valid && message.touched && name.valid && mail.valid"
                     [placeholder]="(!message.valid && message.touched && name.valid && mail.valid) ? ('contact.input.message.wrong' | translate) : ('contact.input.message.default' | translate)"></textarea>
@@ -67,11 +67,23 @@
                         {{'contact.input.readpolicity.2' | translate}}</label>
                 </div>
 
-                @if (name.valid && mail.valid && message.valid && formData.terms) {
-                <input type="submit" value="{{'contact.button'| translate}}" class="submitbtn" enable>
-                } @else {
-                <input type="submit" value="{{'contact.button'| translate}}" class="submitbtn" disabled>
-                }
+                <div class="wrapper-button">
+                  @if (!name.valid && name.touched && name.value.length  > 0 ) {
+                    <label for="nameInput">{{'contact.input.name.label'|translate}} </label>
+                  } @else if (!mail.valid && mail.touched && name.valid && mail.value.length  > 0 ) {
+                    <label for="mailInput">{{'contact.input.mail.label'|translate}}</label>
+                  } @else if (!message.valid && message.touched && name.valid && mail.valid && message.value.length  > 0 ) {
+                    <label for="textInput">{{'contact.input.message.label'|translate}}</label>
+                  }
+
+                  @if (name.valid && mail.valid && message.valid && formData.terms) {
+                    <input type="submit" value="{{'contact.button'| translate}}" class="submitbtn" enable>
+                    } @else {
+                    <input type="submit" value="{{'contact.button'| translate}}" class="submitbtn" disabled>
+                    }
+                </div>
+
+
             </form>
         </div>
 

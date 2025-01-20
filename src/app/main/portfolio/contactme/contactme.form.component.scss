@@ -31,7 +31,7 @@ form {
 
   .noValid {
     border: 1px solid main.$main-color-wrong;
-    
+
     &::placeholder {
       color: main.$main-color-wrong;
       opacity: 0.7;
@@ -78,7 +78,8 @@ form {
     padding: 12px 24px;
     align-self: flex-end;
     width: 60px;
-    margin-right: 10px;
+    margin-left: auto;
+
 
     &:hover {
       opacity: 0.6;
@@ -92,5 +93,22 @@ form {
     &:hover {
       opacity: 1;
     }
+  }
+}
+
+.wrapper-button{
+  @include main.center($jc:space-between);
+  width: 100%;
+  margin-right: 10px;
+
+  label{
+    font-size: 12px;
+    color: main.$main-color-wrong;
+    padding: 6px;
+    border: 1px solid main.$main-color-wrong;
+    border-radius: 20px;
+    margin-left: auto;
+    animation: blinker 2s linear infinite;
+    -webkit-animation: blinker 2s linear infinite;
   }
 }

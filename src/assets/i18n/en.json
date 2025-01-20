@@ -62,15 +62,18 @@
     "input": {
       "name": {
         "default": "Your name",
-        "wrong": "Please enter your Name."
+        "wrong": "Please enter your Name.",
+        "label": "A name with minimum of 3 letters."
       },
       "mail": {
         "default": "Your e-mail",
-        "wrong": "Please fill a mail adress. example: max@aol.com"
+        "wrong": "Please fill a mail adress. example: max@aol.com",
+        "label": "E-mail format example: max@aol.com"
       },
       "message": {
         "default": "Your message",
-        "wrong": "Please send me some Words , not a empty mail."
+        "wrong": "Please send me some Words , not a empty mail.",
+        "label": "Minimum of 4 letters for Hello, please."
       },
       "readpolicity": {
         "1": "I've read the",

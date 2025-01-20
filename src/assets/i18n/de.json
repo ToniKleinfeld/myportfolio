@@ -61,15 +61,18 @@
     "input": {
       "name": {
         "default": "Ihr Name",
-        "wrong": "Bitte geben Sie Ihren Namen ein."
+        "wrong": "Bitte geben Sie Ihren Namen ein.",
+        "label": "Ein Namen mit mindestens 3 Buchstaben."
       },
       "mail": {
         "default": "Ihre E-Mail",
-        "wrong": "Bitte geben Sie eine E-Mail-Adresse an. Beispiel: max@aol.com"
+        "wrong": "Bitte geben Sie eine E-Mail-Adresse an. Beispiel: max@aol.com",
+        "label": "E-mail format Beispiel: max@aol.com"
       },
       "message": {
         "default": "Ihre Nachricht",
-        "wrong": "Bitte senden Sie mir einige Worte, keine leere Nachricht."
+        "wrong": "Bitte senden Sie mir einige Worte, keine leere Nachricht.",
+        "label": "Minimal 4 Buchstaben für ein Hallo bitte."
       },
       "readpolicity": {
         "1": "Ich habe die",
