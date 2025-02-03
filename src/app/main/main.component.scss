@@ -2,7 +2,7 @@
 
 .side_wrapper {
   height: 100vh;
-  width: auto;
+  width: 100%;
   @include main.center($jc: flex-start, $ai: unset);
   flex-direction: row;
   color: main.$main-color3;
@@ -10,7 +10,6 @@
   overflow-y: hidden;
   white-space: nowrap;
   scroll-behavior: smooth;
-  
 
   app-header,
   app-footer {
@@ -18,7 +17,6 @@
       width: 100%;
     }
   }
-
 
   @media (max-width: 1025px) {
     height: auto;

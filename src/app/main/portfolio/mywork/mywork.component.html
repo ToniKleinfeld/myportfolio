@@ -1,67 +1,70 @@
 <section scrollAnimation direction="top" [threshold]="0.1">
-    <h2>{{'header.mywork'| translate}}
-        <a class="jumpnextsection" href="#reference" title="{{'tooltips.arrowNext'|translate}}"></a>
-    </h2>
+  <h2>{{'header.mywork'| translate}}
+    <a class="jumpnextsection" href="#reference" title="{{'tooltips.arrowNext'|translate}}"></a>
+  </h2>
 
-    <div class="project-wrapper onGoing " *ngFor="let project of projectsArray,let i = index"
-        [class.onGoing]="project.name == 'Ongoing'" [class.smallPreview]="project.toggle == false" scrollAnimation [direction]="(i % 2 === 0) ? 'top' : 'bottom'" [threshold]="0.2">
+  <div class="project-wrapper onGoing " *ngFor="let project of projectsArray,let i = index"
+    [class.onGoing]="project.name == 'Ongoing'" [class.smallPreview]="project.toggle == false" scrollAnimation
+    [direction]="(i % 2 === 0) ? 'top' : 'bottom'" [threshold]="0.2">
 
-        @if (project.name !== 'Ongoing') {
-        <div class="project ">
-            <div class="subHeader">
-                <div class="count">{{i + 1}}</div>
-                <h3>{{'mywork.subhead'|translate}}{{project.name}}</h3>
-            </div>
+    @if (project.name !== 'Ongoing') {
+    <div class="project ">
+      <div class="subHeader">
+        <div class="count">{{i + 1}}</div>
+        <h3>{{'mywork.subhead'|translate}}{{project.name}}</h3>
+      </div>
 
-            <ul>
-                <li>{{'mywork.about'| translate}}</li>
-                <p>{{ 'mywork.'+project.key!+'.about' | translate}}</p>
-                <li>{{'mywork.usedtechnick'| translate}}</li>
-                <p>{{ project.skills}}</p>
-                <li>{{'mywork.learned'| translate}}</li>
-                <p>{{ 'mywork.'+project.key!+'.learned' | translate}}</p>
-            </ul>
+      <ul>
+        <li>{{'mywork.about'| translate}}</li>
+        <p>{{ 'mywork.'+project.key!+'.about' | translate}}</p>
+        <li>{{'mywork.usedtechnick'| translate}}</li>
+        <p>{{ project.skills}}</p>
+        <li>{{'mywork.learned'| translate}}</li>
+        <p>{{ 'mywork.'+project.key!+'.learned' | translate}}</p>
+      </ul>
 
-            <div class="image-button-container">
-                <img src="./assets/img/{{project.key}}.png" alt="image ob a Webapplication">
+      <div class="image-button-container">
+        <img src="./assets/img/{{project.key}}.png" alt="image ob a Webapplication">
 
-                <div class="buttons">
+        <div class="buttons">
 
-                    <a class="btnGitHub btn" href="{{project.hrefGit}}" title="{{'tooltips.visitGitProject'|translate}}" target="_blank">
-                        <span>GitHub</span>
-                        <div class="btnHover">GitHub</div>
-                    </a>
+          <a class="btnGitHub btn" href="{{project.hrefGit}}" title="{{'tooltips.visitGitProject'|translate}}"
+            target="_blank">
+            <span>GitHub</span>
+            <div class="btnHover">GitHub</div>
+          </a>
 
-                    <a class="btnLiveTest btn" href="{{project.href}}" title="{{'tooltips.try'|translate}}" target="_blank">
-                        <span>Live Test</span>
-                        <div class="btnHover">Live Test</div>
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="mobile-size-button">
-                <div (click)="project.toggle = !project.toggle">
-                    <p>{{'mywork.showmore'| translate}}</p>
-                    <p>{{'mywork.showless'| translate}}</p>
-                    <div class="icon"></div>
-                </div>
-            </div>
+          <a class="btnLiveTest btn" href="{{project.href}}" title="{{'tooltips.try'|translate}}" target="_blank">
+            <span>Live Test</span>
+            <div class="btnHover">Live Test</div>
+          </a>
         </div>
 
-        }@else {
-        <div class="project">
-            <div class="subHeader smallHeader">
-                <div class="count">{{i + 1}}</div>
-                <h3>{{project.name}} {{'mywork.subhead'|translate}}</h3>
-            </div>
-            <p>{{project.nextProject! | translate}}</p>
-            <a class="talkBtn btn" href="#contactMe" title="{{'tooltips.contact'|translate}}">
-                <span>{{'mywork.btn' | translate}}</span>
-                <div class="btnHover">{{'mywork.btn' | translate}}</div>
-            </a>
-        </div>
-        }
+      </div>
 
+      <div class="mobile-size-button">
+        <div (click)="project.toggle = !project.toggle">
+          <p>{{'mywork.showmore'| translate}}</p>
+          <p>{{'mywork.showless'| translate}}</p>
+          <div class="icon"></div>
+        </div>
+      </div>
     </div>
+
+    }@else {
+    <div class="project">
+      <div class="subHeader smallHeader">
+        <div class="count">{{i + 1}}</div>
+        <h3>{{project.name}} {{'mywork.subhead'|translate}}</h3>
+      </div>
+      <p>{{project.nextProject! | translate}}</p>
+      <a class="talkBtn btn" (click)="navigateToSectionResponsive('contactMe')"
+        title="{{'tooltips.contact'|translate}}">
+        <span>{{'mywork.btn' | translate}}</span>
+        <div class="btnHover">{{'mywork.btn' | translate}}</div>
+      </a>
+    </div>
+    }
+
+  </div>
 </section>

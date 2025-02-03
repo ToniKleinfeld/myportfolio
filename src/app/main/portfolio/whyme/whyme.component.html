@@ -12,7 +12,7 @@
 
             <app-whymeicons></app-whymeicons>
 
-            <a class="fullcolorbutton" href="#contactMe" title="{{'tooltips.contact'|translate}}">
+            <a class="fullcolorbutton" (click)="navigateToSectionResponsive('contactMe')" title="{{'tooltips.contact'|translate}}">
                 <span>{{'whyme.button' | translate}}</span>
                 <div class="btnHover">{{'whyme.button' | translate}}</div>
             </a>

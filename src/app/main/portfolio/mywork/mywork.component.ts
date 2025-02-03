@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { ScrollAnimationDirective } from '../../../directives/scroll-animation.directive';
+import { ScrolltoService } from '../../../service/scrollto.service';
 
 @Component({
   selector: 'app-mywork',
@@ -11,22 +12,38 @@ import { ScrollAnimationDirective } from '../../../directives/scroll-animation.d
   styleUrls: ['./mywork.component.scss', './mywork.mobile.component.scss'],
 })
 export class MyworkComponent {
+  constructor(private scrollService: ScrolltoService) {}
+  navigateToSection(sectionId: string): void {
+    this.scrollService.scrollToElement(sectionId);
+  }
+
+  isDesktop(): boolean {
+    return window.innerWidth > 1025;
+  }
+
+  navigateToSectionResponsive(mobileSectionId: string) {
+    const sectionId = this.isDesktop()
+      ? mobileSectionId + '1'
+      : mobileSectionId;
+    this.navigateToSection(sectionId);
+  }
+
   projectsArray = [
     {
       name: 'Join',
       skills: 'JavaScript, Firebase, CSS, HTML, Scrum',
       key: 'Join',
       toggle: false,
-      href: "https://toni-kleinfeld.de/join/index.html",
-      hrefGit:"https://github.com/ToniKleinfeld/Join"
+      href: 'https://toni-kleinfeld.de/join/index.html',
+      hrefGit: 'https://github.com/ToniKleinfeld/Join',
     },
     {
       name: 'Little Sharky',
       skills: 'JavaScript, CSS, HTML',
       key: 'Sharky',
       toggle: false,
-      href: "https://toni-kleinfeld.de/sharky/index.html",
-      hrefGit:"https://github.com/ToniKleinfeld/Little-Sharky"
+      href: 'https://toni-kleinfeld.de/sharky/index.html',
+      hrefGit: 'https://github.com/ToniKleinfeld/Little-Sharky',
     },
     // {
     //   name: 'Ring of Fire',
@@ -41,8 +58,8 @@ export class MyworkComponent {
       skills: 'JavaScript, Rest-Api, CSS, HTML',
       key: 'Pokedex',
       toggle: false,
-      href: "https://toni-kleinfeld.de/pokedex/index.html",
-      hrefGit:"https://github.com/ToniKleinfeld/Pokedex"
+      href: 'https://toni-kleinfeld.de/pokedex/index.html',
+      hrefGit: 'https://github.com/ToniKleinfeld/Pokedex',
     },
     {
       name: 'Ongoing',

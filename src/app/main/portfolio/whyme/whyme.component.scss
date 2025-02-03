@@ -1,7 +1,8 @@
 @use "../../../shared/mixin.scss" as main;
 section {
-  @include main.center($ai: flex-start, $jc: flex-start);
-  width: 1050px;
+  @include main.center($ai: flex-start, $jc: center);
+  width: 100vw;
+  max-width: 1440px;
 
   @media (max-width: 1025px) {
     justify-content: center;

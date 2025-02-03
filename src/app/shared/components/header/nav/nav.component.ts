@@ -23,4 +23,13 @@ export class NavComponent {
     this.scrollService.scrollToElement(sectionId);
     this.closeMenu.emit(false);
   }
+
+  isDesktop(): boolean {
+    return window.innerWidth > 1025;
+  }
+
+  navigateToSectionResponsive(mobileSectionId: string) {
+    const sectionId = this.isDesktop() ? mobileSectionId + '1' : mobileSectionId;
+    this.navigateToSection(sectionId);
+  }
 }

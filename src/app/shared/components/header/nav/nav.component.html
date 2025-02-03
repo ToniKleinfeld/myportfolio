@@ -1,16 +1,16 @@
-<nav [ngClass]="{'menu_open': toggle, 'menu_closed': !toggle}" >
+<nav [ngClass]="{'menu_open': toggle, 'menu_closed': !toggle}">
 
-    <div class="mobileClose">
-        <img src="./assets/img/closemenu.svg" alt="" (click)="closeMenu.emit(false)">
-    </div> 
+  <div class="mobileClose">
+    <img src="./assets/img/closemenu.svg" alt="" (click)="closeMenu.emit(false)">
+  </div>
 
-    <div class="navmenu">
-        <a (click)="navigateToSection('contactMe')">{{'header.contact' | translate}}</a>
-        <a (click)="navigateToSection('myWork')">{{'header.mywork' | translate}}</a>
-        <a (click)="navigateToSection('mySkills')">{{'header.skills' | translate}}</a>
-        <a (click)="navigateToSection('whyMe')">{{'header.whyme' | translate}}</a>
-    </div>
+  <div class="navmenu">
+    <a (click)="navigateToSectionResponsive('contactMe')">{{'header.contact' | translate}}</a>
+    <a (click)="navigateToSection('myWork')">{{'header.mywork' | translate}}</a>
+    <a (click)="navigateToSection('mySkills')">{{'header.skills' | translate}}</a>
+    <a (click)="navigateToSection('whyMe')">{{'header.whyme' | translate}}</a>
+  </div>
 
-    <app-iconssection></app-iconssection>
+  <app-iconssection></app-iconssection>
 
 </nav>
