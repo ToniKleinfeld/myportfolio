@@ -37,7 +37,8 @@
 
     div:nth-child(2){
         color: black;             
-        animation: animate 4s ease-in-out infinite;  
+        animation: animate 4s ease-in-out infinite;
+        -webkit-animation: animate 4s ease-in-out infinite;
     }
 }
 
