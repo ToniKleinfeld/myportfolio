@@ -14,9 +14,9 @@
         height: 60px;
         position: absolute;
         top: -2px;
-        left: -4px;                
-        @include main.center();                
-        
+        left: -4px;
+        @include main.center();
+
         :nth-child(1){
             font-size: 60px;
             padding-bottom: 4px;
@@ -36,7 +36,7 @@
     }
 
     div:nth-child(2){
-        color: black;             
+        color: black;
         animation: animate 4s ease-in-out infinite;
         -webkit-animation: animate 4s ease-in-out infinite;
     }
@@ -46,6 +46,6 @@
   cursor:none;
   border: 3px solid whitesmoke;
   div:nth-child(2){
-    color: rgb(12, 92, 197);   
+    color: rgb(12, 92, 197);
 }
 }
