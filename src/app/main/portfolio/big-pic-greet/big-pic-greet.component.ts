@@ -22,7 +22,7 @@ export class BigPicGreetComponent implements OnInit{
   }
 
   playAnimation(time:number){
-    this.typeAnimationh1 = true;    
+    this.typeAnimationh1 = true;
 
     setTimeout(() => {
       this.typeAnimationh1 = false;
@@ -35,5 +35,14 @@ export class BigPicGreetComponent implements OnInit{
         }, 100);
       }, time);
     }, time);
+  }
+
+  scrollToElement(event: Event, elementId: string) {
+    event.preventDefault();
+
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+    }
   }
 }

@@ -3,7 +3,8 @@
 section {
   @include main.center();
   margin-right: 70px;
-
+  width: 100vw;
+  max-width: 1440px;
   h2 {
     @include main.h2();
     @include main.arrow();

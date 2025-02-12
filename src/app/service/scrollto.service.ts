@@ -15,7 +15,13 @@ export class ScrolltoService {
     }
 
     const element = document.getElementById(elementId);
-    if (element) {
+    if (element && elementId !== 'contact1') {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        inline: 'start',
+        block: 'nearest',
+      });
+    } else if (element) {
       element.scrollIntoView({
         behavior: 'smooth',
         block: 'start',

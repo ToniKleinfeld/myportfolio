@@ -1,6 +1,6 @@
 <section scrollAnimation direction="top" [threshold]="0.3">
     <h2 >{{ 'header.whyme' | translate}}
-        <a class="jumpnextsection" href="#mySkills" title="{{'tooltips.arrowNext'|translate}}"></a>
+        <a class="jumpnextsection" href="#mySkills" (click)="scrollToElement($event, 'mySkills')" title="{{'tooltips.arrowNext'|translate}}"></a>
     </h2>
 
     <div class="content_whyme">

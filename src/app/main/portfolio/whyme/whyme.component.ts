@@ -28,4 +28,13 @@ export class WhymeComponent {
       : mobileSectionId;
     this.navigateToSection(sectionId);
   }
+
+  scrollToElement(event: Event, elementId: string) {
+    event.preventDefault();
+
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+    }
+  }
 }
