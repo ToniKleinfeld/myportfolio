@@ -27,7 +27,7 @@ section {
   @media (max-width: 1025px) {
     height: calc(100dvh - 73px);
     width: 95dvw;
-    background-size: 70%;
+    background-size: 80%;
     background-position: center 5vh;
     padding: 0 0 5% 0;
     align-items: center;
@@ -48,10 +48,6 @@ section {
     .start {
       display: none !important;
     }
-  }
-
-  @media (min-height: 1250px) {
-    background-size: 80%;
   }
 
   @media (max-width: 730px) {
