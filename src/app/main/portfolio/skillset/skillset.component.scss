@@ -21,6 +21,9 @@ section {
 
   .skillset-wrapper {
     width: 815px;
+    @media (max-width: 1025px) {
+      width: unset;
+    }
     .skillsetintro {
       font-size: 18px;
       max-width: 860px;
