@@ -1,27 +1,51 @@
-# Myportfolio
+<p align="center"><img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&text=Myportfolio&section=header&reversal=false&textBg=false&fontSize=70&fontAlign=50&animation=fadeIn&fontAlignY=38&descSize=0"></p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/Framework-Angular-darkred?logo=angular" />
+</p>
 
-## Development server
+> This is my first own Portfolio.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Installation
 
-## Code scaffolding
+```sh
+npm install
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## How to use
+
+Run
+
+```sh
+ng serve
+```
+
+for a dev server. Navigate to http://localhost:4200/. The application will automatically reload if you change any of the source files.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run
 
-## Running unit tests
+```sh
+ng build
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+to build the project. The build artifacts will be stored in the dist/ directory.
 
-## Running end-to-end tests
+## Author
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+👤 **Toni Kleinfeld**
 
-## Further help
+- 🏠 : https://toni-kleinfeld.de/
+- Github: [@ToniKleinfeld](https://github.com/ToniKleinfeld)
+- LinkedIn: https://www.linkedin.com/in/tonikleinfeld/
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+Copyright © 2025 [Toni Kleinfeld](https://github.com/ToniKleinfeld).<br />
+
+<p align="center"><img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&section=footer&reversal=false&textBg=false&fontSize=70&fontAlign=50&animation=fadeIn&fontAlignY=38&descSize=0"></p>
