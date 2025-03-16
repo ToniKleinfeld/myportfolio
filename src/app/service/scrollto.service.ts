@@ -15,7 +15,7 @@ export class ScrolltoService {
     }
 
     const element = document.getElementById(elementId);
-    if (element && elementId !== 'contact1') {
+    if (element && elementId !== 'contact1' && window.innerWidth > 1025) {
       element.scrollIntoView({
         behavior: 'smooth',
         inline: 'start',
