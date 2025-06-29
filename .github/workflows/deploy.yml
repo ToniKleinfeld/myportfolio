@@ -41,8 +41,8 @@ jobs:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/myportfolio/browser
-          remote_path : ${{ secrets.FTP_PATH }}
+          local_path: './dist/myportfolio/browser'
+          remote_path: ${{ secrets.FTP_PATH }}
           sftp_only: true
           exclude: |
             **/.git*
