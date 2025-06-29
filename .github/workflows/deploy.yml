@@ -42,6 +42,6 @@ jobs:
           username: ${{ secrets.SFTP_USERNAME }}
           password: ${{ secrets.SFTP_PASSWORD }}
           local_path: './dist/myportfolio/browser'
-          remote_path: '${{ secrets.SFTP_PATH }}'
+          remote_path: '/portfolio'
           sftp_only: true
 
