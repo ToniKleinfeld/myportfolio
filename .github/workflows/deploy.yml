@@ -32,7 +32,7 @@ jobs:
       #   run: npm run lint
 
       - name: Build for Production
-        run: npm run build --base-href /portfolio/
+        run: npm run build -- --base-href /portfolio/
 
       - name: Deploy to Strato SFTP
         if: (github.event_name == 'push' && github.ref == 'refs/heads/main') || github.event_name == 'workflow_dispatch'
