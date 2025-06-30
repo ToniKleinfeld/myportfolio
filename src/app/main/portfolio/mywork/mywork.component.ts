@@ -34,7 +34,7 @@ export class MyworkComponent {
       skills: 'JavaScript, Firebase, CSS, HTML, Scrum',
       key: 'Join',
       toggle: false,
-      href: 'https://toni-kleinfeld.de/join/index.html',
+      href: 'https://toni-kleinfeld.com/join/index.html',
       hrefGit: 'https://github.com/ToniKleinfeld/Join',
     },
     {
@@ -42,7 +42,7 @@ export class MyworkComponent {
       skills: 'JavaScript, CSS, HTML',
       key: 'Sharky',
       toggle: false,
-      href: 'https://toni-kleinfeld.de/sharky/index.html',
+      href: 'https://toni-kleinfeld.com/sharky/index.html',
       hrefGit: 'https://github.com/ToniKleinfeld/Little-Sharky',
     },
     // {
@@ -58,7 +58,7 @@ export class MyworkComponent {
       skills: 'JavaScript, Rest-Api, CSS, HTML',
       key: 'Pokedex',
       toggle: false,
-      href: 'https://toni-kleinfeld.de/pokedex/index.html',
+      href: 'https://toni-kleinfeld.com/pokedex/index.html',
       hrefGit: 'https://github.com/ToniKleinfeld/Pokedex',
     },
     {
