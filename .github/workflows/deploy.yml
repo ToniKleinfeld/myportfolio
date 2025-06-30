@@ -36,11 +36,11 @@ jobs:
 
       - name: Deploy to Strato SFTP
         if: (github.event_name == 'push' && github.ref == 'refs/heads/main') || github.event_name == 'workflow_dispatch'
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.SFTP_HOST }}
           username: ${{ secrets.SFTP_USERNAME }}
           password: ${{ secrets.SFTP_PASSWORD }}
           port: 22
-          local_path: "./dist/myportfolio/browser/*"
-          remote_path: ${{ secrets.SFTP_TARGET_PATH }}
+          local-dir: "./dist/myportfolio/browser/*"
+          server-dir: ${{ secrets.SFTP_TARGET_PATH }}
