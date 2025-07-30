@@ -7,15 +7,20 @@ import { AddSpacePipe } from '../../../shared/pipes/add-space.pipe';
 @Component({
   selector: 'app-skillset',
   standalone: true,
-  imports: [CommonModule, TranslateModule, ScrollAnimationDirective, AddSpacePipe],
+  imports: [
+    CommonModule,
+    TranslateModule,
+    ScrollAnimationDirective,
+    AddSpacePipe,
+  ],
   templateUrl: './skillset.component.html',
   styleUrl: './skillset.component.scss',
 })
 export class SkillsetComponent {
-  frondendSkills: boolean = false;
+  frontendSkills: boolean = false;
 
   iconArray = {
-    frondend: [
+    frontend: [
       'Angular',
       'TypeScript',
       'JavaScript',
@@ -40,11 +45,17 @@ export class SkillsetComponent {
       'Docker',
       'Google_cloud',
       'Github_Action',
-      'Challenge_me'
+      'Challenge_me',
     ],
   };
 
   setSkillSet() {
-    return this.frondendSkills ? this.iconArray.frondend : this.iconArray.backend;
+    return this.frontendSkills
+      ? this.iconArray.frontend
+      : this.iconArray.backend;
+  }
+
+  get iconKeys(): string[] {
+    return Object.keys(this.iconArray);
   }
 }
