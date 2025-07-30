@@ -4,7 +4,7 @@
     "mywork": "My Projects",
     "skills": "Skills",
     "whyme": "Why Me",
-    "job": "Frontend Developer"
+    "job": "Fullstack Developer"
   },
   "footer": {
     "imprint": "Imprint",
@@ -14,7 +14,7 @@
     "header": "Why Me",
     "secondaryheader": "I am",
     "location": "located in ",
-    "descripeme": "I am a patient and persistent front-end developer. With my detail-orientation and willingness to learn, I always work to develop clean and well thought-out solutions. I see new technologies and challenges as an opportunity to develop myself further and create added value, both for projects and for my team.",
+    "descripeme": "I am a patient and persistent fullstack developer. With my detail-orientation and willingness to learn, I always work to develop clean and well thought-out solutions. I see new technologies and challenges as an opportunity to develop myself further and create added value, both for projects and for my team.",
     "button": "Contact me",
     "remote": "open to remote work"
   },
