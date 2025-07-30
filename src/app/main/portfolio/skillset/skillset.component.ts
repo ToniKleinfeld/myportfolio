@@ -13,7 +13,7 @@ import { AddSpacePipe } from '../../../shared/pipes/add-space.pipe';
 })
 export class SkillsetComponent {
   frondendSkills: boolean = false;
-  // iconArray = ['Angular','TypeScript','JavaScript','Firebase','Rest-Api','Git','Scrum','SCSS','CSS','HTML','Material','Bootstrap','Challenge']
+
   iconArray = {
     frondend: [
       'Angular',
@@ -26,9 +26,9 @@ export class SkillsetComponent {
       'SCSS',
       'CSS',
       'HTML',
-      'Material',
+      'Material_Design',
       'Bootstrap',
-      'Challenge',
+      'Challenge_me',
     ],
     backend: [
       'Django',
@@ -40,7 +40,7 @@ export class SkillsetComponent {
       'Docker',
       'Google_cloud',
       'Github_Action',
-      'Challenge'
+      'Challenge_me'
     ],
   };
 
