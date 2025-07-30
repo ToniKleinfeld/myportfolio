@@ -5,10 +5,10 @@
     <div class="skillset-wrapper">
         <div class="skillsetintro">{{'myskills.intro'| translate}}</div>
         <div class="iconskills-wrapper">
-
-            <div class="icon" *ngFor="let icon of iconArray">
+          @for (icon of setSkillSet(); track icon){
+              <div class="icon">
                 <div class="" style="background-image: url(./assets/img/{{icon}}.svg);"></div>
-                {{icon}}
+                {{icon | addSpace}}
                 @if(icon == 'Challenge'){
                 me
                 }
@@ -16,6 +16,8 @@
                 Design
                 }
             </div>
+          }
+
             <div class="text">{{'myskills.challange'|translate}}</div>
         </div>
 
