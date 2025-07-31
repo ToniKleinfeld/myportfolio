@@ -54,8 +54,4 @@ export class SkillsetComponent {
       ? this.iconArray.frontend
       : this.iconArray.backend;
   }
-
-  get iconKeys(): string[] {
-    return Object.keys(this.iconArray);
-  }
 }

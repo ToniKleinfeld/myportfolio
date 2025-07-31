@@ -28,7 +28,6 @@ section {
       @include main.center($jc: flex-start);
       width: 100%;
       height: auto;
-      margin-bottom: 20px;
 
       .changeSkills {
         text-align: center;
@@ -39,12 +38,12 @@ section {
         padding-top: 5px;
         opacity: 0.6;
 
-        &:hover{
+        &:hover {
           cursor: pointer;
         }
       }
 
-      .active{
+      .active {
         opacity: 1;
 
         &:hover {
@@ -59,7 +58,9 @@ section {
       word-wrap: break-word;
       word-break: break-word;
       white-space: wrap;
-      padding-bottom: 30px;
+      padding: 10px 15px;
+      background-color: main.$main-color2;
+      border-radius: 0px 16px 0px 0px;
 
       @media (max-width: 1025px) {
         max-width: unset;
@@ -70,10 +71,14 @@ section {
       @include main.center($x: 5px, $jc: flex-start);
       max-width: 100%;
       flex-wrap: wrap;
+      background-color: main.$main-color2;
+      border-radius: 0 0 16px 16px;
+      padding: 10px 15px;
 
       @media (max-width: 1025px) {
         gap: 10px;
         justify-content: center;
+        padding: 10px 5px;
       }
 
       .icon {
@@ -82,6 +87,7 @@ section {
         width: 100px;
         height: 100px;
         text-align: center;
+        border-radius: 5px;
 
         div {
           width: 60px;
