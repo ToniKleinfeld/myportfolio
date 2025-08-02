@@ -45,14 +45,6 @@ export class MyworkComponent {
       href: 'https://toni-kleinfeld.com/sharky/index.html',
       hrefGit: 'https://github.com/ToniKleinfeld/Little-Sharky',
     },
-    // {
-    //   name: 'Ring of Fire',
-    //   skills: 'Angular, TypeScript, Firebase, SCSS, HTML',
-    //   key: 'Ringoffire',
-    //   toggle: false,
-    //   href: "https://toni-kleinfeld.com/",
-    //   hrefGit:"https://github.com/ToniKleinfeld/ring-of-fire"
-    // },
     {
       name: 'Pokedex',
       skills: 'JavaScript, Rest-Api, CSS, HTML',
