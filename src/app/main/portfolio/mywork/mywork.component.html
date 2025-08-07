@@ -3,7 +3,25 @@
     <a class="jumpnextsection" href="#reference" (click)="scrollToElement($event, 'reference')" title="{{'tooltips.arrowNext'|translate}}"></a>
   </h2>
 
-  <div class="project-wrapper onGoing " *ngFor="let project of projectsArray,let i = index"
+      <div class="skillset-change">
+
+
+      @if (!frontendProjects) {
+      <div class="changeSkills" [ngClass]="{'active':frontendProjects}" (click)="frontendProjects = !frontendProjects">
+        Frontend
+      </div>
+      <div class="changeSkills" [ngClass]="{'active':!frontendProjects}">Backend</div>
+      } @else {
+      <div class="changeSkills" [ngClass]="{'active':frontendProjects}">
+        Frontend
+      </div>
+      <div class="changeSkills" [ngClass]="{'active':!frontendProjects}" (click)="frontendProjects = !frontendProjects">
+        Backend</div>
+      }
+
+    </div>
+
+  <div class="project-wrapper onGoing " *ngFor="let project of setProjectsSet(),let i = index"
     [class.onGoing]="project.name == 'Ongoing'" [class.smallPreview]="project.toggle == false" scrollAnimation
     [direction]="(i % 2 === 0) ? 'top' : 'bottom'" [threshold]="0.2">
 
