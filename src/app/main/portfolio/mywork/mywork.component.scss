@@ -8,6 +8,10 @@ section {
     @include main.arrow();
   }
 
+  .first-project-wrapper{
+    border-radius: 0px 30px 30px 30px !important;
+  }
+
   .project-wrapper {
     position: relative;
     width: 900px;
@@ -16,6 +20,37 @@ section {
     padding: 0 30px 30px 30px;
     background-color: main.$backgroundcoloropacity;
     border-radius: 30px;
+
+    .skillset-change {
+      @include main.center($jc: flex-start);
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: -30px;
+      left: 0px;
+
+      .changeSkills {
+        text-align: center;
+        border-top: 2px solid main.$main-color1;
+        border-radius: 25px 25px 0px 0px;
+        width: 150px;
+        font-size: 18px;
+        padding-top: 5px;
+        opacity: 0.6;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .active {
+        opacity: 1;
+
+        &:hover {
+          cursor: default;
+        }
+      }
+    }
 
     .project {
       height: 100%;
