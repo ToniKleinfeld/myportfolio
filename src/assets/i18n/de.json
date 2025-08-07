@@ -4,7 +4,7 @@
     "mywork": "Projekte",
     "skills": "Skill Set",
     "whyme": "Warum ich",
-    "job":"Fullstack Entwickler"
+    "job": "Fullstack Entwickler"
   },
   "footer": {
     "imprint": "Impressum",
@@ -31,10 +31,6 @@
       "learned": "Umsetzung eines Projekts als gemeinsames Team , wie man verschiedene Meinungen auf einen gemeinsamen Nenner bringt und wie merged man am besten für ein gemeinsames GitHub Projekt.",
       "about": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu."
     },
-    "Ringoffire": {
-      "learned": "Die ersten Schritte in Angular, wie kann ich dom manipulieren und wie bekomme ich eine eigen Datenbank von Firebase Synchron , so dass man ein gemeinsames Spiel über das Internet spielen kann.",
-      "about": "Eine Umsetzung des Spieles Ring of Fire, angebunden an eine Firebase Datenbank , so das es möglich ist , mit mehreren Spielern über das Internet den selben Datensatz zu teilen und aktuell zu halten."
-    },
     "Sharky": {
       "learned": "Object Orientiertes Programmieren , Classen Erstellung und Einbindung in einen Canvas , wie binde und nutze ich vorgefertigte Modelle und wie behalte ich den Überblick.",
       "about": "Little Sharky ist ein kleines Browser Spiel , es gibt insgesamt zwei verschiedene level , Einfach und schwer (Dunkel und Hell). Man muss mit dem kleinen Hai Gegner besiegen oder ausweichen ,Giftflaschen einsammeln und am ende einen Killerwal besiegen"
@@ -42,6 +38,18 @@
     "Pokedex": {
       "learned": "Nutzung und Orientierung in einer unbekannten API , wie greife ich auf diese zu und wo finde ich die Daten , die ich nutzen möchte.",
       "about": "Mein eigener Pokedex um Informationen von verschiedenen Pokemon abrufen zu können. Weiter sind genauere Daten von einzelnen Pokemon einsehbar , z.b welche Attacken sie lernen können."
+    },
+    "Videoflix": {
+      "learned": "Programieren in der Dockerumgebung , wie erstelle ich mit Redis und Django-RQ eine Warteschlange für die Videokonvertierung und wie nutze ich Docker Compose um mehrere Container zu starten.",
+      "about": "Ein Backend um inder Admin umgebung Videos hochzuladen und diese in verschiedene Formate zu konvertieren um diese im Frontend abrufen zu können."
+    },
+    "Coderr": {
+      "learned": "Programierung eines backends für ein bestehndes Frontend, wie erstelle ich eine REST API mit Django Rest Framework und wie nutze ich SQLite als Datenbank. Wie müssen die endpunkte aussehen um das Frontend zu bedienen.",
+      "about": "Coderr ist eine Plattform wo digitale Dienste angeboten werden können und von Kunden geordert werden können. Es ist eine Art Marktplatz für digitale Dienste."
+    },
+    "Angular-Join": {
+      "learned": "Programieren eines Fullstack Tasksmanager mit Angular und Django Rest Framework, wie erstzelle ich ein Fontend sicher und complex um mit einem eigenem Backend zu kommunizieren.",
+      "about": "Fullstack Join ist ein Tasksmanager inspiriert vom Kanban System. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu."
     },
     "nextWork": "Ich arbeite derzeit mit einer kleinen Gruppe an einem Projekt namens 'Münster Interessierts / Policast'. Das Team hat sich beim MSHack 2024 zusammengefunden und wird derzeit durch das Solution Enabler Programm unterstützt. Ich unterstütze hierbei den Frontend Bereich. Ziel ist eine hörbare Wöchentliche Zusammenfassung aus dem Rats Information Netzwerkes der Stadt Münster mittelt LLM , im Idealfall als Podcast. ",
     "btn": "Schreib mir",
@@ -82,10 +90,10 @@
     "button": "Senden",
     "subheader": "Lassen Sie uns zusammenarbeiten.",
     "letsWorkTogetherText": "Ob Ihr Projekt die Entwicklung einer neuen Anwendung, die Aktualisierung bestehender Systeme oder umstieg auf ein neues Framework umfasst, ich habe die technische Kompetenz, um dieses Erfolgreich um zusetzten.",
-    "sendmail":"Danke für ihre Nachricht."
+    "sendmail": "Danke für ihre Nachricht."
   },
   "tooltips": {
-    "start":"Starte die Erkundung.",
+    "start": "Starte die Erkundung.",
     "arrowNext": "Springe zum nächsten Abschnitt.",
     "arrowBack": "Zurück zum Anfang springen.",
     "sendMail": "Senden Sie mir eine E-Mail mit dem Standard Mailprogramm.",

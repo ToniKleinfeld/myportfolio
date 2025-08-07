@@ -64,16 +64,16 @@ export class MyworkComponent {
     backend: [
       {
         name: 'Videoflix',
-        skills: 'Django, Redis, PostgreSQL, Django Rest Framework',
-        key: 'Pokedex',
+        skills: 'Django, Docker , Redis, PostgreSQL, Django Rest Framework',
+        key: 'Videoflix',
         toggle: false,
         href: 'https://toni-kleinfeld.com/videoflix',
         hrefGit: 'https://github.com/ToniKleinfeld/Videoflix',
       },
       {
-        name: 'Join',
+        name: 'Fullstack Join',
         skills: 'Angular, Django, Django Rest Framework, SQLite , SCSS, HTML',
-        key: 'Join',
+        key: 'Angular-Join',
         toggle: false,
         href: 'https://toni-kleinfeld.com/angular-join',
         hrefGit: 'https://github.com/ToniKleinfeld/Backend-Join',
@@ -81,7 +81,7 @@ export class MyworkComponent {
       {
         name: 'Coderr',
         skills: 'Django, Django Rest Framework, SQLite',
-        key: 'Sharky',
+        key: 'Coderr',
         toggle: false,
         href: 'https://toni-kleinfeld.com/coderr',
         hrefGit: 'https://github.com/ToniKleinfeld/backend.Coderr',
