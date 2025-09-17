@@ -28,51 +28,87 @@ export class MyworkComponent {
     this.navigateToSection(sectionId);
   }
 
-  projectsArray = [
-    {
-      name: 'Join',
-      skills: 'JavaScript, Firebase, CSS, HTML, Scrum',
-      key: 'Join',
-      toggle: false,
-      href: 'https://toni-kleinfeld.com/join/index.html',
-      hrefGit: 'https://github.com/ToniKleinfeld/Join',
-    },
-    {
-      name: 'Little Sharky',
-      skills: 'JavaScript, CSS, HTML',
-      key: 'Sharky',
-      toggle: false,
-      href: 'https://toni-kleinfeld.com/sharky/index.html',
-      hrefGit: 'https://github.com/ToniKleinfeld/Little-Sharky',
-    },
-    // {
-    //   name: 'Ring of Fire',
-    //   skills: 'Angular, TypeScript, Firebase, SCSS, HTML',
-    //   key: 'Ringoffire',
-    //   toggle: false,
-    //   href: "https://toni-kleinfeld.com/",
-    //   hrefGit:"https://github.com/ToniKleinfeld/ring-of-fire"
-    // },
-    {
-      name: 'Pokedex',
-      skills: 'JavaScript, Rest-Api, CSS, HTML',
-      key: 'Pokedex',
-      toggle: false,
-      href: 'https://toni-kleinfeld.com/pokedex/index.html',
-      hrefGit: 'https://github.com/ToniKleinfeld/Pokedex',
-    },
-    {
-      name: 'Ongoing',
-      nextProject: 'mywork.nextWork',
-    },
-  ];
+  frontendProjects: boolean = true;
+
+  projectsArray = {
+    frontend: [
+      {
+        name: 'Join',
+        skills: 'JavaScript, Firebase, CSS, HTML, Scrum',
+        key: 'Join',
+        toggle: false,
+        href: 'https://toni-kleinfeld.com/join/index.html',
+        hrefGit: 'https://github.com/ToniKleinfeld/Join',
+      },
+      {
+        name: 'Little Sharky',
+        skills: 'JavaScript, CSS, HTML',
+        key: 'Sharky',
+        toggle: false,
+        href: 'https://toni-kleinfeld.com/sharky/index.html',
+        hrefGit: 'https://github.com/ToniKleinfeld/Little-Sharky',
+      },
+      {
+        name: 'Pokedex',
+        skills: 'JavaScript, Rest-Api, CSS, HTML',
+        key: 'Pokedex',
+        toggle: false,
+        href: 'https://toni-kleinfeld.com/pokedex/index.html',
+        hrefGit: 'https://github.com/ToniKleinfeld/Pokedex',
+      },
+      {
+        name: 'Ongoing',
+        nextProject: 'mywork.nextWork',
+      },
+    ],
+    backend: [
+      {
+        name: 'Videoflix',
+        skills: 'Django, Docker , Redis, PostgreSQL, Django Rest Framework',
+        key: 'Videoflix',
+        toggle: false,
+        href: 'https://toni-kleinfeld.com/Videoflix',
+        hrefGit: 'https://github.com/ToniKleinfeld/Videoflix',
+      },
+      {
+        name: 'Fullstack Join',
+        skills: 'Angular, Django, Django Rest Framework, SQLite , SCSS, HTML',
+        key: 'Angular-Join',
+        toggle: false,
+        href: 'https://toni-kleinfeld.com/a-join',
+        hrefGit: 'https://github.com/ToniKleinfeld/Backend-Join',
+      },
+      {
+        name: 'Coderr',
+        skills: 'Django, Django Rest Framework, SQLite',
+        key: 'Coderr',
+        toggle: false,
+        href: 'https://toni-kleinfeld.com/coderr',
+        hrefGit: 'https://github.com/ToniKleinfeld/backend.Coderr',
+      },
+      {
+        name: 'Ongoing',
+        nextProject: 'mywork.nextWork',
+      },
+    ],
+  };
+
+  setProjectsSet() {
+    return this.frontendProjects
+      ? this.projectsArray.frontend
+      : this.projectsArray.backend;
+  }
 
   scrollToElement(event: Event, elementId: string) {
     event.preventDefault();
 
     const element = document.getElementById(elementId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+      element.scrollIntoView({
+        behavior: 'smooth',
+        inline: 'start',
+        block: 'nearest',
+      });
     }
   }
 }

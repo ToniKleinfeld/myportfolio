@@ -1,11 +1,31 @@
 <section scrollAnimation direction="top" [threshold]="0.1">
   <h2>{{'header.mywork'| translate}}
-    <a class="jumpnextsection" href="#reference" (click)="scrollToElement($event, 'reference')" title="{{'tooltips.arrowNext'|translate}}"></a>
+    <a class="jumpnextsection" href="#reference" (click)="scrollToElement($event, 'reference')"
+      title="{{'tooltips.arrowNext'|translate}}"></a>
   </h2>
 
-  <div class="project-wrapper onGoing " *ngFor="let project of projectsArray,let i = index"
+
+
+  <div class="project-wrapper onGoing " *ngFor="let project of setProjectsSet(),let i = index"
     [class.onGoing]="project.name == 'Ongoing'" [class.smallPreview]="project.toggle == false" scrollAnimation
-    [direction]="(i % 2 === 0) ? 'top' : 'bottom'" [threshold]="0.2">
+    [direction]="(i % 2 === 0) ? 'top' : 'bottom'" [threshold]="0.2" [class.first-project-wrapper]="i == 0" >
+
+    @if (i == 0) {
+    <div class="skillset-change">
+      @if (!frontendProjects) {
+      <div class="changeSkills" [ngClass]="{'active':frontendProjects}" (click)="frontendProjects = !frontendProjects">
+        Frontend
+      </div>
+      <div class="changeSkills" [ngClass]="{'active':!frontendProjects}">Backend</div>
+      } @else {
+      <div class="changeSkills" [ngClass]="{'active':frontendProjects}">
+        Frontend
+      </div>
+      <div class="changeSkills" [ngClass]="{'active':!frontendProjects}" (click)="frontendProjects = !frontendProjects">
+        Backend</div>
+      }
+    </div>
+    }
 
     @if (project.name !== 'Ongoing') {
     <div class="project ">

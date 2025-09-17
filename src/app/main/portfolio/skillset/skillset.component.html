@@ -1,23 +1,35 @@
 <section scrollAnimation direction="bottom" [threshold]="0.3">
-    <h2>{{'myskills.header'| translate}}
-        <a class="jumpnextsection" href="#myWork" title="{{'tooltips.arrowNext'|translate}}"></a>
-    </h2>
-    <div class="skillset-wrapper">
-        <div class="skillsetintro">{{'myskills.intro'| translate}}</div>
-        <div class="iconskills-wrapper">
+  <h2>{{'myskills.header'| translate}}
+    <a class="jumpnextsection" href="#myWork" title="{{'tooltips.arrowNext'|translate}}"></a>
+  </h2>
+  <div class="skillset-wrapper">
+    <div class="skillset-change">
 
-            <div class="icon" *ngFor="let icon of iconArray">
-                <div class="" style="background-image: url(./assets/img/{{icon}}.svg);"></div>
-                {{icon}}
-                @if(icon == 'Challenge'){
-                me
-                }
-                @if(icon == 'Material'){
-                Design
-                }
-            </div>
-            <div class="text">{{'myskills.challange'|translate}}</div>
-        </div>
+
+      @if (!frontendSkills) {
+      <div class="changeSkills" [ngClass]="{'active':frontendSkills}" (click)="frontendSkills = !frontendSkills">
+        Frontend
+      </div>
+      <div class="changeSkills" [ngClass]="{'active':!frontendSkills}">Backend</div>
+      } @else {
+      <div class="changeSkills" [ngClass]="{'active':frontendSkills}">
+        Frontend
+      </div>
+      <div class="changeSkills" [ngClass]="{'active':!frontendSkills}" (click)="frontendSkills = !frontendSkills">
+        Backend</div>
+      }
 
     </div>
+    <div class="skillsetintro">{{'myskills.intro'| translate}}</div>
+    <div class="iconskills-wrapper">
+      @for (icon of setSkillSet(); track icon){
+      <div class="icon">
+        <div style="background-image: url(./assets/img/{{icon}}.svg);"></div>
+        {{icon | addSpace}}
+      </div>
+      }
+      <div class="text">{{'myskills.challange'|translate}}</div>
+    </div>
+
+  </div>
 </section>

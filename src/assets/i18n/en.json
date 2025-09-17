@@ -4,7 +4,7 @@
     "mywork": "My Projects",
     "skills": "Skills",
     "whyme": "Why Me",
-    "job": "Frontend Developer"
+    "job": "Fullstack Developer"
   },
   "footer": {
     "imprint": "Imprint",
@@ -14,7 +14,7 @@
     "header": "Why Me",
     "secondaryheader": "I am",
     "location": "located in ",
-    "descripeme": "I am a patient and persistent front-end developer. With my detail-orientation and willingness to learn, I always work to develop clean and well thought-out solutions. I see new technologies and challenges as an opportunity to develop myself further and create added value, both for projects and for my team.",
+    "descripeme": "I am a patient and persistent fullstack developer. With my detail-orientation and willingness to learn, I always work to develop clean and well thought-out solutions. I see new technologies and challenges as an opportunity to develop myself further and create added value, both for projects and for my team.",
     "button": "Contact me",
     "remote": "open to remote work"
   },
@@ -32,10 +32,6 @@
       "learned": "The first steps in Angular, how can I manipulate dom and how do I get my own database from Firebase Synchron , so that you can play a common game over the Internet.",
       "about": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
     },
-    "Ringoffire": {
-      "learned": "The first steps in Angular, how can I manipulate dom and how do I get my own database from Firebase Synchron , so that you can play a common game over the Internet.",
-      "about": "A realisation of the game Ring of Fire, connected to a Firebase database, so that it is possible to share the same data set with several players over the Internet and keep it up to date."
-    },
     "Sharky": {
       "learned": "Object orientated programming, creating classes and integrating them into a canvas, how do I bind and use prefabricated models and how do I keep an overview.",
       "about": "Little Sharky is a small browser game, there are a total of two different levels, easy and hard (dark and light). You have to defeat or avoid enemies with the little shark, collect poison bottles and defeat a killer whale at the end."
@@ -43,6 +39,18 @@
     "Pokedex": {
       "learned": "Utilisation and orientation in an unknown API, how do I access it and where do I find the data I want to use?",
       "about": "My own Pokedex to retrieve information about different Pokemon. You can also view more detailed data on individual Pokemon, e.g. which attacks they can learn."
+    },
+    "Videoflix": {
+      "learned": "Programming in a Docker environment, how to create a queue for video conversion using Redis and Django-RQ, and how to use Docker Compose to launch multiple containers.",
+      "about": "A backend that allows uploading videos via the admin interface and converting them into different formats to be accessed in the frontend."
+    },
+    "Coderr": {
+      "learned": "Developing a backend for an existing frontend, how to build a REST API with Django Rest Framework, and how to use SQLite as a database. Understanding how the endpoints need to be structured to support the frontend.",
+      "about": "Coderr is a platform where digital services can be offered and ordered by clients. It serves as a kind of marketplace for digital services."
+    },
+    "Angular-Join": {
+      "learned": "Developing a fullstack Kanban task manager with Angular and Django Rest Framework, how to create a secure and complex frontend that communicates with a custom backend.",
+      "about": "Fullstack Join is a task manager inspired by the Kanban system. Create and organize tasks using drag-and-drop features, assign users and categories."
     },
     "nextWork": "I am currently working with a small group on a project called ‘Münster Interessierts / Policast’. The team came together at MSHack 2024 and is currently being supported by the Solution Enabler programme. I am supporting the frontend area. The aim is to produce an audible weekly summary from the City of Münster's Council Information Network using LLM, ideally as a podcast. ",
     "btn": "Let's Talk",
@@ -83,10 +91,10 @@
     "button": "Send",
     "subheader": "Let us work together.",
     "letsWorkTogetherText": "Whether your project involves developing a new application, updating existing systems or migrating to a new framework, I have the technical expertise to make it a success.",
-    "sendmail":"Thank's for your message."
+    "sendmail": "Thank's for your message."
   },
   "tooltips": {
-    "start":"Start exploring.",
+    "start": "Start exploring.",
     "arrowNext": "Jump to next section.",
     "arrowBack": "Jump back to start.",
     "sendMail": "Send me mail with system mail program.",
