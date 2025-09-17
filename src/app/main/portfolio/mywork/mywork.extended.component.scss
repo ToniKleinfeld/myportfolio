@@ -1,0 +1,27 @@
+@use "../../../shared/mixin.scss" as main;
+
+.mobile-size-button {
+  display: none;
+}
+
+.btn {
+  @include main.button();
+}
+
+.talkBtn,
+.btnLiveTest {
+  @include main.butonfilled();
+}
+
+.btnGitHub {
+  @include main.buttonempty();
+}
+
+p {
+  font-size: 18px;
+  max-width: 366px;
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: wrap;
+  margin-bottom: 25px;
+}

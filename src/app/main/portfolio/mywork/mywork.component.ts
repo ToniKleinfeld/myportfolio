@@ -9,7 +9,7 @@ import { ScrolltoService } from '../../../service/scrollto.service';
   standalone: true,
   imports: [CommonModule, TranslateModule, ScrollAnimationDirective],
   templateUrl: './mywork.component.html',
-  styleUrls: ['./mywork.component.scss', './mywork.mobile.component.scss'],
+  styleUrls: ['./mywork.component.scss', './mywork.mobile.component.scss','./mywork.extended.component.scss'],
 })
 export class MyworkComponent {
   constructor(private scrollService: ScrolltoService) {}
