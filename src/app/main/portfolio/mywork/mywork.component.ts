@@ -67,7 +67,7 @@ export class MyworkComponent {
         skills: 'Django, Docker , Redis, PostgreSQL, Django Rest Framework',
         key: 'Videoflix',
         toggle: false,
-        href: 'https://toni-kleinfeld.com/videoflix',
+        href: 'https://toni-kleinfeld.com/Videoflix',
         hrefGit: 'https://github.com/ToniKleinfeld/Videoflix',
       },
       {
@@ -75,7 +75,7 @@ export class MyworkComponent {
         skills: 'Angular, Django, Django Rest Framework, SQLite , SCSS, HTML',
         key: 'Angular-Join',
         toggle: false,
-        href: 'https://toni-kleinfeld.com/angular-join',
+        href: 'https://toni-kleinfeld.com/a-join',
         hrefGit: 'https://github.com/ToniKleinfeld/Backend-Join',
       },
       {
